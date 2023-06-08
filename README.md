@@ -151,19 +151,21 @@
       width: 140%;
     }
     .shape-container {
-      float: left;
-      width: 100px;
-      height: 100px;
-      background-color: white;
-      margin: 5px;
-      border: 1px solid black;
-    }
-    .shape {
-      width: 100%;
-      height: 100%;
-      transition: all 1s ease;
-      cursor: pointer;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 5px;
+    border: 1px solid black;
+  }
+  .shape {
+    width: 80%;
+    height: 80%;
+    transition: all 1s ease;
+    cursor: pointer;
+  }
 .square {
   position: absolute;
   top: 50%;
