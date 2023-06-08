@@ -146,7 +146,8 @@
             text-decoration: none;
         }.grid-wrapper {
   overflow-x: auto;
-}.grid-container {
+}
+.grid-container {
   display: flex;
   flex-wrap: nowrap;
   width: max-content; /* Adjust the width based on your content */
@@ -158,6 +159,8 @@
   height: 200px;
   margin: 20px;
   flex: 0 0 auto;
+  border: 1px solid black; /* Add a 1px border */
+  box-sizing: border-box; /* Include the border in the width and height calculation */
 }.square {
   position: absolute;
   top: 50%;
