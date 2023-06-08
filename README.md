@@ -150,21 +150,20 @@
 .grid-container {
   display: flex;
   flex-wrap: nowrap;
-  width: max-content; /* Adjust the width based on your content */
+  width: max-content; 
   margin: 0 auto;
 }
 .container {
   position: relative;
-  width: 150px;
-  height: 200px;
+  width: 150px; 
+  height: 200px; 
   margin: 20px;
-  flex: 0 0 auto;
-  border: 1px solid black; /* Add a 1px border */
-  box-sizing: border-box; /* Include the border in the width and height calculation */
-  background-color: white; /* Set the background color to white */
-  display: flex; /* Center the items horizontally */
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
+  border: 1px solid black;
+  box-sizing: border-box; 
+  background-color: white;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }.square {
   position: absolute;
   top: 50%;
