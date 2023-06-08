@@ -156,9 +156,9 @@
 }
 .container {
   position: relative;
-  width: 150px;
-  height: 200px;
-  margin: 20px;
+  width: 75px;
+  height: 100px;
+  margin: 5px;
   flex: 0 0 auto;
   border: 1px solid black; /* Add border to create boxes */
   background-color: white; /* Set background color to white */
