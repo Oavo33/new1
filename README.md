@@ -146,11 +146,12 @@
             text-decoration: none;
         }.grid-wrapper {
   overflow-x: auto;
+  background-color: white;
 }
 .grid-container {
   display: flex;
   flex-wrap: nowrap;
-  width: max-content; /* Adjust the width based on your content */
+  width: max-content;
   margin: 0 auto;
 }
 .container {
@@ -159,6 +160,8 @@
   height: 200px;
   margin: 20px;
   flex: 0 0 auto;
+  border: 1px solid black; /* Add border to create boxes */
+  background-color: white; /* Set background color to white */
 }
 .square {
   position: absolute;
