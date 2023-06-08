@@ -602,9 +602,7 @@
       <div id="right-rectangle" class="rectangle"></div>
       <div id="top-triangle" class="triangle"></div>
       <div id="bottom-triangle" class="triangle"></div>
-      <div id="additional-triangle" class="triangle"></div>
-      <span class="text">Jakes<br>Gardens</span>
-    </div>
+      <div id="additional-triangle" class="triangle"></div></div>
     <div class="container">
       <div id="center-pentagon" class="pentagon">
         <span class="text">Jakes<br>Gardens</span>
