@@ -161,6 +161,10 @@
   flex: 0 0 auto;
   border: 1px solid black; /* Add a 1px border */
   box-sizing: border-box; /* Include the border in the width and height calculation */
+  background-color: white; /* Set the background color to white */
+  display: flex; /* Center the items horizontally */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
 }.square {
   position: absolute;
   top: 50%;
