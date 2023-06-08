@@ -588,7 +588,7 @@
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Personalized.Web.Pages/'">
     <i class="community-icon">🌐</i>
-    <p class="community-text">FREE Personalized Web Pages, Every Month</p>
+    <p class="community-text">FREE Web Pages, Every Month</p>
   </div>
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/White.Paper/'">
     <i class="community-icon">📝</i>
