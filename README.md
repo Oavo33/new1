@@ -84,7 +84,7 @@
       max-width: 210px;
       width: 45%;
       margin: 0 auto;
-      margin-top: -138px;
+      margin-top: -136px;
       position: relative;
       z-index: 2;
     }
