@@ -155,9 +155,9 @@
 }
 .container {
   position: relative;
-  width: 150px; 
-  height: 200px; 
-  margin: 20px;
+  width: 75px; 
+  height: 100px; 
+  margin: 5px;
   border: 1px solid black;
   box-sizing: border-box; 
   background-color: white;
