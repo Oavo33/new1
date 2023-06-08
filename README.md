@@ -548,7 +548,7 @@
   </div>
 </header><div class="hub-card">
   <h1>Message From The Team</h1>
-  <p>Hi There, From a local small business owner ,Me and a Team of 20 have built this Hub for Local Community and Local Business to get together and share eachothers skills ! </p>
+  <p>Hi There, From a local small business owner ,Me and a Team of Your Community have built this Hub for Local Community and Local Business to get together and share eachothers skills ! </p>
   <div class="dropdown-container">
     <div class="dropdown">
       <select>
