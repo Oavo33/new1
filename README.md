@@ -523,7 +523,7 @@
       You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
     </div>
   </div>
-  <h1 class="hub-title">Collabor8</h1>
+  <h1 class="hub-title">Community Business</h1>
   <div class="social">
     <div>
       <a href="#">
@@ -547,7 +547,7 @@
     </div>
   </div>
 </header><div class="hub-card">
-  <h1>Community Business</h1>
+  <h1>Message From The Team</h1>
   <p>Hi There, From a local small business owner ,Me and a Team of 20 have built this Hub for Local Community and Local Business to get together and share eachothers skills ! </p>
   <div class="dropdown-container">
     <div class="dropdown">
