@@ -145,26 +145,26 @@
             color: white;
             text-decoration: none;
         }.grid-wrapper {
-  overflow-x: auto;
-}
-.grid-container {
-  display: flex;
-  flex-wrap: nowrap;
-  width: max-content; 
-  margin: 0 auto;
-}
-.container {
-  position: relative;
-  width: 75px; 
-  height: 100px; 
-  margin: 5px;
-  border: 1px solid black;
-  box-sizing: border-box; 
-  background-color: white;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}.square {
+      overflow-x: scroll;
+    }
+    .grid-container {
+      width: 140%;
+    }
+    .shape-container {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      margin: 5px;
+      border: 1px solid black;
+    }
+    .shape {
+      width: 100%;
+      height: 100%;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+.square {
   position: absolute;
   top: 50%;
   left: 50%;
