@@ -72,7 +72,7 @@
   color: black;
   text-align: center;
   visibility: hidden;
-  opacity: 0;
+  opacity: 5;
   transition: visibility 0s, opacity 0.3s ease-in-out;
 }.hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
@@ -548,7 +548,7 @@
   </div>
 </header><div class="hub-card">
   <h1>Message From The Team</h1>
-  <p>Hi There, From a local small business owner ,Me and a Team of Your Community Members have built this Hub for Local Community and Local Business to get together and share eachothers skills ! </p>
+  <p>Hi There, From A Local Small Business Owner ,At The Hub We Have A Team Of Your Local Community Members Who Have Built This Hub For Local Community And Local Business To Get Together And Share Eachothers Skills ! </p>
   <div class="dropdown-container">
     <div class="dropdown">
       <select>
