@@ -721,7 +721,7 @@ function moveSquares() {
   leftSquare.style.transform = "translate(-50%, -50%) translateX(-60px) translateY(36px) rotate(-360deg)";
   rightSquare.style.transform = "translate(-50%, -50%) translateX(60px) translateY(-24px) rotate(360deg)";
   setTimeout(function() {
-    window.location.href = "https://oavo33.github.io/WindowCleaning/";
+    window.location.href =;
   }, 1000); // 1000 milliseconds = 1 second
 }
 centerSquare.addEventListener("click", moveSquares);
