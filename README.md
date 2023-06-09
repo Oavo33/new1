@@ -343,12 +343,7 @@
   border-bottom: 10px solid white;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-}.grid-section {
-  display: flex;
-  justify-content: center;
-  padding: 0 20px; /* Add 20px padding on the left and right */
-}
-.grid-container {
+}.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
