@@ -395,14 +395,10 @@
       background-color: #00b3b3;
       color: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);padding: 10px;
       transition: transform 0.3s, box-shadow 0.3s;
       cursor: pointer;
-      width: 80px;
+      width: 100px;
     }
     .grid-item:hover {
       transform: translateY(-3px);
