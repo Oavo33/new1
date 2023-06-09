@@ -364,10 +364,19 @@
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
     }
+    .grid-wrapper {
+      display: flex;
+      justify-content: center;
+    }
     .grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 20px;
+      max-width: 90%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .grid-container .grid-item {
       background-color: #00b3b3;
@@ -376,7 +385,9 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s, box-shadow 0.3s;
       cursor: pointer;
-      font-size: 12px;
+      font-size: 10px;
+      padding: 10px;
+      text-align: center;
     }
     .grid-container .grid-item:hover {
       transform: translateY(-3px);
