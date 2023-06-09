@@ -476,13 +476,7 @@
 </header><div class="hub-card">
   <h1>Message From The Team</h1>
   <p>Hi There, At The Hub We Have A Team Of Your Local Community Members Who Have Built This Hub For You ! To Help Local Community And Local Business Get Together And Share Eachothers Skills ! </p>
-  <select id="local-business-select">
-  <option value="">Find A Local Business</option>
-  <option value="chippy">Chippy</option>
-  <option value="window-cleaner">Window Cleaner</option>
-  <option value="hairdresser">Hairdresser</option>
-  <option value="rocketship-parts">RocketShip Parts</option>
-</select></div><div class="grid-container">
+  </div><div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
     <i class="community-icon">👵👴🏽</i>
     <p class="community-text">Elderly Assistance</p>
