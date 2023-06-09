@@ -343,14 +343,19 @@
   border-bottom: 10px solid white;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-}.grid-container {
+}.grid-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; /* Add 20px padding on the left and right */
+}
+.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   padding: 10px;
-  width: max-content; /* Change width to "max-content" */
+  width: max-content;
   justify-items: center;
 }
 .grid-item {
