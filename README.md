@@ -587,31 +587,36 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer><script>const dropdownSelect = document.getElementById('local-business-select');
-dropdownSelect.addEventListener('change', function() {
-  const selectedOption = dropdownSelect.value;
-  if (selectedOption !== '') {
-    let url = '';
-    switch (selectedOption) {
-      case 'chippy':
-        url = 'https://example.com/chippy';
-        break;
-      case 'window-cleaner':
-        url = 'https://example.com/window-cleaner';
-        break;
-      case 'hairdresser':
-        url = 'https://example.com/hairdresser';
-        break;
-      case 'rocketship-parts':
-        url = 'https://example.com/rocketship-parts';
-        break;
-      default:
-        break;
+  dropdownSelect.addEventListener('change', function() {
+    const selectedOption = dropdownSelect.value;
+    if (selectedOption !== '') {
+      let url = '';
+      switch (selectedOption) {
+        case 'chippy':
+          const rocketShipContainer = document.getElementById('center-circle');
+          rocketShipContainer.innerHTML = ''; // Clear previous content
+          rocketShipContainer.innerHTML = `
+            <!-- Add your desired content for the rocket ship container -->
+            <span class="text">Chippy Content</span>
+          `;
+          break;
+        case 'window-cleaner':
+          url = 'https://example.com/window-cleaner';
+          break;
+        case 'hairdresser':
+          url = 'https://example.com/hairdresser';
+          break;
+        case 'rocketship-parts':
+          url = 'https://example.com/rocketship-parts';
+          break;
+        default:
+          break;
+      }
+      if (url !== '') {
+        window.location.href = url;
+      }
     }
-    if (url !== '') {
-      window.location.href = url;
-    }
-  }
-});
+  });
 var leftRectangle = document.getElementById("left-rectangle");
 var rightRectangle = document.getElementById("right-rectangle");
 var topTriangle = document.getElementById("top-triangle");
