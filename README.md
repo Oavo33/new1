@@ -354,7 +354,7 @@
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   margin: auto; /* Center the container */
-  width: 60%; /* You can set any width you want */
+  width: 70%; /* You can set any width you want */
 }
 .grid-item {
   background-color: #00b3b3;
@@ -429,7 +429,70 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
-  </style>
+  <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .hub-card {
+    margin-bottom: 20px;
+  }
+  .community-item {
+    cursor: pointer;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .community-icon {
+    font-size: 30px;
+  }
+  .community-text {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .rectangle {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    margin-bottom: 20px;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    margin-bottom: 20px;
+  }
+  .pentagon {
+    width: 100px;
+    height: 70px;
+    background-color: green;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 18% 100%, 0% 35%);
+    margin-bottom: 20px;
+  }
+  .hexagon {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin-bottom: 20px;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -475,7 +538,8 @@
       </a>
     </div>
   </div>
-</header><div class="hub-card">
+</header>
+<div class="hub-card">
   <h1>Message From The Team</h1>
   <p>Hi There, At The Hub We Have A Team Of Your Local Community Members Who Have Built This Hub For You ! To Help Local Community And Local Business Get Together And Share Eachothers Skills ! </p>
   <div class="dropdown-container">
@@ -489,7 +553,8 @@
       </select>
     </div>
   </div>
-</div><div class="grid-container">
+</div>
+<div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
     <i class="community-icon">👵👴🏽</i>
     <p class="community-text">Elderly Assistance</p>
@@ -523,14 +588,16 @@
     <p class="community-text">White Paper</p>
     <p class="hover-text">Want to Know how Our Community will flourish BY local business? Please read: Section 6.4, That's how our Community gets paid! The more we interact with Local Business, The more we get Paid by Them, Pop in say Thanks</p>
   </div>
-</div><div class="grid-wrapper">
+</div>
+<div class="grid-wrapper">
   <div class="grid-container">
     <div class="container">
       <div id="left-rectangle" class="rectangle"></div>
       <div id="right-rectangle" class="rectangle"></div>
       <div id="top-triangle" class="triangle"></div>
       <div id="bottom-triangle" class="triangle"></div>
-      <div id="additional-triangle" class="triangle"></div></div>
+      <div id="additional-triangle" class="triangle"></div>
+    </div>
     <div class="container">
       <div id="center-pentagon" class="pentagon">
         <span class="text">Jakes<br>Gardens</span>
@@ -552,13 +619,15 @@
       <div id="right-hexagon" class="hexagon">
         <span class="text">Now</span>
       </div>
-    </div><div class="container">
+    </div>
+    <div class="container">
       <div id="center-circle" class="circle"></div>
       <div id="left-circle" class="circle"></div>
       <div id="triangle"></div>
     </div>
   </div>
-</div><footer>
+</div>
+<footer>
   <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
