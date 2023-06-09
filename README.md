@@ -362,7 +362,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
   font-size: 12px;
-  width: 140px;
+  width: 150px;
   justify-items: center;
 }
     .grid-item:hover {
