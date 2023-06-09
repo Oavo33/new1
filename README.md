@@ -354,7 +354,7 @@
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   margin: auto; /* Center the container */
-  width: 80%; /* You can set any width you want */
+  width: 60%; /* You can set any width you want */
 }
 .grid-item {
   background-color: #00b3b3;
