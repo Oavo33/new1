@@ -348,24 +348,15 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  width: max-content;
-  justify-items: center;
-}
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);}
 .grid-item {
   background-color: #00b3b3;
   color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  font-size: 12px;
-  width: 148px;
-  justify-items: center;
-}
-    .grid-item:hover {
+  font-size: 12px;  
+}.grid-item:hover {
       transform: translateY(-3px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
     }
