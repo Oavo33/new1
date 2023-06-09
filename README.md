@@ -538,8 +538,7 @@
       </a>
     </div>
   </div>
-</header>
-<div class="hub-card">
+</header><div class="hub-card">
   <h1>Message From The Team</h1>
   <p>Hi There, At The Hub We Have A Team Of Your Local Community Members Who Have Built This Hub For You ! To Help Local Community And Local Business Get Together And Share Eachothers Skills ! </p>
   <div class="dropdown-container">
@@ -553,8 +552,7 @@
       </select>
     </div>
   </div>
-</div>
-<div class="grid-container">
+</div><div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
     <i class="community-icon">👵👴🏽</i>
     <p class="community-text">Elderly Assistance</p>
@@ -588,16 +586,14 @@
     <p class="community-text">White Paper</p>
     <p class="hover-text">Want to Know how Our Community will flourish BY local business? Please read: Section 6.4, That's how our Community gets paid! The more we interact with Local Business, The more we get Paid by Them, Pop in say Thanks</p>
   </div>
-</div>
-<div class="grid-wrapper">
+</div><div class="grid-wrapper">
   <div class="grid-container">
     <div class="container">
       <div id="left-rectangle" class="rectangle"></div>
       <div id="right-rectangle" class="rectangle"></div>
       <div id="top-triangle" class="triangle"></div>
       <div id="bottom-triangle" class="triangle"></div>
-      <div id="additional-triangle" class="triangle"></div>
-    </div>
+      <div id="additional-triangle" class="triangle"></div></div>
     <div class="container">
       <div id="center-pentagon" class="pentagon">
         <span class="text">Jakes<br>Gardens</span>
@@ -619,15 +615,13 @@
       <div id="right-hexagon" class="hexagon">
         <span class="text">Now</span>
       </div>
-    </div>
-    <div class="container">
+    </div><div class="container">
       <div id="center-circle" class="circle"></div>
       <div id="left-circle" class="circle"></div>
       <div id="triangle"></div>
     </div>
   </div>
-</div>
-<footer>
+</div><footer>
   <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
