@@ -452,7 +452,7 @@
       You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
     </div>
   </div>
-  <h1 class="hub-title">Community's Business</h1>
+  <h1 class="hub-title">Community's Business Hub</h1>
   <div class="social">
     <div>
       <a href="#">
