@@ -361,7 +361,7 @@
   padding: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 12px;
   width: 100px;
   justify-items: center;
 }
