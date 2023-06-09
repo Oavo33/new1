@@ -344,19 +344,28 @@
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }.grid-container {
+  position: fixed; /* Fix the position */
+  top: 0; /* Set it to the top of the screen */
+  left: 0; /* Center the container */
+  right: 0; /* Center the container */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);}
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin: auto; /* Center the container */
+  width: 80%; /* You can set any width you want */
+}
 .grid-item {
   background-color: #00b3b3;
   color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
   font-size: 12px;  
-}.grid-item:hover {
+}
+.grid-item:hover {
       transform: translateY(-3px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
     }
