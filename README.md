@@ -384,7 +384,7 @@
     .grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
+      grid-gap: 5px;
       background: linear-gradient(to bottom, #00b3b3, #ffffff);
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
