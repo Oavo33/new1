@@ -349,6 +349,7 @@
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       padding: 10px;
+      width: 100px;
       justify-items: center;
     }
     .grid-item {
@@ -359,6 +360,7 @@
       transition: transform 0.3s, box-shadow 0.3s;
       cursor: pointer;
       width: 100px;
+      justify-items: center;
     }
     .grid-item:hover {
       transform: translateY(-3px);
