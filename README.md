@@ -343,45 +343,7 @@
   border-bottom: 10px solid white;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-}
-.community-container {
-      color: #00b3b3;
-      text-align: center;
-      position: relative;
-      margin-bottom: 100px;
-    }
-    .community-heading,
-    .community-description,
-    .community-benefits,
-    .community-cta,
-    .community-benefits-list {
-      color: #00b3b3;
-      text-align: center;
-    }
-    .community-heading {
-      font-size: 18px;
-      margin-top: 20px;
-    }
-    .community-description {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .community-benefits {
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .community-benefits-list {
-      margin-top: 5px;
-      list-style-type: disc;
-      margin-left: 15px;
-      font-size: 17px;
-    }
-    .community-cta {
-      font-style: italic;
-      margin-top: 10px;
-      font-size: 17px;
-    }
-    .grid-container {
+}.grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 5px;
