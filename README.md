@@ -402,7 +402,7 @@
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
       cursor: pointer;
-      width: 100px;
+      width: 80px;
     }
     .grid-item:hover {
       transform: translateY(-3px);
