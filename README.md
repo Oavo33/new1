@@ -594,10 +594,8 @@
       switch (selectedOption) {
         case 'chippy':
           const rocketShipContainer = document.getElementById('center-circle');
-          rocketShipContainer.innerHTML = ''; // Clear previous content
-          rocketShipContainer.innerHTML = `
-            <!-- Add your desired content for the rocket ship container -->
-            <span class="text">Chippy Content</span>
+          rocketShipContainer.innerHTML = '';
+          rocketShipContainer.innerHTML = `<span class="text">Chippy Content</span>
           `;
           break;
         case 'window-cleaner':
@@ -607,7 +605,19 @@
           url = 'https://example.com/hairdresser';
           break;
         case 'rocketship-parts':
-          url = 'https://example.com/rocketship-parts';
+          const pentagonContainer = document.querySelector('.grid-container .container:nth-child(2)');
+          pentagonContainer.innerHTML = '';
+          pentagonContainer.innerHTML = `
+            <div id="center-pentagon" class="pentagon">
+              <span class="text">Jakes<br>Gardens</span>
+            </div>
+            <div id="left-pentagon" class="pentagon">
+              <span class="text">Rule</span>
+            </div>
+            <div id="right-pentagon" class="pentagon">
+              <span class="text">Now</span>
+            </div>
+          `;
           break;
         default:
           break;
