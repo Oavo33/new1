@@ -101,32 +101,7 @@
       font-size: 14px;
       margin-bottom: 2px;
       color: #ffffff;
-    }
-    .dropdown-container {
-      text-align: center;
-      margin-top: 4px;
-    }
-    .dropdown {
-      display: inline-block;
-      position: relative;
-    }
-    .dropdown select {
-      font-family: 'Space Mono', monospace;
-      font-size: 10px;
-      padding: 5px 5px;
-      border-radius: 5px;
-      border: 2px solid #ffffff;
-      background-color: #008080;
-      color: #ffffff;
-      appearance: none;
-      outline: none;
-      background-image: url('https://img.icons8.com/material-rounded/12/ffffff/keyboard-arrow-down--v1.png');
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-origin: content-box;
-      cursor: pointer;
-    }
-    .graffiti {
+    }.graffiti {
       position: absolute;
       transform: translate(-50%, -50%);
       font-family: 'Space Mono', monospace;
@@ -586,47 +561,7 @@
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
-</footer><script>const dropdownSelect = document.getElementById('local-business-select');
-  dropdownSelect.addEventListener('change', function() {
-    const selectedOption = dropdownSelect.value;
-    if (selectedOption !== '') {
-      let url = '';
-      switch (selectedOption) {
-        case 'chippy':
-          const rocketShipContainer = document.getElementById('center-circle');
-          rocketShipContainer.innerHTML = '';
-          rocketShipContainer.innerHTML = `<span class="text">Chippy Content</span>
-          `;
-          break;
-        case 'window-cleaner':
-          url = 'https://example.com/window-cleaner';
-          break;
-        case 'hairdresser':
-          url = 'https://example.com/hairdresser';
-          break;
-        case 'rocketship-parts':
-          const pentagonContainer = document.querySelector('.grid-container .container:nth-child(2)');
-          pentagonContainer.innerHTML = '';
-          pentagonContainer.innerHTML = `
-            <div id="center-pentagon" class="pentagon">
-              <span class="text">Jakes<br>Gardens</span>
-            </div>
-            <div id="left-pentagon" class="pentagon">
-              <span class="text">Rule</span>
-            </div>
-            <div id="right-pentagon" class="pentagon">
-              <span class="text">Now</span>
-            </div>
-          `;
-          break;
-        default:
-          break;
-      }
-      if (url !== '') {
-        window.location.href = url;
-      }
-    }
-  });
+</footer><script>
 var leftRectangle = document.getElementById("left-rectangle");
 var rightRectangle = document.getElementById("right-rectangle");
 var topTriangle = document.getElementById("top-triangle");
