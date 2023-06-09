@@ -165,41 +165,7 @@
     height: 80%;
     transition: all 1s ease;
     cursor: pointer;
-  }
-.square {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background-color: #00b3b3;
-  transition: all 1s ease;
-  cursor: pointer;
-}
-#left-square {
-  top: calc(50% - 30px);
-  left: calc(50% - 60px);
-  background-color: #008c8c;
-}
-#right-square {
-  top: calc(50% + 30px);
-  left: calc(50% - 60px);
-  background-color: #00a6a6;
-}
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-.container {
+  }.container {
   position: relative;
   width: 150px;
   height: 200px;
@@ -625,27 +591,13 @@
       <div id="right-hexagon" class="hexagon">
         <span class="text">Now</span>
       </div>
-    </div>
-    <div class="container">
-      <div id="center-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="left-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="right-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-    </div>
-    <div class="container">
+    </div><div class="container">
       <div id="center-circle" class="circle"></div>
       <div id="left-circle" class="circle"></div>
       <div id="triangle"></div>
     </div>
   </div>
-</div>
-
-<footer>
+</div><footer>
   <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
@@ -715,25 +667,6 @@ function moveHexagons() {
 centerHexagon.addEventListener("click", moveHexagons);
 leftHexagon.addEventListener("click", moveHexagons);
 rightHexagon.addEventListener("click", moveHexagons);
-var centerSquare = document.getElementById("center-square");
-var leftSquare = document.getElementById("left-square");
-var rightSquare = document.getElementById("right-square");
-function moveSquares() {
-  centerSquare.style.transform = "translate(-50%, -50%) translateY(5px)";
-  leftSquare.style.transform = "translate(-50%, -50%) translateX(-60px) translateY(36px) rotate(-360deg)";
-  rightSquare.style.transform = "translate(-50%, -50%) translateX(60px) translateY(-24px) rotate(360deg)";
-  setTimeout(function() {
-    window.location.href = "https://oavo33.github.io/WindowCleaning/";
-  }, 1000); // 1000 milliseconds = 1 second
-}
-centerSquare.addEventListener("click", moveSquares);
-leftSquare.addEventListener("click", moveSquares);
-rightSquare.addEventListener("click", moveSquares);
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}</script>
+</script>
 </body>
 </html>
