@@ -20,10 +20,10 @@
       text-align: center;
       position: relative;
     }header .hub-title {
-  font-size: 49px; 
+  font-size: 45px; 
 }
     header h1 {
-      font-size: 49px;
+      font-size: 45px;
       color: #ffffff;
       margin: 0;
     }
