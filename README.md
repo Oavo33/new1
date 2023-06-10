@@ -136,7 +136,7 @@
   color: #333333;
 }
 .community-icon {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 .community-text {
