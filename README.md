@@ -638,44 +638,7 @@
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
-</footer><script>var leftRectangle = document.getElementById("left-rectangle");
-    var rightRectangle = document.getElementById("right-rectangle");
-    var duplicatedRectangle = document.getElementById("duplicated-rectangle");
-    var topTriangle = document.getElementById("top-triangle");
-    var bottomTriangle = document.getElementById("bottom-triangle");
-    var additionalTriangle = document.getElementById("additional-triangle");
-    var isRightRectangleClicked = false;
-    function moveRectangleAndTriangles() {
-      if (!isRightRectangleClicked) {
-        leftRectangle.style.transform = "translate(-50%, -50%) translateX(56px) translateY(-30px) rotate(45deg) scale(0.5814, 1)";
-        rightRectangle.style.transform = "translate(-50%, -50%) translateX(24px) translateY(14px) rotate(90deg) scale(1, 4.14)";
-        duplicatedRectangle.style.transform = "translate(-50%, -50%) translateX(-8px) translateY(-65px) rotate(-45deg) scale(0.5814, 1)";
-        topTriangle.style.transform = "translate(-50%, -50%) translateY(10px) translateX(22px) rotate(120deg) scale(2.4)";
-        bottomTriangle.style.transform = "translate(-50%, -50%) translateY(5px) translateX(22px) rotate(120deg) scale(2.2)";
-        additionalTriangle.style.transform = "translate(-50%, -50%) translateY(-65px) translateX(22px) rotate(120deg) scale(2)";
-        isRightRectangleClicked = true;
-      }
-    }
-    leftRectangle.addEventListener("click", moveRectangleAndTriangles);
-    rightRectangle.addEventListener("click", moveRectangleAndTriangles);
-    duplicatedRectangle.addEventListener("click", moveRectangleAndTriangles);
-    topTriangle.addEventListener("click", moveRectangleAndTriangles);
-    bottomTriangle.addEventListener("click", moveRectangleAndTriangles);
-    additionalTriangle.addEventListener("click", moveRectangleAndTriangles);
-var leftRectangle = document.getElementById("left-rectangle");
-var rightRectangle = document.getElementById("right-rectangle");
-var topTriangle = document.getElementById("top-triangle");
-var bottomTriangle = document.getElementById("bottom-triangle");
-var additionalTriangle = document.getElementById("additional-triangle");
-function moveRectangleAndTriangles() {
-  leftRectangle.style.transform = "translate(-50%, -50%) translateX(21px) translateY(-48px)";
-  rightRectangle.style.transform = "translate(-50%, -50%) translateX(25px) translateY(15px) rotate(90deg)";
-  topTriangle.style.transform = "translate(-50%, -50%) translateY(6px) translateX(55px) rotate(90deg)";
-  bottomTriangle.style.transform = "translate(-50%, -50%) translateY(7px) translateX(5px)";
-  additionalTriangle.style.transform = "translate(-50%, -50%) translateY(-55px) translateX(5px)";setTimeout(function() {
-    // window.location.href = "https://example.com";
-  }, 1000); 
-}
+</footer><script>
 leftRectangle.addEventListener("click", moveRectangleAndTriangles);
 rightRectangle.addEventListener("click", moveRectangleAndTriangles);
 topTriangle.addEventListener("click", moveRectangleAndTriangles);
