@@ -83,8 +83,8 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       padding: 10px;
       text-align: center;
-      max-width: 240px;
-      width: 45%;
+      max-width: 250px;
+      width: 49%;
       margin: 0 auto;
       margin-top: -136px;
       position: relative;
@@ -207,7 +207,7 @@ footer {
       You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
     </div>
   </div>
-  <h1 class="hub-title">HubBook</h1>
+  <h1 class="hub-title">The Community <br> Business Hub</h1>
   <div class="social">
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube"></a>
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a>
