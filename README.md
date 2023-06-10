@@ -611,20 +611,20 @@
         <span class="text">Now</span>
       </div>
     </div><div class="container">
-      <div id="center-circle" class="circle"></div>
-      <div id="left-circle" class="circle"></div>
-      <div id="triangle"></div>
-    </div>
-  </div>
-</div>
-      <div class="container">
         <div id="shape1" class="rectangle"></div>
         <div id="shape2" class="rectangle"></div>
         <div id="shape3" class="rectangle"></div>
         <div id="shape4" class="triangle"></div>
         <div id="shape5" class="triangle"></div>
         <div id="shape6" class="triangle"></div>
-      </div>
+      </div><div class="container">
+      <div id="center-circle" class="circle"></div>
+      <div id="left-circle" class="circle"></div>
+      <div id="triangle"></div>
+    </div>
+  </div>
+</div>
+      
     <footer><div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
