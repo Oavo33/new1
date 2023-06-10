@@ -423,7 +423,7 @@ footer {
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div><div class="attribution">
     <p>This site includes content used under the 
-    <a href="http://originalwork.com">Creative Commons Attribution 4.0 International</a> 
+    <a href=>Creative Commons Attribution 4.0 International</a> 
     license. The original work titled "Title of Work" was created by "Author's Name".</p>
   </div>
 </footer>
