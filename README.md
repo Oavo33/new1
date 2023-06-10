@@ -423,7 +423,7 @@ footer {
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div><div class="attribution">
   <p>This site includes content used under the 
-    <a href="https://opensource.org/licenses/MIT">Creative Commons Attribution 4.0 International</a> 
+    <a href=>Creative Commons Attribution 4.0 International</a> 
     license. The original work titled "The Community Business Hub" was created by "Karl Loftus".</p>
 </div>
 </footer>
