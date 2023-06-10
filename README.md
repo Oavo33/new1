@@ -115,9 +115,7 @@
     }
     .box {
       display: inline-block;
-      padding: 1px;
-      border: 1px solid #E53E3E;
-      background-color: transparent;
+      padding: 1px;background-color: transparent;
       border-radius: 4px;
     }
     .box a {
