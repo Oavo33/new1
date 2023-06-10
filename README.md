@@ -37,11 +37,11 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: black;
+      color: red;
     }
     .social div a img {
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
     }
     .login {
       position: absolute;
@@ -51,6 +51,7 @@
       align-items: center;
       font-weight: bold;
       text-decoration: none;
+      color: red;
     }
     .login a {
       color: yellow !important;
