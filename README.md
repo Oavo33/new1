@@ -36,12 +36,10 @@
     .social div a {
       display: flex;
       align-items: center;
-      text-decoration: none;
-      color: red;
-    }
+      text-decoration: none;}
     .social div a img {
-      width: 10px;
-      height: 10px;
+      width: 30px;
+      height: 30px;
     }
     .login {
       position: absolute;
@@ -115,7 +113,8 @@
     }
     .box {
       display: inline-block;
-      padding: 1px;background-color: transparent;
+      padding: 1px;
+      background-color: transparent;
       border-radius: 4px;
     }
     .box a {
@@ -164,7 +163,8 @@
     }
     .grid-container .grid-item:hover .hover-text {
       display: block;
-    }footer {
+    }
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
