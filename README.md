@@ -129,10 +129,7 @@
   transition: background-color 0.3s ease-in-out;
 }
 .community-item {
-  padding: 10px;
-  border: 1px solid #00b3b3;
-  border-radius: 5px;
-  display: inline-flex;
+  padding: 10px;display: inline-flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
