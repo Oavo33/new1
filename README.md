@@ -338,6 +338,78 @@
       border-bottom: 10px solid white;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
+    }.container {
+      position: relative;
+      width: 250px;
+      height: 200px;
+      margin: 20px auto;
+    }
+    .rectangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #00b3b3;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+    #left-rectangle {
+      top: calc(50% - 21px);
+      left: calc(50% - 65px);
+      background-color: #008c8c;
+      width: 50px;
+      height: 21px;
+      z-index: 3;
+    }
+    #right-rectangle {
+      top: calc(50% - 48px);
+      left: calc(50% - 65px);
+      background-color: #00b3b3;
+      width: 70px;
+      height: 14px;
+      z-index: 7;
+    }
+    #duplicated-rectangle {
+      top: calc(50% - -14px);
+      left: calc(50% + -65px);
+      background-color: #008c8c;
+      width: 50px;
+      height: 21px;
+      z-index: 3;
+    }
+    .triangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+    #top-triangle {
+      top: calc(50% - 75px);
+      left: calc(50% - 65px);
+      border-top: 9px solid white;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      z-index: 8;
+    }
+    #bottom-triangle {
+      top: calc(50% - 70px);
+      left: calc(50% - 65px);
+      border-top: 9px solid #00b3b3;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      z-index: 8;
+    }
+    #additional-triangle {
+      top: calc(50% - 2px);
+      left: calc(50% - 65px);
+      border-top: 9px solid white;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      z-index: 8;
     }
     .grid-wrapper {
       display: flex;
@@ -545,7 +617,18 @@
       <div id="triangle"></div>
     </div>
   </div>
-</div><footer>
+</div><div class="grid-wrapper">
+    <div class="grid-container">
+      <div class="container">
+        <div id="left-rectangle" class="rectangle"></div>
+        <div id="right-rectangle" class="rectangle"></div>
+        <div id="duplicated-rectangle" class="rectangle"></div>
+        <div id="top-triangle" class="triangle"></div>
+        <div id="bottom-triangle" class="triangle"></div>
+        <div id="additional-triangle" class="triangle"></div>
+      </div>
+    </div>
+  </div><footer>
   <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
@@ -555,7 +638,30 @@
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
-</footer><script>
+</footer><script>var leftRectangle = document.getElementById("left-rectangle");
+    var rightRectangle = document.getElementById("right-rectangle");
+    var duplicatedRectangle = document.getElementById("duplicated-rectangle");
+    var topTriangle = document.getElementById("top-triangle");
+    var bottomTriangle = document.getElementById("bottom-triangle");
+    var additionalTriangle = document.getElementById("additional-triangle");
+    var isRightRectangleClicked = false;
+    function moveRectangleAndTriangles() {
+      if (!isRightRectangleClicked) {
+        leftRectangle.style.transform = "translate(-50%, -50%) translateX(56px) translateY(-30px) rotate(45deg) scale(0.5814, 1)";
+        rightRectangle.style.transform = "translate(-50%, -50%) translateX(24px) translateY(14px) rotate(90deg) scale(1, 4.14)";
+        duplicatedRectangle.style.transform = "translate(-50%, -50%) translateX(-8px) translateY(-65px) rotate(-45deg) scale(0.5814, 1)";
+        topTriangle.style.transform = "translate(-50%, -50%) translateY(10px) translateX(22px) rotate(120deg) scale(2.4)";
+        bottomTriangle.style.transform = "translate(-50%, -50%) translateY(5px) translateX(22px) rotate(120deg) scale(2.2)";
+        additionalTriangle.style.transform = "translate(-50%, -50%) translateY(-65px) translateX(22px) rotate(120deg) scale(2)";
+        isRightRectangleClicked = true;
+      }
+    }
+    leftRectangle.addEventListener("click", moveRectangleAndTriangles);
+    rightRectangle.addEventListener("click", moveRectangleAndTriangles);
+    duplicatedRectangle.addEventListener("click", moveRectangleAndTriangles);
+    topTriangle.addEventListener("click", moveRectangleAndTriangles);
+    bottomTriangle.addEventListener("click", moveRectangleAndTriangles);
+    additionalTriangle.addEventListener("click", moveRectangleAndTriangles);
 var leftRectangle = document.getElementById("left-rectangle");
 var rightRectangle = document.getElementById("right-rectangle");
 var topTriangle = document.getElementById("top-triangle");
