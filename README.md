@@ -353,7 +353,7 @@
       transition: all 1s ease;
       cursor: pointer;
     }
-    #left-rectangle {
+    #shape1 {
       top: calc(50% - 21px);
       left: calc(50% - 65px);
       background-color: #008c8c;
@@ -361,7 +361,7 @@
       height: 21px;
       z-index: 3;
     }
-    #right-rectangle {
+    #shape2 {
       top: calc(50% - 48px);
       left: calc(50% - 65px);
       background-color: #00b3b3;
@@ -369,7 +369,7 @@
       height: 14px;
       z-index: 7;
     }
-    #duplicated-rectangle {
+    #shape3 {
       top: calc(50% - -14px);
       left: calc(50% + -65px);
       background-color: #008c8c;
@@ -387,7 +387,7 @@
       transition: all 1s ease;
       cursor: pointer;
     }
-    #top-triangle {
+    #shape4 {
       top: calc(50% - 75px);
       left: calc(50% - 65px);
       border-top: 9px solid white;
@@ -395,7 +395,7 @@
       border-right: 5px solid transparent;
       z-index: 8;
     }
-    #bottom-triangle {
+    #shape5 {
       top: calc(50% - 70px);
       left: calc(50% - 65px);
       border-top: 9px solid #00b3b3;
@@ -403,15 +403,14 @@
       border-right: 5px solid transparent;
       z-index: 8;
     }
-    #additional-triangle {
+    #shape6 {
       top: calc(50% - 2px);
       left: calc(50% - 65px);
       border-top: 9px solid white;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       z-index: 8;
-    }
-    .grid-wrapper {
+    }.grid-wrapper {
       display: flex;
       justify-content: center;
     }
@@ -620,16 +619,15 @@
 </div><div class="grid-wrapper">
     <div class="grid-container">
       <div class="container">
-        <div id="left-rectangle" class="rectangle"></div>
-        <div id="right-rectangle" class="rectangle"></div>
-        <div id="duplicated-rectangle" class="rectangle"></div>
-        <div id="top-triangle" class="triangle"></div>
-        <div id="bottom-triangle" class="triangle"></div>
-        <div id="additional-triangle" class="triangle"></div>
+        <div id="shape1" class="rectangle"></div>
+        <div id="shape2" class="rectangle"></div>
+        <div id="shape3" class="rectangle"></div>
+        <div id="shape4" class="triangle"></div>
+        <div id="shape5" class="triangle"></div>
+        <div id="shape6" class="triangle"></div>
       </div>
     </div>
-  </div><footer>
-  <div class="footer-container">
+  </div><footer><div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
     </div>
@@ -638,7 +636,30 @@
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
-</footer><script>
+</footer><script>var shape1 = document.getElementById("shape1");
+    var shape2 = document.getElementById("shape2");
+    var shape3 = document.getElementById("shape3");
+    var shape4 = document.getElementById("shape4");
+    var shape5 = document.getElementById("shape5");
+    var shape6 = document.getElementById("shape6");
+    var isRightRectangleClicked = false;
+    function moveShapes() {
+      if (!isRightRectangleClicked) {
+        shape1.style.transform = "translate(-50%, -50%) translateX(56px) translateY(-30px) rotate(45deg) scale(0.5814, 1)";
+        shape2.style.transform = "translate(-50%, -50%) translateX(24px) translateY(14px) rotate(90deg) scale(1, 4.14)";
+        shape3.style.transform = "translate(-50%, -50%) translateX(-8px) translateY(-65px) rotate(-45deg) scale(0.5814, 1)";
+        shape4.style.transform = "translate(-50%, -50%) translateY(10px) translateX(22px) rotate(120deg) scale(2.4)";
+        shape5.style.transform = "translate(-50%, -50%) translateY(5px) translateX(22px) rotate(120deg) scale(2.2)";
+        shape6.style.transform = "translate(-50%, -50%) translateY(-65px) translateX(22px) rotate(120deg) scale(2)";
+        isRightRectangleClicked = true;
+      }
+    }
+    shape1.addEventListener("click", moveShapes);
+    shape2.addEventListener("click", moveShapes);
+    shape3.addEventListener("click", moveShapes);
+    shape4.addEventListener("click", moveShapes);
+    shape5.addEventListener("click", moveShapes);
+    shape6.addEventListener("click", moveShapes);
 leftRectangle.addEventListener("click", moveRectangleAndTriangles);
 rightRectangle.addEventListener("click", moveRectangleAndTriangles);
 topTriangle.addEventListener("click", moveRectangleAndTriangles);
