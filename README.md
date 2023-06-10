@@ -84,7 +84,7 @@
       padding: 10px;
       text-align: center;
       max-width: 250px;
-      width: 49%;
+      width: 65%;
       margin: 0 auto;
       margin-top: -136px;
       position: relative;
