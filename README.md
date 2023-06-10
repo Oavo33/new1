@@ -83,7 +83,7 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       padding: 10px;
       text-align: center;
-      max-width: 210px;
+      max-width: 240px;
       width: 45%;
       margin: 0 auto;
       margin-top: -136px;
