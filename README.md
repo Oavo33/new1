@@ -623,9 +623,7 @@
       <div id="triangle"></div>
     </div>
   </div>
-</div>
-      
-    <footer><div class="footer-container">
+</div><footer><div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
     </div>
