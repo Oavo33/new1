@@ -280,8 +280,8 @@ footer {
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;">
   <a class="community-item" style="position: absolute; bottom: 2px; left: 50%; ">
-    <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p></a>
+    <p class="community-text" onclick="window.location.href='1'">YouTube Review</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'">Page Review</p></a>
 </div>
   <div class="grid-item" onclick="changeColor(this)">
     <a class="community-item">
