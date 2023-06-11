@@ -136,7 +136,7 @@
       color: #00b3b3;
       font-size: 8px;
       text-align: center;
-      padding: 2px;
+      padding: 0px;
       cursor: pointer;
       font-weight: bold;
       text-shadow: 1px 1px 2px black;
