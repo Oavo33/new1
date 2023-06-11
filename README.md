@@ -105,13 +105,13 @@
       margin: 10px auto;
       padding: 0 10px;
     }.grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      grid-gap: 10px;
-      max-width: 800px;
-      margin: 10px auto;
-      padding: 0 10px;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Updated property */
+  grid-gap: 10px;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
     .grid-item {
       border-radius: 10px;
       padding: 10px;
