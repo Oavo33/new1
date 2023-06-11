@@ -123,7 +123,7 @@
 .grid-item {border-radius: 10px;padding: 10px;
   text-align: center;
   border: 1px solid #00b3b3;
-  cursor: pointer;}
+  }
 .community-item {
   padding: 10px;display: inline-flex;
   flex-direction: column;
