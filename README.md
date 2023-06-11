@@ -279,9 +279,11 @@ footer {
     </a>
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;">
-  <a class="community-item" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; position: absolute; bottom: 0; width: 100%;">
-    <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  <a class="community-item" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; position: absolute; bottom: 0; width: 100%; height: 100%;">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+        <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
+        <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+    </div>
 </a>
 </div>
   <div class="grid-item" onclick="changeColor(this)">
