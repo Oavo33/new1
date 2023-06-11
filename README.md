@@ -123,9 +123,7 @@
 .grid-item {border-radius: 10px;padding: 10px;
   text-align: center;
   border: 1px solid #00b3b3;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
+  cursor: pointer;}
 .community-item {
   padding: 10px;display: inline-flex;
   flex-direction: column;
@@ -141,9 +139,7 @@
   font-size: 14px;
   font-weight: 500;
   margin: 0;
-  color: #00b3b3; 
-  background-color: #ffffff; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #00b3b3; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
