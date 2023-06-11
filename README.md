@@ -244,52 +244,52 @@
   <h1>Message From The Team</h1>
   <p>Hi there! At The Hub, we have a team of your local community members who have built this hub for you! We aim to help the local community and local businesses come together and share each other's skills.</p>
 </div><div class="grid-container">
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/">
-      <i class="community-icon">👵👴🏽</i>
-      <p class="community-text">Elderly Assistance</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/Elderly.assistance/">
+      <i class="grid-icon">👵👴🏽</i>
+      <p class="grid-text">Elderly Assistance</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/">
-      <i class="community-icon">🤝</i>
-      <p class="community-text">Community Giveaway</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/">
+      <i class="grid-icon">🤝</i>
+      <p class="grid-text">Community Giveaway</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall">
-      <i class="community-icon">🎨</i>
-      <p class="community-text">The Community Graffiti Wall</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall">
+      <i class="grid-icon">🎨</i>
+      <p class="grid-text">The Community Graffiti Wall</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/">
-      <i class="community-icon">📸</i>
-      <p class="community-text">Our Vintage Shop Memories</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/Vintage.High.Street/">
+      <i class="grid-icon">📸</i>
+      <p class="grid-text">Our Vintage Shop Memories</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/Help/">
-      <i class="community-icon">🏠</i>
-      <p class="community-text">Help Our Homeless</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/Help/">
+      <i class="grid-icon">🏠</i>
+      <p class="grid-text">Help Our Homeless</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/The.Hub/">
-      <i class="community-icon">💼</i>
-      <p class="community-text">Encouraging Young Business</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/The.Hub/">
+      <i class="grid-icon">💼</i>
+      <p class="grid-text">Encouraging Young Business</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/">
-      <i class="community-icon">🌐</i>
-      <p class="community-text">FREE Web Pages, Every Month</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/Personalized.Web.Pages/">
+      <i class="grid-icon">🌐</i>
+      <p class="grid-text">FREE Web Pages, Every Month</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
-    <a class="community-item" href="https://oavo33.github.io/White.Paper/">
-      <i class="community-icon">📝</i>
-      <p class="community-text" onclick="event.stopPropagation();">White Paper</p>
+  <div class="grid-item" onclick="changeColor(this)">
+    <a class="grid-item" href="https://oavo33.github.io/White.Paper/">
+      <i class="grid-icon">📝</i>
+      <p class="grid-text" onclick="event.stopPropagation();">White Paper</p>
     </a>
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
