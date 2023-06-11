@@ -4,57 +4,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hub</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
-
-    /* Common styles */
-    body {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');body {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       background-color: #f2f2f2;
       color: #333333;
       margin: 0;
       padding: 0;
-    }
-
-    header {
+    }header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 40px 20px;
       text-align: center;
       position: relative;
-    }
-
-    header .hub-title {
+    }header .hub-title {
       font-size: 38px;
-    }
-
-    header h1 {
+    }header h1 {
       font-size: 38px;
       color: #ffffff;
       margin: 0;
-    }
-
-    .social {
+    }.social {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-    }
-
-    .social div {
+    }.social div {
       margin-bottom: 5px;
-    }
-
-    .social div a {
+    }.social div a {
       display: flex;
       align-items: center;
       text-decoration: none;
-    }
-
-    .social div a img {
+    }.social div a img {
       width: 30px;
       height: 30px;
-    }
-
-    .login {
+    }.login {
       position: absolute;
       top: 14px;
       right: 14px;
@@ -63,18 +44,12 @@
       font-weight: bold;
       text-decoration: none;
       color: red;
-    }
-
-    .login a {
+    }.login a {
       color: yellow !important;
-    }
-
-    .login:hover .tooltip {
+    }.login:hover .tooltip {
       visibility: visible;
       opacity: 1;
-    }
-
-    .tooltip {
+    }.tooltip {
       position: absolute;
       top: 75%;
       right: 35%;
@@ -89,9 +64,7 @@
       visibility: hidden;
       opacity: 5;
       transition: visibility 0s, opacity 0.3s ease-in-out;
-    }
-
-    .hub-card {
+    }.hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
@@ -104,22 +77,16 @@
       margin-top: -136px;
       position: relative;
       z-index: 2;
-    }
-
-    .hub-card h1 {
+    }.hub-card h1 {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #ffffff;
-    }
-
-    .hub-card p {
+    }.hub-card p {
       font-size: 14px;
       margin-bottom: 2px;
       color: #ffffff;
-    }
-
-    .graffiti {
+    }.graffiti {
       position: absolute;
       transform: translate(-50%, -50%);
       font-family: 'Roboto', sans-serif;
@@ -130,64 +97,48 @@
       transform: rotate(-7deg);
       top: 2%;
       color: white;
-    }
-
-    .grid-container {
+    }.grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       grid-gap: 10px;
       max-width: 800px;
       margin: 10px auto;
       padding: 0 10px;
-    }
-
-    .grid-item {
+    }.grid-item {
       border-radius: 10px;
       padding: 10px;
       text-align: center;
       border: 1px solid #00b3b3;
-    }
-
-    .community-item {
+    }.community-item {
       padding: 10px;
       display: inline-flex;
       flex-direction: column;
       align-items: center;
       text-decoration: none;
       color: #333333;
-    }
-
-    .community-icon {
+    }.community-icon {
       font-size: 30px;
       margin-bottom: 10px;
-    }
-
-    .community-text {
+    }.community-text {
       font-size: 14px;
       font-weight: 500;
       margin: 0;
       color: #00b3b3;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    }
-
-    footer {
+    }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
       text-align: center;
       font-size: 14px;
-    }
-
-    .footer-container {
+    }.footer-container {
       max-width: 1200px;
       margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-    }
-
-    .footer-container .box {
+    }.footer-container .box {
       background-color: #00b3b3;
       color: #ffffff;
       border-radius: 10px;
@@ -196,114 +147,61 @@
       text-align: center;
       margin: 10px;
       cursor: pointer;
-    }
-
-    .footer-container .box h3 {
+    }.footer-container .box h3 {
       margin: 0;
-    }
-
-    .footer-container .box:first-child {
+    }.footer-container .box:first-child {
       border: 1px solid #ffffff;
-    }
-
-    .footer-container .box:last-child {
+    }.footer-container .box:last-child {
       border: 1px solid #ffffff;
-    }
-
-    /* Media Queries */
-
-    /* Mobile devices */
-    @media only screen and (max-width: 600px) {
+    }@media only screen and (max-width: 600px) {
       header .hub-title {
         font-size: 24px;
-      }
-
-      header h1 {
+      }header h1 {
         font-size: 24px;
-      }
-
-      .hub-card {
+      }.hub-card {
         width: 100%;
         margin-top: 0;
-      }
-
-      .grid-item {
+      }.grid-item {
         width: 100%;
-      }
-
-      .community-icon {
+      }.community-icon {
         font-size: 24px;
-      }
-
-      .community-text {
+      }.community-text {
         font-size: 12px;
-      }
-
-      .footer-container .box {
+      }.footer-container .box {
         width: 100%;
       }
-    }
-
-    /* Tablets and small laptops */
-    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    }@media only screen and (min-width: 601px) and (max-width: 1024px) {
       header .hub-title {
         font-size: 32px;
-      }
-
-      header h1 {
+      }header h1 {
         font-size: 32px;
-      }
-
-      .hub-card {
+      }.hub-card {
         width: 75%;
         margin-top: -100px;
-      }
-
-      .grid-item {
+      }.grid-item {
         width: calc((100% - 30px) / 2);
-      }
-
-      .community-icon {
+      }.community-icon {
         font-size: 28px;
-      }
-
-      .community-text {
+      }.community-text {
         font-size: 14px;
-      }
-
-      .footer-container .box {
+      }.footer-container .box {
         width: calc((100% - 30px) / 2);
       }
-    }
-
-    /* Desktops and larger screens */
-    @media only screen and (min-width: 1025px) {
+    }@media only screen and (min-width: 1025px) {
       header .hub-title {
         font-size: 38px;
-      }
-
-      header h1 {
+      }header h1 {
         font-size: 38px;
-      }
-
-      .hub-card {
+      }.hub-card {
         width: 65%;
         margin-top: -136px;
-      }
-
-      .grid-item {
+      }.grid-item {
         width: calc((100% - 40px) / 3);
-      }
-
-      .community-icon {
+      }.community-icon {
         font-size: 30px;
-      }
-
-      .community-text {
+      }.community-text {
         font-size: 16px;
-      }
-
-      .footer-container .box {
+      }.footer-container .box {
         width: calc((100% - 40px) / 3);
       }
     }
