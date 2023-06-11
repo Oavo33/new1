@@ -125,8 +125,13 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  text-align: center;cursor: pointer;
+  text-align: center;
+  cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+}
+.grid-item .community-text {
+  color: #00b3b3; 
+  font-size: 18px; 
 }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
