@@ -133,7 +133,7 @@
     color: #00b3b3; 
     font-size: 14px; 
     text-align: center; 
-    padding: 10px; 
+    padding: 2px; 
     cursor: pointer;
   }
   .-text:hover {
