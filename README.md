@@ -104,34 +104,35 @@
       max-width: 800px;
       margin: 10px auto;
       padding: 0 10px;
-    }.grid-item {
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #00b3b3;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}.community-item {
-  padding: 10px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #333333;
-  height: 100%;
-}.community-icon {
+    }.grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-gap: 10px;
+      max-width: 800px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+    .grid-item {
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #00b3b3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .grid-item p {
+      font-size: 14px;margin: 0;
+    }
+    .grid-item i {
       font-size: 30px;
-      margin-bottom: 10px;
-    }.community-text {
-      font-size: 14px;
-      font-weight: 500;
-      margin: 0;
-      color: #00b3b3;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    .grid-item a {
+      text-decoration: none;
+      color: inherit;
     }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
@@ -243,99 +244,78 @@
   <h1>Message From The Team</h1>
   <p>Hi there! At The Hub, we have a team of your local community members who have built this hub for you! We aim to help the local community and local businesses come together and share each other's skills.</p>
 </div><div class="grid-container">
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
     <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/">
       <i class="community-icon">👵👴🏽</i>
       <p class="community-text">Elderly Assistance</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
     <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/">
       <i class="community-icon">🤝</i>
       <p class="community-text">Community Giveaway</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
     <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall">
       <i class="community-icon">🎨</i>
       <p class="community-text">The Community Graffiti Wall</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
     <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/">
       <i class="community-icon">📸</i>
       <p class="community-text">Our Vintage Shop Memories</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
     <a class="community-item" href="https://oavo33.github.io/Help/">
       <i class="community-icon">🏠</i>
       <p class="community-text">Help Our Homeless</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
     <a class="community-item" href="https://oavo33.github.io/The.Hub/">
       <i class="community-icon">💼</i>
       <p class="community-text">Encouraging Young Business</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
     <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/">
       <i class="community-icon">🌐</i>
       <p class="community-text">FREE Web Pages, Every Month</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
-  <a class="community-item" href="https://oavo33.github.io/White.Paper/">
-    <i class="community-icon">📝</i>
-    <p class="community-text" onclick="event.stopPropagation();">White Paper</p>
-  </a>
-</div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-<div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-<div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-<div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-<div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <a class="community-item" style="position: absolute; bottom: -14px; left: 13.14%;">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
+    <a class="community-item" href="https://oavo33.github.io/White.Paper/">
+      <i class="community-icon">📝</i>
+      <p class="community-text" onclick="event.stopPropagation();">White Paper</p>
+    </a>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
+    <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
+    <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
+    <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
+    <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;">
+    <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p>
+  </div>
+  <a class="community-item" href="URL_HERE" style="position: absolute; bottom: -14px; left: 13.14%;">
     <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
     <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p>
   </a>
-</div>
-<div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-<div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-position: center; background-size: cover;"><p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p></div>
 </div><footer>
   <div class="footer-container">
     <div class="box">
