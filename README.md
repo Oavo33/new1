@@ -285,7 +285,7 @@ footer {
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;">
-  <a class="community-item" style="position: absolute; bottom: 0; width: 100%; text-align: center;">
+  <a class="community-item" style="position: absolute; bottom: 0; width: 100%; text-align: center; background-color: rgba(255, 255, 255, 0.7);">
     <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </a>
