@@ -99,7 +99,7 @@
       color: white;
     }.grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       grid-gap: 10px;
       max-width: 800px;
       margin: 10px auto;
