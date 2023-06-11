@@ -131,7 +131,7 @@
 }
 .grid-item .community-text {
   color: #00b3b3; 
-  font-size: 18px; 
+  font-size: 10.14px; 
 }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
