@@ -404,7 +404,11 @@
   </div>
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
-  </div>
+  </div><div class="tcbhg">
+  <p>
+    <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+  </p>
+</div>
 </footer>
 <script>
   function scrollToTop() {
