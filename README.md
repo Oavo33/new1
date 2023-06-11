@@ -127,30 +127,7 @@
   padding: 10px;
   text-align: center;cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-}
-.community-item {
-  padding: 10px;
-  border: 1px solid #00b3b3;
-  border-radius: 5px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #333333;
-}
-.community-icon {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.community-text {
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0;
-  color: #00b3b3; /* Black text color */
-  background-color: #ffffff; /* White background color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Optional: Text shadow */
-}
-footer {
+}footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
