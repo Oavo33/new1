@@ -130,11 +130,22 @@
   font-size: 14px; 
 }
   .-text {
-    color: #00b3b3; 
-    font-size: 14px; 
+    color: #ffffff;
+    font-size: 18px; 
     text-align: center; 
-    padding: 2px; 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: absolute; /* Enable absolute positioning */
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%);
   }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
