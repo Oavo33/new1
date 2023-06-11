@@ -147,7 +147,7 @@
     }
     h1 {
       text-align: center;
-      font-size: 14px;
+      font-size: 10px;
       color: #00b3b3;
       margin-top: 2px;
       margin-bottom: 2px;
@@ -159,7 +159,7 @@
       text-align: center;
     }
     .audits p {
-      font-size: 10px;
+      font-size: 9px;
       line-height: 1.6;
       margin-bottom: 2px;
       color: #00b3b3;
@@ -169,10 +169,10 @@
       display: inline-block;
       background-color: #00b3b3;
       color: #ffffff;
-      font-size: 14px;
+      font-size: 9px;
       font-weight: bold;
       text-decoration: none;
-      padding: 5px 10px;
+      padding: 0.1px 0.1px;
       border-radius: 4px;
       transition: background-color 0.3s ease;
     }
