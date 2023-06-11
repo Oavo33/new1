@@ -3,7 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hub</title>
-  <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
     body {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
@@ -52,7 +53,8 @@
       font-weight: bold;
       text-decoration: none;
       color: red;
-    }.login:hover .tooltip {
+    }
+    .login:hover .tooltip {
       visibility: visible;
       opacity: 1;
     }
@@ -110,41 +112,45 @@
       color: white;
     }
     .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  grid-gap: 10px;
-  max-width: 800px;
-  margin: 10px auto;
-  padding: 0 10px;
-}
-.grid-item {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-.grid-item .community-text {
-  color: #00b3b3; 
-  font-size: 14px; 
-}
-  .-text {
-    color: #ffffff;
-    font-size: 18px; 
-    text-align: center; 
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 50%;left: 50%;
-  }footer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-gap: 10px;
+      max-width: 800px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+    .grid-item {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      position: relative;
+    }
+    .grid-item .community-text {
+      color: #00b3b3;
+      font-size: 14px;
+    }
+    .-text {
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      transition: background-color 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
@@ -177,7 +183,8 @@
     }
     .footer-container .box:last-child {
       border: 1px solid #ffffff;
-    }</style>
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -203,8 +210,10 @@
   <h1 class="hub-title">The Community Business Hub</h1>
   <div class="social">
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube"></a>
-    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a></div>
-</header><div class="hub-card">
+    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a>
+  </div>
+</header>
+<div class="hub-card">
   <h1>Message From The Team</h1>
   <p>Hi there! At The Hub, we have a team of your local community members who have built this hub for you! We aim to help the local community and local businesses come together and share each other's skills.</p>
 </div>
@@ -258,27 +267,50 @@
     </a>
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;">
-  <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-  <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-</div>
-  <div class="grid-item" onclick="changeColor(this)">
-  <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
-    <i class="community-icon"></i>
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </div></div>
-  <div class="grid-item" onclick="changeColor(this)">
-  <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
-    <i class="community-icon"></i>
-    <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
-</div><div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png')">
-    <a class="community-item">
+  <div class="grid-item" onclick="changeColor(this)">
+    <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
+      <i class="community-icon"></i>
+      <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+      <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+    </div>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)">
+    <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
       <i class="community-icon"></i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
+    </div>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)">
+    <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
+      <i class="community-icon"></i>
+      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
+      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+    </div>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)">
+    <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
+      <i class="community-icon"></i>
+      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
+      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+    </div>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)">
+    <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
+      <i class="community-icon"></i>
+      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
+      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+    </div>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)">
+    <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
+      <i class="community-icon"></i>
+      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
+      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+    </div>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png')">
     <a class="community-item">
@@ -343,34 +375,35 @@
   </div>
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
-  </div><div class="tcbhg">
-  <p>
-    <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
-  </p>
-</div>
+  </div>
+  <div class="tcbhg">
+    <p>
+      <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+    </p>
+  </div>
 </footer>
 <script>
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   function changeColor(element) {
-  if (element.classList.contains('grid-item')) {
-    var colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#8B00FF'];
-    var randomColor = colors[Math.floor(Math.random() * colors.length)];
-    element.style.backgroundColor = randomColor;
+    if (element.classList.contains('grid-item')) {
+      var colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#8B00FF'];
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      element.style.backgroundColor = randomColor;
+    }
   }
-}
   function stopPropagation(event) {
     event.stopPropagation();
   }
   var buttons = document.querySelectorAll('.community-item a');
-  buttons.forEach(function(button) {
+  buttons.forEach(function (button) {
     button.addEventListener('click', stopPropagation);
   });
   var gridItems = document.querySelectorAll('.grid-item');
-  gridItems.forEach(function(gridItem) {
+  gridItems.forEach(function (gridItem) {
     var itemButtons = gridItem.querySelectorAll('.community-text');
-    itemButtons.forEach(function(itemButton) {
+    itemButtons.forEach(function (itemButton) {
       itemButton.addEventListener('click', stopPropagation);
     });
   });
