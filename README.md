@@ -133,18 +133,15 @@
       font-size: 14px;
     }
     .-text {
-      color: #ffffff;
-      font-size: 18px;
+      color: #00b3b3;
+      font-size: 8px;
       text-align: center;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      border-radius: 8px;
-      text-transform: uppercase;
+      padding: 2px;
+      cursor: pointer;text-transform: uppercase;
       font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      text-shadow: 1px 1px 2px black;
       transition: background-color 0.3s;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 4px black;
       position: absolute;
       top: 50%;
       left: 50%;
