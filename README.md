@@ -142,6 +142,44 @@
       text-shadow: 1px 1px 2px black;
       top: 35%;
       left: 50%;
+    }.container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 14px;
+      color: #00b3b3;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .audits {
+      margin-top: 2px;
+      text-align: center;
+    }
+    .audits p {
+      font-size: 10px;
+      line-height: 1.6;
+      margin-bottom: 2px;
+      color: #00b3b3;
+      text-align: justify;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #00b3b3;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #008080;
     }
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
@@ -259,7 +297,14 @@
       <p class="community-text">White Paper</p>
     </a>
   </div>
-  <h1>Message From The Team</h1>
+  <div class="container">
+    <h1>My Audits</h1>
+    <div class="audits">
+      <p>Join us in supporting our community's businesses! The window cleaner with 20 years of experience secretly conducted audits on local shops. Uncover valuable insights and expert recommendations from their covert investigations on popular platforms. Subscribe, follow, and like to boost small business growth and receive exciting rewards. Let's come together and make a difference!</p>
+      <a href="https://www.facebook.com/myprofile" class="cta-button">Explore on Facebook</a>
+      <a href="https://www.youtube.com/mychannel" class="cta-button">Watch on YouTube</a>
+    </div>
+  </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;"
   onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
