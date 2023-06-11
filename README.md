@@ -143,9 +143,7 @@
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%;left: 50%;
   }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
