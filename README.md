@@ -186,197 +186,125 @@
   <h1 class="hub-title">The Community Business Hub</h1>
   <div class="social">
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube"></a>
-    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a>
-    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram"></a>
-    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter"></a>
-  </div>
+    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a></div>
 </header><div class="hub-card">
   <h1>Message From The Team</h1>
   <p>Hi there! At The Hub, we have a team of your local community members who have built this hub for you! We aim to help the local community and local businesses come together and share each other's skills.</p>
 </div>
 <div class="grid-container">
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_1')">
     <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/">
       <i class="community-icon">👵👴🏽</i>
       <p class="community-text">Elderly Assistance</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_2')">
     <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/">
       <i class="community-icon">🤝</i>
       <p class="community-text">Community Giveaway</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_3')">
     <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall">
       <i class="community-icon">🎨</i>
       <p class="community-text">The Community Graffiti Wall</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_4')">
     <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/">
       <i class="community-icon">📸</i>
       <p class="community-text">Our Vintage Shop Memories</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_5')">
     <a class="community-item" href="https://oavo33.github.io/Help/">
       <i class="community-icon">🏠</i>
       <p class="community-text">Help Our Homeless</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_6')">
     <a class="community-item" href="https://oavo33.github.io/The.Hub/">
       <i class="community-icon">💼</i>
       <p class="community-text">Encouraging Young Business</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_7')">
     <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/">
       <i class="community-icon">🌐</i>
       <p class="community-text">FREE Web Pages, Every Month</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_8')">
     <a class="community-item" href="https://oavo33.github.io/White.Paper/">
       <i class="community-icon">📝</i>
       <p class="community-text">White Paper</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_9')">
     <div class="community-item">
       <i class="community-icon">🌟</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </div>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_10')">
     <a class="community-item">
       <i class="community-icon">🎯</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_11')">
     <a class="community-item">
       <i class="community-icon">🎮</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <!-- Repeat the code below for the remaining grid items -->
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_12')">
     <a class="community-item">
       <i class="community-icon">🌺</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_13')">
     <a class="community-item">
       <i class="community-icon">🍕</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_14')">
     <a class="community-item">
       <i class="community-icon">📚</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_15')">
     <a class="community-item">
       <i class="community-icon">⚽</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_16')">
     <a class="community-item">
       <i class="community-icon">🎨</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_17')">
     <a class="community-item">
       <i class="community-icon">🎧</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">🌈</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-<div class="grid-item" onclick="changeColor(this)">
-    <div class="community-item">
-      <i class="community-icon">🌟</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </div>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">🎯</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">🎮</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">🌺</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">🍕</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">📚</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">⚽</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">🎨</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item">
-      <i class="community-icon">🎧</i>
-      <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-      <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-    </a>
-  </div>
-  <div class="grid-item" onclick="changeColor(this)">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_18')">
     <a class="community-item">
       <i class="community-icon">🌈</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
