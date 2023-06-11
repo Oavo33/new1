@@ -284,10 +284,13 @@ footer {
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'), url('https://i.imgur.com/yfGIIEC.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'), url('https://i.imgur.com/yfGIIEC.png'); background-repeat: no-repeat; background-position: center; background-size: auto;">
   <a class="community-item">
     <i class="community-icon">🌺</i>
     <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </a>
+</div>s="community-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </a>
 </div>
