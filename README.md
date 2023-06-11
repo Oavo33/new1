@@ -3,7 +3,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hub</title>
-  <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+    /* Common styles */
     body {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
@@ -12,37 +15,45 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 40px 20px;
       text-align: center;
       position: relative;
     }
+
     header .hub-title {
       font-size: 38px;
     }
+
     header h1 {
       font-size: 38px;
       color: #ffffff;
       margin: 0;
     }
+
     .social {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
+
     .social div {
       margin-bottom: 5px;
     }
+
     .social div a {
       display: flex;
       align-items: center;
       text-decoration: none;
     }
+
     .social div a img {
       width: 30px;
       height: 30px;
     }
+
     .login {
       position: absolute;
       top: 14px;
@@ -53,13 +64,16 @@
       text-decoration: none;
       color: red;
     }
+
     .login a {
       color: yellow !important;
     }
+
     .login:hover .tooltip {
       visibility: visible;
       opacity: 1;
     }
+
     .tooltip {
       position: absolute;
       top: 75%;
@@ -76,6 +90,7 @@
       opacity: 5;
       transition: visibility 0s, opacity 0.3s ease-in-out;
     }
+
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
@@ -90,17 +105,20 @@
       position: relative;
       z-index: 2;
     }
+
     .hub-card h1 {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #ffffff;
     }
+
     .hub-card p {
       font-size: 14px;
       margin-bottom: 2px;
       color: #ffffff;
     }
+
     .graffiti {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -112,42 +130,54 @@
       transform: rotate(-7deg);
       top: 2%;
       color: white;
-    }.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  grid-gap: 10px;
-  max-width: 800px;
-  margin: 10px auto;
-  padding: 0 10px;
-}
-.grid-item {border-radius: 10px;padding: 10px;
-  text-align: center;
-  border: 1px solid #00b3b3;
-  }
-.community-item {
-  padding: 10px;display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #333333;
-}
-.community-icon {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-.community-text {
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0;
-  color: #00b3b3; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-footer {
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-gap: 10px;
+      max-width: 800px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+
+    .grid-item {
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #00b3b3;
+    }
+
+    .community-item {
+      padding: 10px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333333;
+    }
+
+    .community-icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .community-text {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      color: #00b3b3;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
       text-align: center;
       font-size: 14px;
     }
+
     .footer-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -156,6 +186,7 @@ footer {
       align-items: center;
       flex-wrap: wrap;
     }
+
     .footer-container .box {
       background-color: #00b3b3;
       color: #ffffff;
@@ -166,14 +197,115 @@ footer {
       margin: 10px;
       cursor: pointer;
     }
+
     .footer-container .box h3 {
       margin: 0;
     }
+
     .footer-container .box:first-child {
       border: 1px solid #ffffff;
     }
+
     .footer-container .box:last-child {
       border: 1px solid #ffffff;
+    }
+
+    /* Media Queries */
+
+    /* Mobile devices */
+    @media only screen and (max-width: 600px) {
+      header .hub-title {
+        font-size: 24px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      .hub-card {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      .grid-item {
+        width: 100%;
+      }
+
+      .community-icon {
+        font-size: 24px;
+      }
+
+      .community-text {
+        font-size: 12px;
+      }
+
+      .footer-container .box {
+        width: 100%;
+      }
+    }
+
+    /* Tablets and small laptops */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      header .hub-title {
+        font-size: 32px;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      .hub-card {
+        width: 75%;
+        margin-top: -100px;
+      }
+
+      .grid-item {
+        width: calc((100% - 30px) / 2);
+      }
+
+      .community-icon {
+        font-size: 28px;
+      }
+
+      .community-text {
+        font-size: 14px;
+      }
+
+      .footer-container .box {
+        width: calc((100% - 30px) / 2);
+      }
+    }
+
+    /* Desktops and larger screens */
+    @media only screen and (min-width: 1025px) {
+      header .hub-title {
+        font-size: 38px;
+      }
+
+      header h1 {
+        font-size: 38px;
+      }
+
+      .hub-card {
+        width: 65%;
+        margin-top: -136px;
+      }
+
+      .grid-item {
+        width: calc((100% - 40px) / 3);
+      }
+
+      .community-icon {
+        font-size: 30px;
+      }
+
+      .community-text {
+        font-size: 16px;
+      }
+
+      .footer-container .box {
+        width: calc((100% - 40px) / 3);
+      }
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
