@@ -298,15 +298,13 @@
     </a>
   </div>
   <div class="container">
-      <h8>Window Cleaners<br>Cheeky Audits</h8>
-      <div class="audits">
-        <p>Join the fun and support our community's businesses! Our cheeky window cleaner, with 20 years of experience, has been conducting secret audits on local shops. Uncover sneaky insights and mischievous recommendations they've discovered on popular platforms. Subscribe, follow, and like to boost small business growth and enjoy exciting rewards. Let's come together, make a difference, and show our love for the community!</p>
-        <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
-        <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
-      </div>
-    </div>
+  <h8>Window Cleaners<br>Cheeky Audits</h8>
+  <div class="audits">
+    <p>Join the fun and support our community's businesses! Our cheeky window cleaner, with 20 years of experience, has been conducting secret audits on local shops. Uncover sneaky insights and mischievous recommendations they've discovered on popular platforms. Subscribe, follow, and like to boost small business growth and enjoy exciting rewards. Let's come together, make a difference, and show our love for the community!</p>
+    <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
+    <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
   </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+</div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
