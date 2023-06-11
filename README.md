@@ -142,9 +142,9 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    position: absolute; /* Enable absolute positioning */
-    top: 50%; /* Adjust the vertical position */
-    left: 50%; /* Adjust the horizontal position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
