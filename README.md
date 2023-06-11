@@ -140,7 +140,7 @@
       cursor: pointer;
       font-weight: bold;
       text-shadow: 1px 1px 2px black;
-      box-shadow: 0 2px 4px black;top: 60%;
+      box-shadow: 0 2px 4px black;top: 30%;
       left: 50%;
     }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
