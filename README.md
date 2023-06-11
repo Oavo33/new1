@@ -139,7 +139,7 @@
   padding: 0px;
   cursor: pointer;
   font-weight: bold;
-  text-shadow: 1px 1px 2px black;top: 60%;
+  text-shadow: 1px 1px 2px black;top: 35%;
   left: 50%;
 }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
