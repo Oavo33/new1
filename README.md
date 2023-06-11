@@ -141,7 +141,7 @@
       font-weight: bold;top: 35%;
       left: 50%;
     }.container {
-      max-width: 50px;
+      max-width: 150px;
       margin: 0 auto;
       padding: 2px;
     }
