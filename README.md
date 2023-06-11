@@ -421,10 +421,10 @@ footer {
   </div>
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
-  </div><div class="attribution">
-  <p>This site includes content used under the 
-    <a href=>Creative Commons Attribution 4.0 International</a> 
-    license. The original work titled "The Community Business Hub" was created by "Karl Loftus".</p>
+  </div><div class="tcbhg">
+  <p>
+    <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+  </p>
 </div>
 </footer>
 
