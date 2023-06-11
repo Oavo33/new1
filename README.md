@@ -133,15 +133,17 @@
       font-size: 14px;
     }
     .-text {
-  color: #00b3b3;
-  font-size: 8px;
-  text-align: center;
-  padding: 0px;
-  cursor: pointer;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px black;top: 35%;
-  left: 50%;
-}footer {
+      color: #00b3b3;
+      font-size: 8px;
+      text-align: center;
+      padding: 0px;
+      cursor: pointer;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px black;
+      top: 35%;
+      left: 50%;
+    }
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
@@ -256,7 +258,8 @@
       <i class="community-icon">📝</i>
       <p class="community-text">White Paper</p>
     </a>
-  </div><h1>Message From The Team</h1>
+  </div>
+  <h1>Message From The Team</h1>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
