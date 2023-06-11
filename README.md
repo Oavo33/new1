@@ -248,7 +248,7 @@ footer {
       <p class="community-text">FREE Web Pages, Every Month</p>
     </a>
   </div>
-  <div class="grid-item">
+  <div class="grid-item" onclick="changeColor(this)">
   <a class="community-item" href="https://oavo33.github.io/White.Paper/">
     <i class="community-icon">📝</i>
     <p class="community-text" onclick="event.stopPropagation();">White Paper</p>
