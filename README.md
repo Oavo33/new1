@@ -4,38 +4,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hub</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');body {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+    body {
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       background-color: #f2f2f2;
       color: #333333;
       margin: 0;
       padding: 0;
-    }header {
+    }
+    header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 40px 20px;
       text-align: center;
       position: relative;
-    }header .hub-title {
+    }
+    header .hub-title {
       font-size: 38px;
-    }header h1 {
+    }
+    header h1 {
       font-size: 38px;
       color: #ffffff;
       margin: 0;
-    }.social {
+    }
+    .social {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-    }.social div {
+    }
+    .social div {
       margin-bottom: 5px;
-    }.social div a {
+    }
+    .social div a {
       display: flex;
       align-items: center;
       text-decoration: none;
-    }.social div a img {
+    }
+    .social div a img {
       width: 30px;
       height: 30px;
-    }.login {
+    }
+    .login {
       position: absolute;
       top: 14px;
       right: 14px;
@@ -44,12 +53,15 @@
       font-weight: bold;
       text-decoration: none;
       color: red;
-    }.login a {
+    }
+    .login a {
       color: yellow !important;
-    }.login:hover .tooltip {
+    }
+    .login:hover .tooltip {
       visibility: visible;
       opacity: 1;
-    }.tooltip {
+    }
+    .tooltip {
       position: absolute;
       top: 75%;
       right: 35%;
@@ -64,7 +76,8 @@
       visibility: hidden;
       opacity: 5;
       transition: visibility 0s, opacity 0.3s ease-in-out;
-    }.hub-card {
+    }
+    .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
@@ -77,16 +90,19 @@
       margin-top: -136px;
       position: relative;
       z-index: 2;
-    }.hub-card h1 {
+    }
+    .hub-card h1 {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #ffffff;
-    }.hub-card p {
+    }
+    .hub-card p {
       font-size: 14px;
       margin-bottom: 2px;
       color: #ffffff;
-    }.graffiti {
+    }
+    .graffiti {
       position: absolute;
       transform: translate(-50%, -50%);
       font-family: 'Roboto', sans-serif;
@@ -97,21 +113,15 @@
       transform: rotate(-7deg);
       top: 2%;
       color: white;
-    }.grid-container {
+    }
+    .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       grid-gap: 10px;
       max-width: 800px;
       margin: 10px auto;
       padding: 0 10px;
-    }.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Updated property */
-  grid-gap: 10px;
-  max-width: 800px;
-  margin: 10px auto;
-  padding: 0 10px;
-}
+    }
     .grid-item {
       border-radius: 10px;
       padding: 10px;
@@ -119,34 +129,47 @@
       border: 1px solid #00b3b3;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      color: #ffffff;
+      text-decoration: none;
     }
     .grid-item p {
-      font-size: 14px;margin: 0;
+      font-size: 14px;
+      margin: 0;
     }
     .grid-item i {
       font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .grid-item:hover {
+      background-color: #008080;
+    }
+    .grid-item:hover p {
+      color: #ffffff;
     }
     .grid-item a {
       text-decoration: none;
       color: inherit;
-    }footer {
+    }
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
       text-align: center;
       font-size: 14px;
-    }.footer-container {
+    }
+    .footer-container {
       max-width: 1200px;
       margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-    }.footer-container .box {
+    }
+    .footer-container .box {
       background-color: #00b3b3;
       color: #ffffff;
       border-radius: 10px;
@@ -155,61 +178,85 @@
       text-align: center;
       margin: 10px;
       cursor: pointer;
-    }.footer-container .box h3 {
+    }
+    .footer-container .box h3 {
       margin: 0;
-    }.footer-container .box:first-child {
+    }
+    .footer-container .box:first-child {
       border: 1px solid #ffffff;
-    }.footer-container .box:last-child {
+    }
+    .footer-container .box:last-child {
       border: 1px solid #ffffff;
-    }@media only screen and (max-width: 600px) {
+    }
+    @media only screen and (max-width: 600px) {
       header .hub-title {
         font-size: 24px;
-      }header h1 {
+      }
+      header h1 {
         font-size: 24px;
-      }.hub-card {
+      }
+      .hub-card {
         width: 100%;
         margin-top: 0;
-      }.grid-item {
-        width: 100%;
-      }.community-icon {
-        font-size: 24px;
-      }.community-text {
-        font-size: 12px;
-      }.footer-container .box {
+      }
+      .grid-item {
         width: 100%;
       }
-    }@media only screen and (min-width: 601px) and (max-width: 1024px) {
+      .community-icon {
+        font-size: 24px;
+      }
+      .community-text {
+        font-size: 12px;
+      }
+      .footer-container .box {
+        width: 100%;
+      }
+    }
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
       header .hub-title {
         font-size: 32px;
-      }header h1 {
+      }
+      header h1 {
         font-size: 32px;
-      }.hub-card {
+      }
+      .hub-card {
         width: 75%;
         margin-top: -100px;
-      }.grid-item {
-        width: calc((100% - 30px) / 2);
-      }.community-icon {
-        font-size: 28px;
-      }.community-text {
-        font-size: 14px;
-      }.footer-container .box {
+      }
+      .grid-item {
         width: calc((100% - 30px) / 2);
       }
-    }@media only screen and (min-width: 1025px) {
+      .community-icon {
+        font-size: 28px;
+      }
+      .community-text {
+        font-size: 14px;
+      }
+      .footer-container .box {
+        width: calc((100% - 30px) / 2);
+      }
+    }
+    @media only screen and (min-width: 1025px) {
       header .hub-title {
         font-size: 38px;
-      }header h1 {
+      }
+      header h1 {
         font-size: 38px;
-      }.hub-card {
+      }
+      .hub-card {
         width: 65%;
         margin-top: -136px;
-      }.grid-item {
+      }
+      .grid-item {
         width: calc((100% - 40px) / 3);
-      }.community-icon {
+      }
+      .community-icon {
         font-size: 30px;
-      }.community-text {
+      }
+      .community-text {
         font-size: 16px;
-      }.footer-container .box {
+      }
+      .footer-container .box {
         width: calc((100% - 40px) / 3);
       }
     }
@@ -225,9 +272,9 @@
 <body>
 <header>
   <div class="graffiti">
-    This is your Hub !<br>
-    Do you want to change It ?<br>
-    Submit Request <br>
+    This is your Hub!<br>
+    Do you want to change it?<br>
+    Submit Request<br>
     <span class="box"><button class="custom-class" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
   </div>
   <div class="login">
@@ -239,11 +286,14 @@
   <div class="hub-title">The Community <br> Business Hub</div>
   <div class="social">
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube"></a>
-    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a></div>
-</header><div class="hub-card">
+    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a>
+  </div>
+</header>
+<div class="hub-card">
   <h1>Message From The Team</h1>
   <p>Hi there! At The Hub, we have a team of your local community members who have built this hub for you! We aim to help the local community and local businesses come together and share each other's skills.</p>
-</div><div class="grid-container">
+</div>
+<div class="grid-container">
   <div class="grid-item" onclick="changeColor(this)">
     <a class="grid-item" href="https://oavo33.github.io/Elderly.assistance/">
       <i class="grid-icon">👵👴🏽</i>
@@ -316,7 +366,8 @@
     <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
     <p class="community-text" onclick="window.location.href='URL_HERE'" style="cursor: pointer;">Page Review</p>
   </a>
-</div><footer>
+</div>
+<footer>
   <div class="footer-container">
     <div class="box">
       <h3>Contact</h3>
@@ -324,9 +375,11 @@
       <p>Phone: 123-456-7890</p>
     </div>
     <div class="box">
-      <h3>About Us</h3><p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+      <h3>About Us</h3>
+      <p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
     </div>
-  </div><div class="footer-container">
+  </div>
+  <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
     </div>
@@ -334,20 +387,16 @@
   </div>
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
-  </div><div class="tcbhg">
-  <p>
-    <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
-  </p>
-</div>
-</footer>
-
-<script>
+  </div>
+  <div class="tcbhg">
+    <p>
+      <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+    </p>
+  </div>
+</footer><script>
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  function changeColor(element) {
-  // Check if the clicked element is the first border box
+  }function changeColor(element) {
   if (element.classList.contains('grid-item')) {
     var colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#8B00FF'];
     var randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -356,14 +405,10 @@
 }
   function stopPropagation(event) {
     event.stopPropagation();
-  }
-
-  var buttons = document.querySelectorAll('.community-item a');
+  }var buttons = document.querySelectorAll('.community-item a');
   buttons.forEach(function(button) {
     button.addEventListener('click', stopPropagation);
-  });
-
-  var gridItems = document.querySelectorAll('.grid-item');
+  });var gridItems = document.querySelectorAll('.grid-item');
   gridItems.forEach(function(gridItem) {
     var itemButtons = gridItem.querySelectorAll('.community-text');
     itemButtons.forEach(function(itemButton) {
