@@ -137,7 +137,8 @@
     cursor: pointer;
   }
   .-text:hover {
-    background-color: #00b3b3; 
+    background-color: #00b3b3;
+    color: white; 
   }
   footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
