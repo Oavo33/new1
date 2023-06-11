@@ -147,7 +147,7 @@
     }
     h1 {
       text-align: center;
-      font-size: 10px;
+      font-size: 8px;
       color: #00b3b3;
       margin-top: 2px;
       margin-bottom: 2px;
