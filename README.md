@@ -286,28 +286,28 @@
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_15')">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png')">
     <a class="community-item">
       <i class="community-icon">shop</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_16')">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png')">
     <a class="community-item">
       <i class="community-icon">shop</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_17')">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png')">
     <a class="community-item">
       <i class="community-icon">shop</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
       <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_18')">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('https://i.imgur.com/gT1Sbd4.png')">
     <a class="community-item">
       <i class="community-icon">shop</i>
       <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
