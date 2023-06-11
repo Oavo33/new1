@@ -242,8 +242,11 @@
     </a>
   </div>
   <div class="grid-item"style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover;">
-  <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
+  
+<p class="community-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  
+</div>
   <div class="grid-item" onclick="changeColor(this)">
   <div class="community-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: cover; background-position: center;">
     <i class="community-icon"></i>
