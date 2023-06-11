@@ -256,7 +256,7 @@
       <i class="community-icon">📝</i>
       <p class="community-text">White Paper</p>
     </a>
-  </div>
+  </div><h1>Message From The Team</h1>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
