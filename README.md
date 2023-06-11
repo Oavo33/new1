@@ -26,24 +26,24 @@
       font-size: 38px;
       color: #ffffff;
       margin: 0;
-    }
+    }    
     .social {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-    }
+    }   
     .social div {
       margin-bottom: 5px;
-    }
+    }   
     .social div a {
       display: flex;
       align-items: center;
       text-decoration: none;
-    }
+    }   
     .social div a img {
       width: 30px;
       height: 30px;
-    }
+    }   
     .login {
       position: absolute;
       top: 14px;
@@ -53,11 +53,11 @@
       font-weight: bold;
       text-decoration: none;
       color: red;
-    }
+    }    
     .login:hover .tooltip {
       visibility: visible;
       opacity: 1;
-    }
+    }  
     .tooltip {
       position: absolute;
       top: 75%;
@@ -73,7 +73,7 @@
       visibility: hidden;
       opacity: 5;
       transition: visibility 0s, opacity 0.3s ease-in-out;
-    }
+    }   
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
@@ -87,18 +87,18 @@
       margin-top: -136px;
       position: relative;
       z-index: 2;
-    }
+    }   
     .hub-card h1 {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #ffffff;
-    }
+    }   
     .hub-card p {
       font-size: 14px;
       margin-bottom: 2px;
       color: #ffffff;
-    }
+    }   
     .graffiti {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -110,7 +110,7 @@
       transform: rotate(-7deg);
       top: 2%;
       color: white;
-    }
+    }   
     .grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -118,7 +118,7 @@
       max-width: 800px;
       margin: 10px auto;
       padding: 0 10px;
-    }
+    }   
     .grid-item {
       background-color: #ffffff;
       border-radius: 10px;
@@ -127,24 +127,26 @@
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
       position: relative;
-    }
+    }    
     .grid-item .community-text {
       color: #00b3b3;
       font-size: 14px;
-    }
+    }   
     .-text {
       color: #00b3b3;
       font-size: 8px;
       text-align: center;
       padding: 0px;
       cursor: pointer;
-      font-weight: bold;top: 35%;
+      font-weight: bold;
+      top: 35%;
       left: 50%;
-    }.container {
+    }   
+    .container {
       max-width: 150px;
       margin: 0 auto;
       padding: 2px;
-    }
+    }   
     .h8 {
       text-align: center;
       font-size: 8px;
@@ -153,18 +155,18 @@
       margin-bottom: 2px;
       text-transform: uppercase;
       letter-spacing: 1px;
-    }
+    }   
     .audits {
       margin-top: 2px;
       text-align: center;
-    }
+    }   
     .audits p {
       font-size: 9px;
       line-height: 1.6;
       margin-bottom: 2px;
       color: #00b3b3;
       text-align: justify;
-    }
+    }   
     .cta-button {
       display: inline-block;
       background-color: #00b3b3;
@@ -185,7 +187,7 @@
       color: #ffffff;
       text-align: center;
       font-size: 14px;
-    }
+    }   
     .footer-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -193,7 +195,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-    }
+    } 
     .footer-container .box {
       background-color: #00b3b3;
       color: #ffffff;
@@ -203,13 +205,13 @@
       text-align: center;
       margin: 10px;
       cursor: pointer;
-    }
+    }   
     .footer-container .box h3 {
       margin: 0;
-    }
+    }   
     .footer-container .box:first-child {
       border: 1px solid #ffffff;
-    }
+    }   
     .footer-container .box:last-child {
       border: 1px solid #ffffff;
     }
@@ -303,18 +305,15 @@
       <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
     </div>
   </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;"
-  onclick="changeColor(this)">
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;"
-  onclick="changeColor(this)">
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;"
-  onclick="changeColor(this)">
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
