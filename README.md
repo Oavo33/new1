@@ -122,7 +122,7 @@
     .grid-item {
       background-color: #ffffff;
       border-radius: 10px;
-      padding: 10px;
+      padding: 2px;
       text-align: center;
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
