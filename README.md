@@ -115,9 +115,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.community-item {
+}.community-item {
   padding: 10px;
   display: inline-flex;
   flex-direction: column;
