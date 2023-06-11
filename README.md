@@ -137,17 +137,12 @@
       font-size: 8px;
       text-align: center;
       padding: 2px;
-      cursor: pointer;text-transform: uppercase;
+      cursor: pointer;
       font-weight: bold;
       text-shadow: 1px 1px 2px black;
-      transition: background-color 0.3s;
-      box-shadow: 0 2px 4px black;
-      position: absolute;
-      top: 50%;
+      box-shadow: 0 2px 4px black;top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    footer {
+    }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
