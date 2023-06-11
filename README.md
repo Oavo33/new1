@@ -298,7 +298,7 @@
   <div class="container">
     <h1>My Audits</h1>
     <div class="audits">
-      <p>Join us in supporting our community's businesses! The window cleaner with 20 years of experience secretly conducted audits on local shops. Uncover valuable insights and expert recommendations from their covert investigations on popular platforms. Subscribe, follow, and like to boost small business growth and receive exciting rewards. Let's come together and make a difference!</p>
+      <p>Join the fun and support our community's businesses! Our cheeky window cleaner, with 20 years of experience, has been conducting secret audits on local shops. Uncover sneaky insights and mischievous recommendations they've discovered on popular platforms. Subscribe, follow, and like to boost small business growth and enjoy exciting rewards. Let's come together, make a difference, and show our love for the community!</p>
       <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
       <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
     </div>
