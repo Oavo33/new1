@@ -139,9 +139,7 @@
   padding: 0px;
   cursor: pointer;
   font-weight: bold;
-  text-shadow: 1px 1px 2px black;
-  box-shadow: 0 1px 2px black; /* Adjust the values to make the shadow smaller horizontally */
-  top: 60%;
+  text-shadow: 1px 1px 2px black;top: 60%;
   left: 50%;
 }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
