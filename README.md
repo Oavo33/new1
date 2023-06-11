@@ -143,7 +143,7 @@
       top: 35%;
       left: 50%;
     }.container {
-      max-width: 800px;
+      max-width: 50px;
       margin: 0 auto;
       padding: 2px;
     }
