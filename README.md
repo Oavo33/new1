@@ -289,11 +289,7 @@ footer {
     <i class="community-icon">🌺</i>
     <p class="community-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </a>
-</div>s="community-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="community-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </a>
-</div>
+  </a></div>
   <div class="grid-item" onclick="changeColor(this)">
     <a class="community-item">
       <i class="community-icon">🍕</i>
