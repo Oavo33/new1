@@ -128,7 +128,18 @@
 .grid-item .community-text {
   color: #00b3b3; 
   font-size: 14px; 
-}footer {
+}
+  .-text {
+    color: #00b3b3; 
+    font-size: 14px; 
+    text-align: center; 
+    padding: 10px; 
+    cursor: pointer;
+  }
+  .-text:hover {
+    background-color: #00b3b3; 
+  }
+  footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
