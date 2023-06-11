@@ -125,9 +125,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  text-align: center;
-  border: 1px solid #00b3b3;
-  cursor: pointer;
+  text-align: center;cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 .community-item {
