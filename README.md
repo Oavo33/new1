@@ -138,9 +138,7 @@
       text-align: center;
       padding: 0px;
       cursor: pointer;
-      font-weight: bold;
-      text-shadow: 1px 1px 2px black;
-      top: 35%;
+      font-weight: bold;top: 35%;
       left: 50%;
     }.container {
       max-width: 50px;
