@@ -135,12 +135,7 @@
     text-align: center; 
     padding: 2px; 
     cursor: pointer;
-  }
-  .-text:hover {
-    background-color: #00b3b3;
-    color: white; 
-  }
-  footer {
+  }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
