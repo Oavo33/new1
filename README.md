@@ -248,12 +248,12 @@ footer {
       <p class="community-text">FREE Web Pages, Every Month</p>
     </a>
   </div>
-  <div class="grid-item" onclick="changeColor(this)">
-    <a class="community-item" href="https://oavo33.github.io/White.Paper/">
-      <i class="community-icon">📝</i>
-      <p class="community-text">White Paper</p>
-    </a>
-  </div>
+  <div class="grid-item">
+  <a class="community-item" href="https://oavo33.github.io/White.Paper/">
+    <i class="community-icon">📝</i>
+    <p class="community-text" onclick="event.stopPropagation();">White Paper</p>
+  </a>
+</div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;">
   <a class="community-item" style="position: absolute; bottom: -14px; left: 13.14%;">
     <p class="community-text" onclick="window.location.href='1'" style="cursor: pointer;">custom Review</p>
