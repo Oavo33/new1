@@ -15,9 +15,12 @@
     }
     header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     header .hub-title {
       font-size: 38px;
@@ -26,24 +29,31 @@
       font-size: 38px;
       color: #ffffff;
       margin: 0;
-    }    
+      margin-top: 20px;
+    }
     .social {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }   
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      position: absolute;
+      top: 2%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
     .social div {
-      margin-bottom: 5px;
-    }   
+      margin-right: 10px;
+    }
     .social div a {
       display: flex;
       align-items: center;
       text-decoration: none;
-    }   
+    }
     .social div a img {
       width: 30px;
       height: 30px;
-    }   
+    }
     .login {
       position: absolute;
       top: 14px;
@@ -53,11 +63,11 @@
       font-weight: bold;
       text-decoration: none;
       color: red;
-    }    
+    }
     .login:hover .tooltip {
       visibility: visible;
       opacity: 1;
-    }  
+    }
     .tooltip {
       position: absolute;
       top: 75%;
@@ -73,7 +83,8 @@
       visibility: hidden;
       opacity: 5;
       transition: visibility 0s, opacity 0.3s ease-in-out;
-    }   
+      z-index: 10;
+    }
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
@@ -81,24 +92,24 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       padding: 10px;
       text-align: center;
-      max-width: 210px;
-      width: 45%;
+      max-width: 280px;
+      width: 65%;
       margin: 0 auto;
-      margin-top: -136px;
+      margin-top: -55px;
       position: relative;
       z-index: 2;
-    }   
+    }
     .hub-card h1 {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #ffffff;
-    }   
+    }
     .hub-card p {
       font-size: 14px;
       margin-bottom: 2px;
       color: #ffffff;
-    }   
+    }
     .graffiti {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -106,71 +117,50 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 1;
       left: 2px;
-      font-size: 10px;
+      font-size: 11px;
       transform: rotate(-7deg);
       top: 2%;
       color: white;
-    }   
+    }
+    .grid-item .-text {
+      font-size: 18px;
+      margin: 0;
+      color: #333333;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+    }
+    .grid-item .-text:hover {
+      color: #00b3b3;
+      text-decoration: underline;
+    }
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 10px;
-      max-width: 800px;
-      margin: 10px auto;
-      padding: 0 10px;
-    }   
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
     .grid-item {
       background-color: #ffffff;
       border-radius: 10px;
-      padding: 2px;
+      padding: 20px;
       text-align: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-      position: relative;
-    }    
-    .grid-item .community-text {
+      cursor: pointer;position: relative;
+    }
+    .grid-item h3 {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 10px;
       color: #00b3b3;
+    }.grid-item p {
       font-size: 14px;
-    }   
-    .-text {
-      color: #00b3b3;
-      font-size: 8px;
-      text-align: center;
-      padding: 0px;
-      cursor: pointer;
-      font-weight: bold;
-      top: 35%;
-      left: 50%;
-    }   
-    .container {
-      max-width: 150px;
-      margin: 0 auto;
-      padding: 2px;
+      margin-bottom: 10px;
+      color: #333333;
     }
-    .audits {
-      margin-top: 2px;
-      text-align: center;
-    }   
-    .audits p {
-      font-size: 9px;
-      line-height: 1.6;
-      margin-bottom: 2px;
-      color: #00b3b3;
-      text-align: justify;
-    }   
-    .cta-button {
-      display: inline-block;
-      background-color: #00b3b3;
-      color: #ffffff;
-      font-size: 9px;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 0.1px 0.1px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #008080;
+    .grid-item .community-text {
+      font-size: 14px;
+      color: #00b3b3;font-weight: bold;
     }
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
@@ -178,7 +168,7 @@
       color: #ffffff;
       text-align: center;
       font-size: 14px;
-    }   
+    }
     .footer-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -186,25 +176,43 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-    } 
+    }
     .footer-container .box {
       background-color: #00b3b3;
       color: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-      padding: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
       text-align: center;
       margin: 10px;
       cursor: pointer;
-    }   
+    }
     .footer-container .box h3 {
+      font-size: 18px;
       margin: 0;
-    }   
+      color: #ffffff;
+    }
+    .footer-container .box p {
+      font-size: 14px;
+      margin: 10px 0 0;
+      color: #ffffff;
+    }
     .footer-container .box:first-child {
       border: 1px solid #ffffff;
-    }   
+    }
     .footer-container .box:last-child {
       border: 1px solid #ffffff;
+    }
+    .tcbhg {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .tcbhg a {
+      color: #00b3b3;
+      text-decoration: none;
+    }
+    .tcbhg a:hover {
+      text-decoration: underline;
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
@@ -216,21 +224,19 @@
   </script>
 </head>
 <body>
-<header>
-  <div class="graffiti">
-    This is your Hub !<br>
-    Do you want to change It ?<br>
-    Submit Request <br>
-    <span class="box"><button class="custom-class" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
-  </div>
-  <div class="login">
+<header><div class="login">
     <button class="custom-class">Login</button>
     <div class="tooltip">
       You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
     </div>
   </div>
   <h1 class="hub-title">The Community Business Hub</h1>
-  <div class="social">
+  <div class="graffiti">
+    This is your Hub !<br>
+    Do you want to change It ?<br>
+    Submit Request <br>
+    <span class="box"><button class="custom-class" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
+  </div><div class="social">
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube"></a>
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a>
   </div>
@@ -288,13 +294,11 @@
       <p class="community-text">White Paper</p>
     </a>
   </div>
-  <div class="container">
-    <div class="audits">
-      <p>Join the fun and support our community's businesses! Our cheeky window cleaner, with 20 years of experience, has been conducting secret audits on local shops. Uncover sneaky insights and mischievous recommendations they've discovered on popular platforms. Subscribe, follow, and like to boost small business growth and enjoy exciting rewards. Let's come together, make a difference, and show our love for the community!</p>
-      <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
-      <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
-    </div>
-  </div>
+  <div class="grid-item">
+    <h1 class="new-heading">Your New Heading</h1>
+    <p>Hey community! As your cheeky window cleaner, I've been auditing local businesses and here's what I found. The more we Subscribe, Like and Follow Our Hub, the more we help them thrive. When we support them, they can support us in return. So let's subscribe, like, follow, and spread the word about their fantastic services. Together, we can ensure the success of our local businesses. Stay cheeky and support local! - The Cheeky Window Cleaner</p>
+    <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
+    <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a></div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
@@ -315,30 +319,18 @@
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p><p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)"><p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+</div>
 <footer>
   <div class="footer-container">
     <div class="box">
