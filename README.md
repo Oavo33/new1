@@ -52,11 +52,7 @@
       font-weight: bold;
       text-decoration: none;
       color: red;
-    }
-    .login a {
-      color: yellow !important;
-    }
-    .login:hover .tooltip {
+    }.login:hover .tooltip {
       visibility: visible;
       opacity: 1;
     }
@@ -66,11 +62,11 @@
       right: 35%;
       width: 200px;
       background-color: #f9f9f9;
-      border: 1px solid #ccc;
+      border: 1px solid #00b3b3;
       border-radius: 5px;
       padding: 10px;
       font-size: 14px;
-      color: black;
+      color: #00b3b3;
       text-align: center;
       visibility: hidden;
       opacity: 5;
