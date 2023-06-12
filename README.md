@@ -100,7 +100,7 @@
       padding: 5px 10px;
       border-radius: 30px;
       font-family: 'Roboto', sans-serif;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -111,7 +111,7 @@
     }
     .login button:hover {
       background-color: #008080;
-      transform: scale(1.05);
+      transform: scale(1.14);
     }
     .login button:active {
       transform: scale(0.95);
