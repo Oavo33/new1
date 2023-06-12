@@ -25,7 +25,7 @@
     header .hub-title {
       font-size: 38px;
     }
-    header h1 {
+    header div.hub-card-title {
       font-size: 38px;
       color: #ffffff;
       margin: 0;
@@ -150,7 +150,7 @@
       position: relative;
       z-index: 2;
     }
-    .hub-card h1 {
+    .hub-card .hub-card-title {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 2px;
@@ -268,7 +268,8 @@
     }
     .tcbhg a:hover {
       text-decoration: underline;
-    }.graffiti-button {
+    }
+    .graffiti-button {
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
@@ -318,6 +319,7 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
       text-decoration: none;
+      margin-bottom: 10px;
     }
     .cta-button:hover {
       background-color: #008080;
@@ -407,6 +409,7 @@
   <p>Hey community! As your cheeky window cleaner, I've been auditing local businesses and here's what I found. The more we Subscribe, Like and Follow Our Hub, the more we help them thrive. When we support them, they can support us in return. So let's subscribe, like, follow, and spread the word about their fantastic services. Together, we can ensure the success of our local businesses. Stay cheeky and support local! - The Cheeky Window Cleaner</p>
   <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
   <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
+onclick="changeColor(this)"
 </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 140% ; background-repeat: no-repeat; background-position: center;" >
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
