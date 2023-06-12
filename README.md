@@ -302,7 +302,7 @@
       margin-top: 0;
     }
     .new-heading+p {
-      font-size: 10px;
+      font-size: 14px;
       margin-bottom: 10px;
       color: #00b3b3;
     }.wide-grid-item {
