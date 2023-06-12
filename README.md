@@ -243,10 +243,10 @@
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
-      padding: 10px 20px;
+      padding: 2px 4px;
       border-radius: 30px;
       font-family: 'Roboto', sans-serif;
-      font-size: 16px;
+      font-size: 10px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
