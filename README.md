@@ -24,10 +24,11 @@
     }
     header .hub-title {
       font-size: 38px;
+      color: white;
     }
     header div.hub-card-title {
       font-size: 38px;
-      color: #ffffff;
+      color: white;
       margin: 0;
       margin-top: 20px;
     }
