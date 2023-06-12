@@ -25,12 +25,14 @@
     header .hub-title {
       font-size: 38px;
       color: white;
+      font-weight: bold;
     }
     header div.hub-card-title {
       font-size: 38px;
       color: white;
       margin: 0;
       margin-top: 20px;
+      font-weight: bold;
     }
     .social {
       display: flex;
