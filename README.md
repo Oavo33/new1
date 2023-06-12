@@ -54,37 +54,59 @@
       width: 30px;
       height: 30px;
     }
-    .login {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      text-decoration: none;
-      color: red;
-    }
-    .login:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
-    }
-    .tooltip {
-      position: absolute;
-      top: 75%;
-      right: 35%;
-      width: 200px;
-      background-color: #f9f9f9;
-      border: 1px solid #00b3b3;
-      border-radius: 5px;
-      padding: 10px;
-      font-size: 14px;
-      color: #00b3b3;
-      text-align: center;
-      visibility: hidden;
-      opacity: 5;
-      transition: visibility 0s, opacity 0.3s ease-in-out;
-      z-index: 10;
-    }
+.login {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+}
+.login button {
+  background-color: #00b3b3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.login button:hover {
+  background-color: #008080;
+  transform: scale(1.05);
+}
+.login button:active {
+  transform: scale(0.95);
+}
+.tooltip {
+  position: absolute;
+  top: 100%;
+  right: 99%;
+  transform: translateX(50%);
+  width: 200px;
+  background-color: #f2f2f2;
+  border: 1px solid #00b3b3;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+  z-index: 10;
+  font-family: 'Roboto', sans-serif;
+}
+.login:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
@@ -146,22 +168,26 @@
       border-radius: 10px;
       padding: 20px;
       text-align: center;
-      cursor: pointer;position: relative;
+      cursor: pointer;
+      position: relative;
     }
     .grid-item h3 {
       font-size: 16px;
       margin-top: 0;
       margin-bottom: 10px;
       color: #00b3b3;
-    }.grid-item p {
+    }
+    .grid-item p {
       font-size: 14px;
       margin-bottom: 10px;
       color: #333333;
     }
     .grid-item .community-text {
       font-size: 14px;
-      color: #00b3b3;font-weight: bold;
+      color: #00b3b3;
+      font-weight: bold;
     }
+    /* Footer Styles */
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
@@ -224,19 +250,21 @@
   </script>
 </head>
 <body>
-<header><div class="login">
-    <button class="custom-class">Login</button>
-    <div class="tooltip">
-      You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
-    </div>
+<header>
+  <div class="login">
+  <button class="custom-class">Login</button>
+  <div class="tooltip">
+    You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
   </div>
+</div>
   <h1 class="hub-title">The Community Business Hub</h1>
   <div class="graffiti">
     This is your Hub !<br>
     Do you want to change It ?<br>
     Submit Request <br>
     <span class="box"><button class="custom-class" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
-  </div><div class="social">
+  </div>
+  <div class="social">
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube"></a>
     <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a>
   </div>
@@ -247,61 +275,42 @@
 </div>
 <div class="grid-container">
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_1')">
-    <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/">
-      <i class="community-icon">👵👴🏽</i>
-      <p class="community-text">Elderly Assistance</p>
+    <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/"><p class="community-text">Elderly Assistance</p>
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_2')">
-    <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/">
-      <i class="community-icon">🤝</i>
-      <p class="community-text">Community Giveaway</p>
+    <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/"><p class="community-text">Community Giveaway</p>
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_3')">
-    <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall">
-      <i class="community-icon">🎨</i>
-      <p class="community-text">The Community Graffiti Wall</p>
+    <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall"><p class="community-text">The Community Graffiti Wall</p>
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_4')">
-    <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/">
-      <i class="community-icon">📸</i>
-      <p class="community-text">Our Vintage Shop Memories</p>
+    <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/"><p class="community-text">Our Vintage Shop Memories</p>
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_5')">
-    <a class="community-item" href="https://oavo33.github.io/Help/">
-      <i class="community-icon">🏠</i>
-      <p class="community-text">Help Our Homeless</p>
+    <a class="community-item" href="https://oavo33.github.io/Help/"><p class="community-text">Help Our Homeless</p>
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_6')">
-    <a class="community-item" href="https://oavo33.github.io/The.Hub/">
-      <i class="community-icon">💼</i>
-      <p class="community-text">Encouraging Young Business</p>
+    <a class="community-item" href="https://oavo33.github.io/The.Hub/"><p class="community-text">Encouraging Young Business</p>
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_7')">
-    <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/">
-      <i class="community-icon">🌐</i>
-      <p class="community-text">FREE Web Pages, Every Month</p>
+    <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/"><p class="community-text">FREE Web Pages, Every Month</p>
     </a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_8')">
-    <a class="community-item" href="https://oavo33.github.io/White.Paper/">
-      <i class="community-icon">📝</i>
-      <p class="community-text">White Paper</p>
+    <a class="community-item" href="https://oavo33.github.io/White.Paper/"><p class="community-text">White Paper</p>
     </a>
   </div>
   <div class="grid-item">
     <h1 class="new-heading">Your New Heading</h1>
     <p>Hey community! As your cheeky window cleaner, I've been auditing local businesses and here's what I found. The more we Subscribe, Like and Follow Our Hub, the more we help them thrive. When we support them, they can support us in return. So let's subscribe, like, follow, and spread the word about their fantastic services. Together, we can ensure the success of our local businesses. Stay cheeky and support local! - The Cheeky Window Cleaner</p>
     <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
-    <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a></div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+    <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
@@ -319,7 +328,12 @@
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)"><p class="-text" onclick="window.location.href='1'">New Button 1</p>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 74% auto; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
