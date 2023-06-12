@@ -54,59 +54,59 @@
       width: 30px;
       height: 30px;
     }
-.login {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  display: flex;
-  align-items: center;
-}
-.login button {
-  background-color: #00b3b3;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
-.login button:hover {
-  background-color: #008080;
-  transform: scale(1.05);
-}
-.login button:active {
-  transform: scale(0.95);
-}
-.tooltip {
-  position: absolute;
-  top: 100%;
-  right: 99%;
-  transform: translateX(50%);
-  width: 200px;
-  background-color: #f2f2f2;
-  border: 1px solid #00b3b3;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 14px;
-  color: #333333;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s ease-in-out;
-  z-index: 10;
-  font-family: 'Roboto', sans-serif;
-}
-.login:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
+    .login {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+    }
+    .login button {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .login button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .login button:active {
+      transform: scale(0.95);
+    }
+    .tooltip {
+      position: absolute;
+      top: 100%;
+      right: 99%;
+      transform: translateX(50%);
+      width: 200px;
+      background-color: #f2f2f2;
+      border: 1px solid #00b3b3;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s ease-in-out;
+      z-index: 10;
+      font-family: 'Roboto', sans-serif;
+    }
+    .login:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
@@ -240,14 +240,25 @@
     .tcbhg a:hover {
       text-decoration: underline;
     }
-    .graffiti-button {
+    .new-heading {
+      font-size: 20px;
+      color: #333333;
+      margin-top: 0;
+    }
+    .new-heading+p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+    .cta-button {
+      display: inline-block;
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
-      padding: 4px 6px;
+      padding: 10px 20px;
       border-radius: 30px;
       font-family: 'Roboto', sans-serif;
-      font-size: 9px;
+      font-size: 16px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -255,12 +266,13 @@
       outline: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      text-decoration: none;
     }
-    .graffiti-button:hover {
+    .cta-button:hover {
       background-color: #008080;
       transform: scale(1.05);
     }
-    .graffiti-button:active {
+    .cta-button:active {
       transform: scale(0.95);
     }
   </style>
