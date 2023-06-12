@@ -41,18 +41,47 @@
       top: 2%;
       left: 50%;
       transform: translateX(-50%);
+      background: none;
     }
     .social div {
-      margin-right: 10px;
+      background: none;
+    }
+    .social div:not(:last-child) {
+      margin-right: 50px;
     }
     .social div a {
       display: flex;
+      flex-direction: column;
       align-items: center;
       text-decoration: none;
+      background: none;
+      position: relative;
     }
     .social div a img {
       width: 30px;
       height: 30px;
+      background: none;
+      transition: all 0.3s ease;
+    }
+    .social div a span {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #00b3b3;
+      white-space: nowrap;
+    }
+    .social div a:hover img {
+      width: 40px;
+      height: 40px;
+    }
+    .social div a:hover span {
+      display: block;
     }
     .login {
       position: absolute;
@@ -322,8 +351,18 @@
     <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
   </div>
   <div class="social">
-    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube"></a>
-    <a href="#"><img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook"></a>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+    </div>
   </div>
 </header>
 <div class="hub-card">
