@@ -244,7 +244,7 @@
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
-      padding: 1px 2px;
+      padding: 4px 6px;
       border-radius: 30px;
       font-family: 'Roboto', sans-serif;
       font-size: 9px;
