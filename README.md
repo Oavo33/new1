@@ -263,7 +263,7 @@
       transform: scale(0.95);
     }
     .new-heading {
-      font-size: 12px;
+      font-size: 18px;
       color: '00b3b3';
       margin-top: 0;
     }
