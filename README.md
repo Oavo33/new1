@@ -190,7 +190,7 @@
     }
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 4fr));
       grid-gap: 20px;
       padding: 20px;
       max-width: 1200px;
