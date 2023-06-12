@@ -1,212 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youth Entrepreneurship Hub</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-      overflow-x: hidden; 
-    }
-    .header {
-      background: linear-gradient(to bottom, #00b3b3, #008080);
-      padding: 20px;
-      text-align: center;
-      color: #ffffff;
-    }
-    .logo {
-      font-size: 32px;
-      font-weight: bold;
-      margin: 0;
-    }
-    .description {
-      font-size: 18px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    .main-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;text-align: center;
-    }.highlight-box {
-      background-color: #ffffff;
-      color: #333333;
-      border-radius: 10px;
-      padding: 40px;
-      margin-bottom: 40px;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    }
-    .highlight-title {
-      font-size: 32px;
-      margin-top: 0;
-      margin-bottom: 20px;}.highlight-text {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }.cta-button {
-      display: inline-block;
-      padding: 16px 36px;
-      background-color: #00b3b3;
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: background-color 0.3s;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-    }
-    .cta-button:hover {
-      background-color: #008080;
-    }
-    .secondary-button {
-      display: inline-block;
-      padding: 4px 9px;
-      background-color: #00b3b3;
-      color: #ffffff;
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: background-color 0.3s;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    }
-    .secondary-button:hover {
-      background-color: #008080;
-    }
-    .social {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .social a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      margin: 0 8px;
-      border-radius: 50%;
-      background-color: #00b3b3;
-      color: #ffffff;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-    .social a:hover {
-      background-color: #008080;
-    }
-    footer {
-  background: linear-gradient(to bottom, #00b3b3, #008080);
-  padding: 20px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-}
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.footer-container .box {
-  background-color: #00b3b3;
-  color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 2px;
-  text-align: center;
-  margin: 2px;
-  cursor: pointer;
-  flex: 0 0 auto; 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);  
-}
-  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community With Care!</title>
+    <style>body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333333;
+            text-align: center;
+        }
+        header {
+            background-color: #00b3b3;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }.hero-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('nostalgic_image.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #333333;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+        }.section-title {
+            color: #00b3b3;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            text-align: center;
+        }
+        a {
+            color: #00b3b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #00b3b3;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #006666;
+        }
+        .top-navigation {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .top-navigation a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #00b3b3;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .top-navigation a:hover {
+            background-color: #006666;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 8px;
+            border-radius: 50%;
+            background-color: #00b3b3;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .social a:hover {
+            background-color: #008080;
+        }
+        footer {
+            background: linear-gradient(to bottom, #00b3b3, #008080);
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background-color: #00b3b3;
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            cursor: pointer;
+            width: fit-content;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RZG8MP5HRX');
+    </script>
 </head>
 <body>
-  <div class="header">
-    <h1 class="logo">Youth Entrepreneurship Hub</h1>
-    <p class="description">Inspiring and empowering young entrepreneurs</p>
-    <div class="social">
-      <a href="#">
-        <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-      </a>
-      <a href="#">
-        <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-      </a>
+    <div class="top-navigation">
+        <a href="#section1" class="skip-link">Our Promise</a>
+        <a href="#section2" class="skip-link">Features</a>
+        <a href="#section3" class="skip-link">Contact Us</a>
     </div>
-  </div>
-  <div class="main-content">
-    <div class="highlight-box">
-      <h2 class="highlight-title">Encouraging Young Entrepreneurship</h2>
-      <p class="highlight-text">Every year, we provide a platform for aspiring young entrepreneurs in the community. We invite three individuals, regardless of age, to submit their business plans. Once their proposals demonstrate a clear direction and compliance with legal requirements, we offer them the opportunity to launch their own business with full autonomy.</p>
-      <p class="highlight-text">To support their ventures, we provide a startup capital of £1000. These young entrepreneurs are free to invest in any legal stocks or materials of their choice.</p>
-      <p class="highlight-text">We're thrilled to share that a local lad, <a href="jake.html" style="color: #00b3b3;">Jake</a>, aged 16, has already taken the initiative and started a successful gardening business in the vicinity of St. Cathrienes Hospital. We've been informed about his remarkable endeavor, and we're actively assisting him with his future plans. His inspiring story serves as a testament to the potential and determination of young entrepreneurs in our community.</p>
-      <p class="highlight-text">We aim to inspire and support the entrepreneurial aspirations of our young community members, encouraging them to save pocket money and pursue their dreams. Take, for example, the story of a 12-year-old kid who wrote to an Australian scooter company and asked if he could sell their scooters in England. The Australian company agreed, and that 12-year-old kid has now made millions by moving stocks from A to B. It's a true story—Google it!</p>
-      <p class="highlight-text">Join us today and be a part of the thriving community of young entrepreneurs!</p>
-      <a href="newpage.html" class="cta-button">Get Started</a>
-      <br>
-      <button id="rainbowButton" class="secondary-button" onclick="addRainbowEffect();">Secondary Button</button>
+    <header>
+        <div class="social">
+            <a href="#">
+                <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+            </a>
+            <a href="#">
+                <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+            </a>
+        </div>
+        <h1>Community With Care</h1>
+    </header>
+    <div class="hero-image" role="img" aria-label="Hero image"></div>
+    <main id="maincontent">
+        <section id="section1">
+            <h2>We Will Only Help, If You Ask For Help!<br>As our Reputation grows Hopefully your Trust will.</h2>
+            <div class="content section">
+                <h3 class="section-title">Our Promise</h3>
+                <div class="section-content">
+                    <p>At Community With Care, we believe in the power of mutual support and collaboration. We understand that everyone's needs and circumstances are unique, which is why our assistance is tailored specifically to you. We will only provide help if you ask for it, ensuring that you maintain autonomy and control over the support you receive.</p>
+                    <p>Our team consists of compassionate and dedicated individuals who are committed to making a positive impact in the lives of older adults. We value the trust placed in us and strive to uphold our reputation by delivering exceptional care and assistance. As our reputation grows, we hope that your trust in our services will grow as well.</p>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="content section">
+                <h2 class="section-title">Voluntary Workers from Your Community</h2>
+                <div class="section-content">
+                    <p>All help provided through our platform is from voluntary workers and members of your surrounding area who generously offer their spare time to assist others. These individuals have a genuine desire to make a positive difference in the lives of those in need. We are proud to connect you with these dedicated volunteers who are committed to creating a caring community.</p>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+    <div class="content section">
+        <h2 class="section-title">How Can We Assist You?</h2>
+        <div class="section-content">
+            <p>Because we are currently a small platform, there are certain limitations to what we can offer. However, we are dedicated to making a positive impact in our community through various initiatives.</p>
+            <p>Our focus is on creating interactive help points, like community notice boards, to foster communication and support within the local area. These interactive boards act as a community hub, providing valuable information and resources.</p>
+            <p>While we're proud to have interactive tables at restaurants, where kids can enjoy moving shapes around through a projector, we recognize that the same technology may not be accessible for everyone. That's why installing interactive notice boards outside busy venues to assist the homeless, impoverished, and elderly population is at the top of our priority list. We're committed to making this a reality and providing a user-friendly platform for everyone, regardless of age or ability.</p>
+        </div>
     </div>
-  </div>
-  <footer>
-    <div class="footer-container">
-      <div class="box">
-        <h3>Contact</h3>
-        <p>Email: contact@thehub.com</p>
-      </div>
-      <div class="box">
-        <h3>About Us</h3>
-        <p>By using The Hub, you agree to our Terms of Service and Privacy Policy.<br> Please read them carefully before accessing or using our platform.</p>
-      </div>
+</section>
+        <section id="section5">
+            <div class="content section">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="section-content">
+                    <div class="testimonial">
+                        <p>"I am grateful for the assistance I received. The volunteers were kind, patient, and understanding. They made a positive impact on my life."</p>
+                        <p class="testimonial-author">- Anonymous</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The Elderly Assistance team went above and beyond to help my mother. Their dedication and professionalism were commendable."</p>
+                        <p class="testimonial-author">- Anonymous</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section6">
+    <div class="content section cta-section">
+        <h2 class="section-title">Do You Need Help?</h2>
+        <div class="section-content">
+            <p>If you need assistance or have any questions, feel free to reach out to us. <strong>If we have to help you in person, we will give you a unique 9-digit number.</strong> When the helper arrives, they will show you the same number, so you know it's the person you contacted who has come to help. We're here for you.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJmDB_SjsnQvm9lBJXPN7SDFfmeJIDk8t-UpeZecGZve7hpg/viewform?embedded=true" class="button">File A Form</a>
+        </div>
     </div>
-    <div class="footer-container">
-      <div class="box" onclick="scrollToTop()">Top Of Page</div>
-    </div>
-    <div class="footer-container">
-      <p>&copy; 2023 Lofties. All rights reserved.</p>
-    </div>
-    <div class="tcbhg">
-      <p>
-        <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
-      </p>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RZG8MP5HRX');
-  </script>
-  <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    function addRainbowEffect() {
-      var colors = ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#8b00ff'];
-      var button = document.getElementById('rainbowButton');
-      var currentIndex = 0;
-      var interval = setInterval(function() {
-        button.style.backgroundColor = colors[currentIndex];
-        currentIndex++;
-        if (currentIndex === colors.length) {
-          currentIndex = 0;
+</section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="box">
+                <h3>Contact</h3>
+                <p>Email: contact@thehub.com</p>
+            </div>
+            <div class="box">
+                <h3>About Us</h3>
+                <p>By using The Hub, you agree to our Terms of Service and Privacy Policy.<br> Please read them carefully before accessing or using our platform.</p>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="box" onclick="scrollToTop()">Top Of Page</div>
+        </div>
+        <div class="footer-container">
+            <p>&copy; 2023 Lofties. All rights reserved.</p>
+        </div>
+        <div class="tcbhg">
+            <p>
+                <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+            </p>
+        </div>
+    </footer><script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-      }, 200);
-      setTimeout(function() {
-        clearInterval(interval);
-        button.style.backgroundColor = '#00b3b3';
-      }, 3000);
-    }
-  </script>
-</body>
+    </script></body>
 </html>
