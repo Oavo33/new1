@@ -264,7 +264,7 @@
     }
     .new-heading {
       font-size: 18px;
-      color: '00b3b3';
+      color: #00b3b3;
       margin-top: 0;
     }
     .new-heading+p {
