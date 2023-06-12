@@ -408,7 +408,7 @@
   <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
   <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
 </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 120% ; background-repeat: no-repeat; background-position: center;" >
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 140% ; background-repeat: no-repeat; background-position: center;" >
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
