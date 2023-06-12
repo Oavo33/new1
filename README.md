@@ -366,7 +366,7 @@
   </div>
 </header>
 <div class="hub-card">
-  <h1>Message From The Team</h1>
+  <div class="hub-card-title">Message From The Team</div>
   <p>Hi there! At The Hub, we have a team of your local community members who have built this hub for you! We aim to help the local community and local businesses come together and share each other's skills.</p>
 </div>
 <div class="grid-container">
