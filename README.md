@@ -149,7 +149,7 @@
       max-width: 280px;
       width: 65%;
       margin: 0 auto;
-      margin-top: -65px;
+      margin-top: -68px;
       position: relative;
       z-index: 2;
     }
