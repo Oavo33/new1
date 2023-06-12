@@ -263,24 +263,24 @@
       transform: scale(0.95);
     }
     .new-heading {
-      font-size: 20px;
-      color: #333333;
+      font-size: 12px;
+      color: '00b3b3';
       margin-top: 0;
     }
     .new-heading+p {
-      font-size: 14px;
+      font-size: 10px;
       margin-bottom: 10px;
-      color: #333333;
+      color: #00b3b3;
     }
     .cta-button {
       display: inline-block;
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
-      padding: 10px 20px;
-      border-radius: 30px;
+      padding: 2px 4px;
+      border-radius: 14px;
       font-family: 'Roboto', sans-serif;
-      font-size: 16px;
+      font-size: 10px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
