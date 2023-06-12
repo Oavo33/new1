@@ -149,7 +149,7 @@
     <div class="top-navigation">
         <a href="#section1" class="skip-link">Our Promise</a>
         <a href="#section2" class="skip-link">Features</a>
-        <a href="#section3" class="skip-link">Contact Us</a>
+        <a href="#section6" class="skip-link">Contact Us</a>
     </div>
     <header>
         <div class="social">
