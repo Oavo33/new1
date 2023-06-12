@@ -330,7 +330,7 @@
     </a>
   </div>
   <div class="grid-item">
-    <h1 class="new-heading">Your New Heading</h1>
+    <h1 class="new-heading">Lets Get Our Hub Heard !</h1>
     <p>Hey community! As your cheeky window cleaner, I've been auditing local businesses and here's what I found. The more we Subscribe, Like and Follow Our Hub, the more we help them thrive. When we support them, they can support us in return. So let's subscribe, like, follow, and spread the word about their fantastic services. Together, we can ensure the success of our local businesses. Stay cheeky and support local! - The Cheeky Window Cleaner</p>
     <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On FaceBook</a>
     <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
