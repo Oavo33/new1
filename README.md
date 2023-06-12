@@ -153,6 +153,7 @@
     .hub-card .hub-card-title {
       font-size: 16px;
       margin-top: 0;
+      font-weight: bold;
       margin-bottom: 2px;
       color: #ffffff;
     }
