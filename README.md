@@ -51,8 +51,10 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
-      text-align: center;}
-    .highlight-box {background-color: #ffffff;
+      text-align: center;
+    }
+    .highlight-box {
+      background-color: #ffffff;
       color: #333333;
       border-radius: 10px;
       padding: 40px;
@@ -98,29 +100,7 @@
     }
     .secondary-button:hover {
       background-color: #008080;
-    }
-    .social {
-      display: flex;
-      justify-content: center;
-      margin-top: 2px;
-    }
-    .social a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      margin: 0 8px;
-      border-radius: 50%;
-      background-color: #00b3b3;
-      color: #ffffff;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-    .social a:hover {
-      background-color: #008080;
-    }
-    footer {
+    }footer {
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 20px;
       color: #ffffff;
@@ -153,8 +133,27 @@
     .tcbhg a:hover {
       text-decoration: underline;
     }
+    .social {
+      display: flex;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 8px;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+    .social a:hover {
+      background-color: #008080;
+    }
   </style>
-</head><body>
+</head>
+<body>
   <header>
   <div class="social">
     <a href="#">
@@ -164,7 +163,8 @@
       <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
     </a>
   </div>
-  <h1 class="rare-title">Ultimate WebPage Giveaway</h1><h2 class="su-rare-title">1 FREE page a month! As Our Hub grows, we can shrink this to one a week! Then 1 a day!</h2>
+  <h1 class="rare-title">Ultimate WebPage Giveaway</h1>
+  <h2 class="su-rare-title">1 FREE PAGE A MONTH! AS OUR HUB GROWS, WE CAN SHRINK THIS TO ONE A WEEK! THEN 1 A DAY!</h2>
 </header>
 <div class="main-content">
     <div class="highlight-box">
@@ -174,7 +174,8 @@
       <p class="highlight-text">Enter now for a chance to win a free personalized web page! Celebrate your special moments with a dedicated online space just for you. Join the excitement and click below to enter the giveaway.</p>
       <a href="#" class="cta-button">Enter Contest</a>
     </div>
-  </div><footer>
+  </div>
+<footer>
     <div class="footer-container">
       <div class="box">
         <h3>Contact</h3>
@@ -210,5 +211,4 @@
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  </script>
-</body></html>
+  </script></body></html>
