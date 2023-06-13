@@ -255,7 +255,7 @@
     <div class="community-gatherings-section">
       <h2>Community Gatherings</h2>
       <p>
-        Join us for regular gatherings where we come together to interact and talk about the old ways of the high street. These gatherings are an opportunity to connect with fellow community members who have a deep appreciation for our shared history. Let's meet at local park venues to uplift our spirits, ignite enthusiasm, and work towards bringing back the charm of the old high street.
+          Come join us at our local park venues as we gather to interact and engage in conversations about the nostalgic days of the high street. These regular gatherings aim to uplift the spirits of our community, fostering a sense of unity and enthusiasm to revive the charm of the old high street. Let's come together, share our stories, memories, and experiences, and reconnect with fellow community members who share our deep appreciation for our shared history. Together, we can work towards bringing back the vibrancy of the old high street.
       </p>
       <h3>Upcoming Gatherings</h3>
       <ul>
