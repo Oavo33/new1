@@ -1,247 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community With Care!</title>
-    <style>body {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            color: #333333;
-            text-align: center;
-        }
-        header {
-            background-color: #00b3b3;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }.hero-image {
-            width: 100%;
-            height: 400px;
-            background-image: url('nostalgic_image.jpg');
-            background-position: center;
-            background-size: cover;
-        }
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            color: #333333;
-            text-align: center;
-        }
-        .section {
-            margin-bottom: 40px;
-        }.section-title {
-            color: #00b3b3;
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .section-content {
-            text-align: center;
-        }
-        a {
-            color: #00b3b3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #00b3b3;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #006666;
-        }
-        .top-navigation {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .top-navigation a {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #00b3b3;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            margin-right: 10px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .top-navigation a:hover {
-            background-color: #006666;
-        }
-        .social {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .social a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            margin: 0 8px;
-            border-radius: 50%;
-            background-color: #00b3b3;
-            color: #ffffff;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .social a:hover {
-            background-color: #008080;
-        }
-        footer {
-            background: linear-gradient(to bottom, #00b3b3, #008080);
-            padding: 20px;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
-        }
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        .box {
-            background-color: #00b3b3;
-            color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            text-align: center;
-            margin: 10px;
-            cursor: pointer;
-            width: fit-content;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-RZG8MP5HRX');
-    </script>
-</head>
-<body>
-    <div class="top-navigation">
-        <a href="#section1" class="skip-link">Our Promise</a>
-        <a href="#section2" class="skip-link">Features</a>
-        <a href="#section6" class="skip-link">Contact Us</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique and Rare Design Competition</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(to bottom, #00b3b3, #008080);
+      padding: 20px;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+      animation: slideIn 1s ease-out;
+    }
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    .rare-title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 48px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .su-rare-title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 10px;
+    }
+    .main-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;}
+    .highlight-box {background-color: #ffffff;
+      color: #333333;
+      border-radius: 10px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .highlight-title {
+      font-size: 32px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .highlight-text {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 16px 36px;
+      background-color: #00b3b3;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .cta-button:hover {
+      background-color: #008080;
+    }
+    .secondary-button {
+      display: inline-block;
+      padding: 4px 9px;
+      background-color: #00b3b3;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .secondary-button:hover {
+      background-color: #008080;
+    }
+    .social {
+      display: flex;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 8px;
+      border-radius: 50%;
+      background-color: #00b3b3;
+      color: #ffffff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .social a:hover {
+      background-color: #008080;
+    }
+    footer {
+      background: linear-gradient(to bottom, #00b3b3, #008080);
+      padding: 20px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+    }
+    .back-to-top {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #00b3b3;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .back-to-top:hover {
+      background-color: #00b3b3;
+      color: #ffffff;
+    }
+    .tcbhg {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .tcbhg a {
+      color: #00b3b3;
+      text-decoration: none;
+    }
+    .tcbhg a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head><body>
+  <header>
+  <div class="social">
+    <a href="#">
+      <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+    </a>
+    <a href="#">
+      <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+    </a>
+  </div>
+  <h1 class="rare-title">Ultimate WebPage Giveaway</h1><h2 class="su-rare-title">1 FREE page a month! As Our Hub grows, we can shrink this to one a week! Then 1 a day!</h2>
+</header>
+<div class="main-content">
+    <div class="highlight-box">
+      <h2 class="highlight-title">Join Our Giveaway Contest!</h2>
+      <p class="highlight-text">Celebrate your special life moments with a free, personalized web page! Whether it's a birth, a wedding, or a heartfelt memorial, create your own dedicated space to capture and cherish these memories. It's easy and completely free to participate - just click below to get started and design your personalized web page. Don't miss out on this incredible opportunity to showcase your story and create a lasting digital legacy. Join now and let your memories shine online.</p>
+      <p class="highlight-text">We use GitHub's free service, which is a widely recognized platform for publishing web pages. With GitHub, we provide you with an easy-to-use interface and reliable hosting capabilities. As the lucky winner of our giveaway contest, you will receive the login details and password for your own web page on GitHub. This means you have full ownership and control over your page, allowing you to decide what happens to it in the future. You can showcase your special moments and stories with a professionally designed web page. And the best part is, all of this is available to you at no cost.</p>
+      <p class="highlight-text">Enter now for a chance to win a free personalized web page! Celebrate your special moments with a dedicated online space just for you. Join the excitement and click below to enter the giveaway.</p>
+      <a href="#" class="cta-button">Enter Contest</a>
     </div>
-    <header>
-        <div class="social">
-            <a href="#">
-                <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-            </a>
-            <a href="#">
-                <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-            </a>
-        </div>
-        <h1>Community With Care</h1>
-    </header>
-    <div class="hero-image" role="img" aria-label="Hero image"></div>
-    <main id="maincontent">
-        <section id="section1">
-            <h2>We Will Only Help, If You Ask For Help!<br>As our Reputation grows Hopefully your Trust will.</h2>
-            <div class="content section">
-                <h3 class="section-title">Our Promise</h3>
-                <div class="section-content">
-                    <p>At Community With Care, we believe in the power of mutual support and collaboration. We understand that everyone's needs and circumstances are unique, which is why our assistance is tailored specifically to you. We will only provide help if you ask for it, ensuring that you maintain autonomy and control over the support you receive.</p>
-                    <p>Our team consists of compassionate and dedicated individuals who are committed to making a positive impact in the lives of older adults. We value the trust placed in us and strive to uphold our reputation by delivering exceptional care and assistance. As our reputation grows, we hope that your trust in our services will grow as well.</p>
-                </div>
-            </div>
-        </section>
-        <section id="section3">
-            <div class="content section">
-                <h2 class="section-title">Voluntary Workers from Your Community</h2>
-                <div class="section-content">
-                    <p>All help provided through our platform is from voluntary workers and members of your surrounding area who generously offer their spare time to assist others. These individuals have a genuine desire to make a positive difference in the lives of those in need. We are proud to connect you with these dedicated volunteers who are committed to creating a caring community.</p>
-                </div>
-            </div>
-        </section>
-        <section id="section2">
-    <div class="content section">
-        <h2 class="section-title">How Can We Assist You?</h2>
-        <div class="section-content">
-            <p>Because we are currently a small platform, there are certain limitations to what we can offer. However, we are dedicated to making a positive impact in our community through various initiatives.</p>
-            <p>Our focus is on creating interactive help points, like community notice boards, to foster communication and support within the local area. These interactive boards act as a community hub, providing valuable information and resources.</p>
-            <p>While we're proud to have interactive tables at restaurants, where kids can enjoy moving shapes around through a projector, we recognize that the same technology may not be accessible for everyone. That's why installing interactive notice boards outside busy venues to assist the homeless, impoverished, and elderly population is at the top of our priority list. We're committed to making this a reality and providing a user-friendly platform for everyone, regardless of age or ability.</p>
-        </div>
+  </div><footer>
+    <div class="footer-container">
+      <div class="box">
+        <h3>Contact</h3>
+        <p>Email: contact@thehub.com</p>
+      </div>
+      <div class="box">
+        <h3>About Us</h3>
+        <p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        </a>
+      </div>
     </div>
-</section>
-        <section id="section5">
-            <div class="content section">
-                <h2 class="section-title">Testimonials</h2>
-                <div class="section-content">
-                    <div class="testimonial">
-                        <p>"I am grateful for the assistance I received. The volunteers were kind, patient, and understanding. They made a positive impact on my life."</p>
-                        <p class="testimonial-author">- Anonymous</p>
-                    </div>
-                    <div class="testimonial">
-                        <p>"The Elderly Assistance team went above and beyond to help my mother. Their dedication and professionalism were commendable."</p>
-                        <p class="testimonial-author">- Anonymous</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section6">
-    <div class="content section cta-section">
-        <h2 class="section-title">Do You Need Help?</h2>
-        <div class="section-content">
-            <p>If you need assistance or have any questions, feel free to reach out to us. <strong>If we have to help you in person, we will give you a unique 9-digit number.</strong> When the helper arrives, they will show you the same number, so you know it's the person you contacted who has come to help. We're here for you.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJmDB_SjsnQvm9lBJXPN7SDFfmeJIDk8t-UpeZecGZve7hpg/viewform?embedded=true" class="button">File A Form</a>
-        </div>
+    <div class="footer-container">
+      <div class="box back-to-top" onclick="scrollToTop()">Back to Top</div>
     </div>
-</section>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="box">
-                <h3>Contact</h3>
-                <p>Email: contact@thehub.com</p>
-            </div>
-            <div class="box">
-                <h3>About Us</h3>
-                <p>By using The Hub, you agree to our Terms of Service and Privacy Policy.<br> Please read them carefully before accessing or using our platform.</p>
-            </div>
-        </div>
-        <div class="footer-container">
-            <div class="box" onclick="scrollToTop()">Top Of Page</div>
-        </div>
-        <div class="footer-container">
-            <p>&copy; 2023 Lofties. All rights reserved.</p>
-        </div>
-        <div class="tcbhg">
-            <p>
-                <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
-            </p>
-        </div>
-    </footer><script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script></body>
-</html>
+    <div class="footer-container">
+      <p>&copy; 2023 Lofties. All rights reserved.</p>
+    </div>
+    <div class="tcbhg">
+      <p>
+        <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body></html>
