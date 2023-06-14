@@ -36,7 +36,8 @@
     }
     .brick-wall {
       background-color: #ff6699;
-      padding: 20px;text-align: center;
+      padding: 20px;
+      text-align: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
     .container {
@@ -45,7 +46,7 @@
       margin: 0 auto;
       padding: 20px;
       box-sizing: border-box;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
     .bricks-container {
       display: flex;
@@ -53,7 +54,7 @@
       justify-content: center;
       background-color: #ff6699;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .brick {
       background-color: #8B0000;
@@ -76,7 +77,8 @@
     }
     .appealing-paragraph {
       font-size: 20px;
-      line-height: 1.5;text-align: center;
+      line-height: 1.5;
+      text-align: center;
       color: #333333;
       margin: 40px 0;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
@@ -154,7 +156,7 @@
       flex-wrap: wrap;
       gap: 2px;
       margin-bottom: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .footer-section {
       border: 1px solid maroon;
@@ -163,7 +165,7 @@
       flex: 1 1 300px;
       max-width: 300px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .footer-title {
       font-size: 12px;
@@ -244,7 +246,8 @@
     <div class="footer-wrapper">
       <div class="footer-section">
         <h3 class="footer-title">Connect</h3>
-        <p class="footer-text">Email: connect@thehub.com</p><div class="footer-social">
+        <p class="footer-text">Email: connect@thehub.com</p>
+        <div class="footer-social">
           <a href="#">
             <img src="https://img.icons8.com/office/30/0000FF/youtube.png" alt="YouTube">
           </a>
@@ -252,7 +255,8 @@
             <img src="https://img.icons8.com/office/30/0000FF/facebook-new.png" alt="Facebook">
           </a>
         </div>
-      </div><div class="footer-section">
+      </div>
+      <div class="footer-section">
         <h3 class="footer-title">Know More About Us</h3>
         <p class="footer-text">Terms of Service and Privacy Policy. Please read them thoroughly before accessing or using our platform.</p>
       </div>
@@ -271,58 +275,67 @@
     </div>
   </footer>
   <script>
-    function getRandomRainbowColor() {
-      var colors = [
-        "#FF0000", // Red
-        "#FF7F00", // Orange
-        "#FFFF00", // Yellow
-        "#00FF00", // Green
-        "#0000FF", // Blue
-        "#4B0082", // Indigo
-        "#8B00FF" // Violet
-      ];
-      return colors[Math.floor(Math.random() * colors.length)];
-    }
-    function addGraffitiItem() {
-      var graffitiWall = document.getElementById('graffiti-wall');
-      var graffitiItem = document.createElement('div');
-      graffitiItem.className = 'graffiti-item';
-      graffitiItem.style.backgroundColor = getRandomRainbowColor();
-      graffitiItem.innerText = 'Nickname ' + (graffitiWall.childElementCount + 1);
-      graffitiWall.appendChild(graffitiItem);
-    }
-    for (var i = 0; i < 25; i++) {
-      addGraffitiItem();
-    }
-    var graffitiItems = document.getElementsByClassName('graffiti-item');
-    for (var i = 0; i < graffitiItems.length; i++) {
-      graffitiItems[i].addEventListener('click', function() {
-        this.style.backgroundColor = getRandomRainbowColor();
-      });
-    }
-    function submitNickname() {
-      var nicknameInput = document.getElementById('nickname-input');
-      var nickname = nicknameInput.value.trim();
-      if (nickname !== '') {
-        var graffitiWall = document.getElementById('graffiti-wall');
-        var graffitiItem = document.createElement('div');
-        graffitiItem.className = 'graffiti-item';
-        graffitiItem.style.backgroundColor = getRandomRainbowColor();
-        graffitiItem.innerText = nickname;
-        graffitiWall.appendChild(graffitiItem);
-        nicknameInput.value = '';
-      }
-    }
-    function generateBricks() {
-      var bricksContainer = document.querySelector('.bricks-container');
-      var numBricks = 114;
-      for (var i = 0; i < numBricks; i++) {
-        var brick = document.createElement('div');
-        brick.className = 'brick';
-        bricksContainer.appendChild(brick);
-      }
-    }
-    generateBricks();
+ function getRandomRainbowColor() {
+  var colors = [
+    "#FF0000", // Red
+    "#FF7F00", // Orange
+    "#FFFF00", // Yellow
+    "#00FF00", // Green
+    "#0000FF", // Blue
+    "#4B0082", // Indigo
+    "#8B00FF" // Violet
+  ];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+function addGraffitiItem() {
+  var graffitiWall = document.getElementById('graffiti-wall');
+  var graffitiItem = document.createElement('div');
+  graffitiItem.className = 'graffiti-item';
+  graffitiItem.style.backgroundColor = getRandomRainbowColor();
+  graffitiItem.innerText = 'Nickname ' + (graffitiWall.childElementCount + 1);
+  graffitiItem.addEventListener('click', function() {
+    this.style.backgroundColor = getRandomRainbowColor();
+  });
+  graffitiWall.appendChild(graffitiItem);
+}
+for (var i = 0; i < 25; i++) {
+  addGraffitiItem();
+}
+var bricks = document.getElementsByClassName('brick');
+for (var i = 0; i < bricks.length; i++) {
+  bricks[i].addEventListener('click', function() {
+    this.style.backgroundColor = getRandomRainbowColor();
+  });
+}
+function submitNickname() {
+  var nicknameInput = document.getElementById('nickname-input');
+  var nickname = nicknameInput.value.trim();
+  if (nickname !== '') {
+    var graffitiWall = document.getElementById('graffiti-wall');
+    var graffitiItem = document.createElement('div');
+    graffitiItem.className = 'graffiti-item';
+    graffitiItem.style.backgroundColor = getRandomRainbowColor();
+    graffitiItem.innerText = nickname;
+    graffitiItem.addEventListener('click', function() {
+      this.style.backgroundColor = getRandomRainbowColor();
+    });
+    graffitiWall.appendChild(graffitiItem);
+    nicknameInput.value = '';
+  }
+}
+function generateBricks() {
+  var bricksContainer = document.querySelector('.bricks-container');
+  var numBricks = 114; 
+  for (var i = 0; i < numBricks; i++) {
+    var brick = document.createElement('div');
+    brick.className = 'brick';
+    brick.addEventListener('click', function() {
+      this.style.backgroundColor = getRandomRainbowColor();
+    });
+    bricksContainer.appendChild(brick);
+  }
+}
+generateBricks();
   </script>
 </body>
 </html>
