@@ -226,7 +226,7 @@
     </div>
   </header>
   <p class="appealing-paragraph">
-    Welcome to our vibrant and interactive <strong class="highlight">"Graffiti Wall"</strong> feature! It's all about you, our incredible community members. Unleash your creativity and leave your mark on our digital canvas. Submit your unique nickname, and watch with pride as it becomes a timeless part of our thriving hub. This innovative idea was born from our deep commitment to fostering engagement and inclusivity among individuals of all ages. Join us in creating an unforgettable tapestry of identities that will forever be associated with our remarkable community.
+    Join our vibrant community on the <strong class="highlight">Graffiti Wall,</strong> a dynamic web page where you can proudly share your unique nickname. It's a space to express yourself, connect with like-minded individuals, and celebrate the diversity of our community. Whether you're an artist, a storyteller, or simply someone with a creative spirit, the Graffiti Wall welcomes you to leave your mark and be a part of something extraordinary. Join us today and let your nickname become a work of art!
   </p>
   <div class="graffiti-wall" id="graffiti-wall">
   </div>
