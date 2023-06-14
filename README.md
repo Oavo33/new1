@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Old High Street - Community Hub</title>
+  <title>The Community Graffiti Wall</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,178 +11,174 @@
       background-color: #f2f2f2;
     }
     header {
-      background-color: #8b0000;
-      color: #fff;
+      background-color: #ff6699;
+      color: #ffffff;
       padding: 20px;
       text-align: center;
+      border-bottom: 2px solid #ffffff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      transform-style: preserve-3d; 
+      perspective: 500px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
-    .hero-image {
-      width: 100%;
-      height: 400px;
-      background-image: url('nostalgic_image.jpg');
-      background-position: center;
-      background-size: cover;
-    }
-    .content {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .community-section {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .community-section h2 {
-      color: #8b0000;
-      font-size: 24px;
+    h1 {
+      font-size: 32px;
+      color: #ffcc00;
+      margin-bottom: 20px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      letter-spacing: 2px;
+      transform: translateZ(40px);
+      animation: rotateHeader 10s infinite linear; 
     }
-    .community-section p {
-      color: #666;
-      font-size: 16px;
-      line-height: 1.5;
+    @keyframes rotateHeader {
+      0% { transform: translateZ(40px) rotateY(0); }
+      100% { transform: translateZ(40px) rotateY(1turn); }
     }
-    .about-section {
+    .brick-wall {
+      background-color: #ff6699;
+      padding: 20px;text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    }
+    .container {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
       padding: 20px;
-      background-color: #f7f3f3;
-      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
-    .about-section h2 {
-      color: #8b0000;
-      font-size: 28px;
-      text-align: center;
+    .bricks-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #ff6699;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    }
+    .brick {
+      background-color: #8B0000;
+      width: 20px;
+      height: 10px;
+      display: inline-block;
+      margin: 1px;
+    }
+    h1 {
+      font-size: 32px;
+      color: #ffcc00;
       margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
-    .about-section p {
-      color: #666;
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: justify;
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #333333;
     }
-    .shop-section {
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
+    .appealing-paragraph {
+      font-size: 20px;
+      line-height: 1.5;text-align: center;
+      color: #333333;
+      margin: 40px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    }
+    .highlight {
+      color: #ff6699;
+      font-weight: bold;
+    }
+    .graffiti-wall {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       margin-top: 40px;
     }
-    .shop-section h2 {
-      color: #8b0000;
-      font-size: 28px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .shop-section p {
-      color: #666;
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: justify;
-    }
-    .shop-list {
-      list-style-type: none;
-      padding: 0;
-      margin-top: 20px;
-    }
-    .shop-list li {
-      color: #666;
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
-    .community-gatherings-section {
-      padding: 20px;
-      background-color: #f7f3f3;
+    .graffiti-item {
+      color: #ffffff;
       border-radius: 5px;
-      margin-top: 40px;
-    }
-    .community-gatherings-section h2 {
-      color: #8b0000;
-      font-size: 28px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .community-gatherings-section p {
-      color: #666;
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: justify;
-    }
-    .community-gatherings-section h3 {
-      color: #8b0000;
-      font-size: 24px;
-      margin-top: 20px;
-    }
-    .community-gatherings-section ul {
-      list-style-type: none;
-      padding: 0;
-      margin-top: 10px;
-    }
-    .community-gatherings-section li {
-      color: #666;
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 5px;
-    }
-    .newsletter-section {
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      margin-top: 40px;
-    }
-    .newsletter-section h2 {
-      color: #8b0000;
-      font-size: 28px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .newsletter-section p {
-      color: #666;
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: justify;
-    }
-    .newsletter-section form {
-      text-align: center;
-    }
-    .newsletter-section input[type="email"] {
-      padding: 10px;
-      width: 300px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .newsletter-section input[type="submit"] {
       padding: 10px 20px;
-      font-size: 16px;
-      background-color: #8b0000;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
+      margin: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: Arial, sans-serif;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
       cursor: pointer;
-      margin-top: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+      animation: borderAnimation 2s infinite;
+    }
+    @keyframes borderAnimation {
+      0% { border: 2px solid #ffcc00; }
+      50% { border: 2px solid #ff6699; }
+      100% { border: 2px solid #ffcc00; }
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    }
+    .gallery-item {
+      flex-basis: 150px;
+      height: 150px;
+      background-color: #ffcc00;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
     footer {
-      background-color: #666;
-      padding: 30px;
+      padding: 80px 0;
+      background-color: #ff6699;
       color: #ffffff;
-    }.footer-section {
       text-align: center;
+      clip-path: polygon(50% 15%, 90% 20%, 100% 50%, 90% 80%, 50% 100%, 10% 80%, 0% 50%, 10% 20%);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    footer p {
+      margin: 0;
+    }
+    .footer-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    }
+    .footer-section {
+      border: 1px solid maroon;
+      padding: 2px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     }
     .footer-title {
-      font-size: 18px;
+      font-size: 12px;
       margin-bottom: 10px;
+      color: maroon;
+      text-transform: uppercase;
     }
     .footer-text {
-      font-size: 14px;
+      font-size: 12px;
     }
     .footer-social {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 2px;
     }
     .footer-social img {
       margin: 0 5px;
@@ -213,8 +209,8 @@
   </script>
 </head>
 <body>
-  <header>
-    <div id="header">
+  <header class="brick-wall">
+    <div class="container">
       <div class="social">
         <a href="#">
           <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
@@ -223,68 +219,32 @@
           <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
         </a>
       </div>
-      <h1>Old High Street Community Hub</h1>
+      <div class="bricks-container"></div>
+      <h1>The Graffiti Collective</h1>
     </div>
   </header>
-  <div class="hero-image"></div>
-  <div class="content">
-    <div class="community-section">
-      <h2>Welcome to the Community Hub</h2>
-      <p>
-        The Old High Street Community Hub is a place where we come together to celebrate and cherish the memories of the old shops on our beloved high street. Join us in exploring the rich history and stories that have shaped our community.
-      </p>
-    </div>
-    <div class="about-section">
-      <h2>About the Old High Street</h2>
-      <p>
-        The Old High Street has been the heart of our community for generations. It's a place filled with nostalgia, where local shops have thrived and created lasting memories. We are dedicated to preserving the spirit of the old high street and honoring the businesses that have made it special.
-      </p>
-    </div>
-    <div class="shop-section">
-      <h2>Old Shops on the High Street</h2>
-      <p>
-        Take a walk down memory lane as we remember the cherished shops that were once part of our high street. These establishments have left an indelible mark on our community, and their stories deserve to be shared. Here are some of the notable old shops:
-      </p>
-      <ul class="shop-list">
-        <li>Smithson's Bookstore - A cozy bookstore that was a treasure trove for book lovers.</li>
-        <li>Johnson's Bakery - The aroma of freshly baked bread and pastries that filled the air.</li>
-        <li>Miller's Music Store - A place where aspiring musicians found their instruments and inspiration.</li>
-        <li>Thompson's Antiques - A haven for antique enthusiasts, offering unique pieces of history.</li>
-      </ul>
-    </div>
-    <div class="community-gatherings-section">
-      <h2>Community Gatherings</h2>
-      <p>
-          Come join us at our local park venues as we gather to interact and engage in conversations about the nostalgic days of the high street. These regular gatherings aim to uplift the spirits of our community, fostering a sense of unity and enthusiasm to revive the charm of the old high street. Let's come together, share our stories, memories, and experiences, and reconnect with fellow community members who share our deep appreciation for our shared history. Together, we can work towards bringing back the vibrancy of the old high street.
-      </p>
-      <h3>Upcoming Gatherings</h3>
-      <ul>
-        <li>June 20, 2023 - Birkenhead Market</li>
-        <li>July 8, 2023 - New Ferry Priceinct</li>
-        <li>August 1, 2023 - New Brighton Prominard</li>
-      </ul>
-    </div>
-    <div class="newsletter-section">
-      <h2>Join Our Newsletter</h2>
-      <p>
-        Stay informed about the latest updates, events, and initiatives of The Old High Street Community Hub. Sign up for our newsletter to receive regular updates straight to your inbox. Join us as we continue to celebrate our community's past and build a brighter future.
-      </p>
-      <form>
-        <input type="email" placeholder="Enter your email" required>
-        <br>
-        <input type="submit" value="Sign Up">
-      </form>
-    </div>
+  <p class="appealing-paragraph">
+    Welcome to our vibrant and interactive <strong class="highlight">"Graffiti Wall"</strong> feature! It's all about you, our incredible community members. Unleash your creativity and leave your mark on our digital canvas. Submit your unique nickname, and watch with pride as it becomes a timeless part of our thriving hub. This innovative idea was born from our deep commitment to fostering engagement and inclusivity among individuals of all ages. Join us in creating an unforgettable tapestry of identities that will forever be associated with our remarkable community.
+  </p>
+  <div class="graffiti-wall" id="graffiti-wall">
+  </div>
+  <div class="form-container">
+    <h2>Submit Your Nickname</h2>
+    <input type="text" id="nickname-input" placeholder="Enter your nickname">
+    <button onclick="submitNickname()">Submit</button>
+  </div>
+  <h3>Imagine Our Wall On Your House! #MaybeOneDay</h3>
+  <div class="gallery-container">
+    <div class="gallery-item"></div>
+    <div class="gallery-item"></div>
+    <div class="gallery-item"></div>
+    <div class="gallery-item"></div>
   </div>
   <footer>
     <div class="footer-wrapper">
       <div class="footer-section">
         <h3 class="footer-title">Connect</h3>
-        <p class="footer-text">Email: connect@thehub.com</p>
-      </div>
-      <div class="footer-section">
-        <h3 class="footer-title">Stay Updated</h3>
-        <div class="footer-social">
+        <p class="footer-text">Email: connect@thehub.com</p><div class="footer-social">
           <a href="#">
             <img src="https://img.icons8.com/office/30/0000FF/youtube.png" alt="YouTube">
           </a>
@@ -292,21 +252,77 @@
             <img src="https://img.icons8.com/office/30/0000FF/facebook-new.png" alt="Facebook">
           </a>
         </div>
-      </div>
-    </div>
-    <div class="footer-wrapper">
-      <div class="footer-section">
+      </div><div class="footer-section">
         <h3 class="footer-title">Know More About Us</h3>
-        <p class="footer-text">By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them thoroughly before accessing or using our platform.</p>
+        <p class="footer-text">Terms of Service and Privacy Policy. Please read them thoroughly before accessing or using our platform.</p>
       </div>
-      <div class="footer-container">
-        <p>&copy; 2023 Lofties. All rights reserved.</p>
+      <div class="footer-section">
+        <div class="footer-container">
+          <p>&copy; 2023 Lofties. All rights reserved.</p>
+        </div>
       </div>
-      <div class="tcbhg">
-        <p>
-          <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
-        </p>
+      <div class="footer-section">
+        <div class="tcbhg">
+          <p>
+            <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
-</body></html>
+  <script>
+    function getRandomRainbowColor() {
+      var colors = [
+        "#FF0000", // Red
+        "#FF7F00", // Orange
+        "#FFFF00", // Yellow
+        "#00FF00", // Green
+        "#0000FF", // Blue
+        "#4B0082", // Indigo
+        "#8B00FF" // Violet
+      ];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+    function addGraffitiItem() {
+      var graffitiWall = document.getElementById('graffiti-wall');
+      var graffitiItem = document.createElement('div');
+      graffitiItem.className = 'graffiti-item';
+      graffitiItem.style.backgroundColor = getRandomRainbowColor();
+      graffitiItem.innerText = 'Nickname ' + (graffitiWall.childElementCount + 1);
+      graffitiWall.appendChild(graffitiItem);
+    }
+    for (var i = 0; i < 25; i++) {
+      addGraffitiItem();
+    }
+    var graffitiItems = document.getElementsByClassName('graffiti-item');
+    for (var i = 0; i < graffitiItems.length; i++) {
+      graffitiItems[i].addEventListener('click', function() {
+        this.style.backgroundColor = getRandomRainbowColor();
+      });
+    }
+    function submitNickname() {
+      var nicknameInput = document.getElementById('nickname-input');
+      var nickname = nicknameInput.value.trim();
+      if (nickname !== '') {
+        var graffitiWall = document.getElementById('graffiti-wall');
+        var graffitiItem = document.createElement('div');
+        graffitiItem.className = 'graffiti-item';
+        graffitiItem.style.backgroundColor = getRandomRainbowColor();
+        graffitiItem.innerText = nickname;
+        graffitiWall.appendChild(graffitiItem);
+        nicknameInput.value = '';
+      }
+    }
+    function generateBricks() {
+      var bricksContainer = document.querySelector('.bricks-container');
+      var numBricks = 114;
+      for (var i = 0; i < numBricks; i++) {
+        var brick = document.createElement('div');
+        brick.className = 'brick';
+        bricksContainer.appendChild(brick);
+      }
+    }
+    generateBricks();
+  </script>
+</body>
+</html>
