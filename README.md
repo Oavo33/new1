@@ -2,218 +2,472 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Community Graffiti Wall</title>
+  <title>The Hub</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      background-color: #f2f2f2;
+      color: #333333;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
-    }
-    header {
-      background-color: #ff6699;
-      color: #ffffff;
-      padding: 20px;
+    }header {
+      background: linear-gradient(to bottom, #00b3b3, #008080);
+      padding: 50px 20px;
       text-align: center;
-      border-bottom: 2px solid #ffffff;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-      transform-style: preserve-3d; 
-      perspective: 500px; 
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    h1 {
-      font-size: 32px;
-      color: #ffcc00;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      transform: translateZ(40px);
-      animation: rotateHeader 10s infinite linear; 
-    }
-    @keyframes rotateHeader {
-      0% { transform: translateZ(40px) rotateY(0); }
-      100% { transform: translateZ(40px) rotateY(1turn); }
-    }
-    .brick-wall {
-      background-color: #ff6699;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    }
-    .container {
-      max-width: 960px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 20px;
-      box-sizing: border-box;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    }
-    .bricks-container {
+      position: relative;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: #ff6699;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      flex-direction: column;
+      align-items: center;
     }
-    .brick {
-      background-color: #8B0000;
-      width: 20px;
-      height: 10px;
-      display: inline-block;
-      margin: 1px;
-    }
-    h1 {
-      font-size: 32px;
-      color: #ffcc00;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-      color: #333333;
-    }
-    .appealing-paragraph {
-      font-size: 20px;
-      line-height: 1.5;
-      text-align: center;
-      color: #333333;
-      margin: 40px 0;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    }
-    .highlight {
-      color: #ff6699;
+    header .hub-title {
+      font-size: 38px;
+      color: white;
       font-weight: bold;
     }
-    .graffiti-wall {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 40px;
-    }
-    .graffiti-item {
-      color: #ffffff;
-      border-radius: 5px;
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-family: Arial, sans-serif;
-      letter-spacing: 1px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-      animation: borderAnimation 2s infinite;
-    }
-    @keyframes borderAnimation {
-      0% { border: 2px solid #ffcc00; }
-      50% { border: 2px solid #ff6699; }
-      100% { border: 2px solid #ffcc00; }
-    }
-    .form-container {
-      max-width: 400px;
-      margin: 0 auto;
-      margin-bottom: 40px;
-    }
-    input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-    .gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    }
-    .gallery-item {
-      flex-basis: 150px;
-      height: 150px;
-      background-color: #ffcc00;
-      margin: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    }
-    footer {
-      padding: 80px 0;
-      background-color: #ff6699;
-      color: #ffffff;
-      text-align: center;
-      clip-path: polygon(50% 15%, 90% 20%, 100% 50%, 90% 80%, 50% 100%, 10% 80%, 0% 50%, 10% 20%);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    footer p {
+    header div.hub-card-title {
+      font-size: 38px;
+      color: white;
       margin: 0;
+      margin-top: 20px;
+      font-weight: bold;
     }
-    .footer-wrapper {
+    .social {
       display: flex;
-      justify-content: center;
+      flex-direction: row;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 2px;
-      margin-bottom: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      justify-content: center;
+      margin-top: 20px;
+      position: absolute;
+      top: 2%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: none;
     }
-    .footer-section {
-      border: 1px solid maroon;
-      padding: 2px;
-      border-radius: 10px;
-      flex: 1 1 300px;
-      max-width: 300px;
+    .social div {
+      background: none;
+    }
+    .social div:not(:last-child) {
+      margin-right: 50px;
+    }
+    .social div a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      background: none;
+      position: relative;
+    }
+    .social div a img {
+      width: 30px;
+      height: 30px;
+      background: none;
+      transition: all 0.3s ease;
+    }
+    .social div a span {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #00b3b3;
+      white-space: nowrap;
+    }
+    .social div a:hover img {
+      width: 40px;
+      height: 40px;
+    }
+    .social div a:hover span {
+      display: block;
+    }
+    .login {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+    }
+    .login button {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .login button:hover {
+      background-color: #008080;
+      transform: scale(1.14);
+    }
+    .login button:active {
+      transform: scale(0.95);
+    }
+    .tooltip {
+      position: absolute;
+      top: 100%;
+      right: 99%;
+      transform: translateX(50%);
+      width: 200px;
+      background-color: #f2f2f2;
+      border: 1px solid #00b3b3;
+      border-radius: 5px;
+      padding: 10px;font-size: 14px;
+      color: #333333;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s ease-in-out;
+      z-index: 10;
+      font-family: 'Roboto', sans-serif;
     }
-    .footer-title {
-      font-size: 12px;
+    .login:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+    .hub-card {
+      background: linear-gradient(to bottom, #008080, #00b3b3);
+      border-radius: 10px;
+      border: 2px solid #ffffff;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      text-align: center;
+      max-width: 280px;
+      width: 65%;
+      margin: 0 auto;
+      margin-top: -55px;
+      position: relative;
+      z-index: 2;
+    }
+    .hub-card .hub-card-title {
+      font-size: 16px;
+      margin-top: 0;
+      font-weight: bold;
+      margin-bottom: 2px;
+      color: #ffffff;
+    }
+    .hub-card p {
+      font-size: 14px;
+      margin-bottom: 2px;
+      color: #ffffff;
+    }
+    .graffiti {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      left: 2px;
+      font-size: 11px;
+      transform: rotate(-7deg);
+      top: 2%;
+      color: white;
+    }
+    .grid-item .-text {
+      font-size: 18px;
+      margin: 0;
+      color: #333333;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+    }
+    .grid-item .-text:hover {
+      color: #00b3b3;
+      text-decoration: underline;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+      grid-gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }.grid-item {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+    }
+    .grid-item h3 {
+      font-size: 16px;
+      margin-top: 0;
       margin-bottom: 10px;
-      color: maroon;
-      text-transform: uppercase;
+      color: #00b3b3;
     }
-    .footer-text {
-      font-size: 12px;
+    .grid-item p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #333333;
     }
-    .footer-social {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2px;
+    .grid-item .community-text {
+      font-size: 14px;
+      color: #00b3b3;
+      font-weight: bold;
     }
-    .footer-social img {
-      margin: 0 5px;
-      width: 20px;
-      height: 20px;
+    /* Footer Styles */
+    footer {
+      background: linear-gradient(to bottom, #ffffff, #00b3b3);
+      padding: 35px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
     }
     .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }.footer-container .box {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
       text-align: center;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .footer-container .box h3 {
+      font-size: 18px;
+      margin: 0;
+      color: #ffffff;
+    }
+    .footer-container .box p {
+      font-size: 14px;
+      margin: 10px 0 0;
+      color: #ffffff;
+    }
+    .footer-container .box:first-child {
+      border: 1px solid #ffffff;
+    }
+    .footer-container .box:last-child {
+      border: 1px solid #ffffff;
     }
     .tcbhg {
       text-align: center;
       margin-top: 20px;
     }
     .tcbhg a {
-      color: #8b0000;
+      color: #00b3b3;
       text-decoration: none;
     }
     .tcbhg a:hover {
       text-decoration: underline;
     }
+    .graffiti-button {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .graffiti-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .graffiti-button:active {
+      transform: scale(0.95);
+    }
+    .new-heading {
+      font-size: 18px;
+      color: #00b3b3;
+      margin-top: 0;
+    }
+    .new-heading+p {
+      font-size: 10px;
+      margin-bottom: 10px;
+      color: #00b3b3;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 14px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .cta-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .cta-button:active {
+      transform: scale(0.95);
+    }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-RZG8MP5HRX');
   </script>
 </head>
 <body>
-  <header class="brick-wall">
-    <div class="container">
-      <div class="social">
+<header>
+  <div class="login">
+  <button class="custom-class">Login</button>
+  <div class="tooltip">
+    You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
+  </div>
+</div>
+  <h1 class="hub-title">The Community Business Hub</h1>
+  <div class="graffiti">
+    This is your Hub !<br>
+    Do you want to change It ?<br>
+    Submit Request <br>
+    <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
+  </div>
+  <div class="social">
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+    </div></div>
+</header>
+<div class="hub-card">
+  <div class="hub-card-title">Message From The Team</div>
+  <p>Hi there! At The Hub, we have a team of your local community members who have built this hub for you! We aim to help the local community and local businesses come together and share each other's skills.</p>
+</div>
+<div class="grid-container">
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_1')">
+    <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/"><p class="community-text">Elderly Assistance</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_2')">
+    <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/"><p class="community-text">Community Giveaway</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_3')">
+    <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall"><p class="community-text">The Community Graffiti Wall</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_4')">
+    <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/"><p class="community-text">Our Vintage Shop Memories</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_5')">
+    <a class="community-item" href="https://oavo33.github.io/Help/"><p class="community-text">Help Our Homeless</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_6')">
+    <a class="community-item" href="https://oavo33.github.io/The.Hub/"><p class="community-text">Encouraging Young Business</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_7')">
+    <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/"><p class="community-text">FREE Web Pages, Every Month</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_8')">
+    <a class="community-item" href="https://oavo33.github.io/White.Paper/"><p class="community-text">White Paper</p>
+    </a>
+  </div>
+  <div class="grid-item" onclick="changeColor(this)">
+  <div class="new-heading">Let's Go!</div>
+  <p>Hey community! As your cheeky window cleaner, I've been auditing local businesses and here's what I found. The more we Subscribe, Like, and Follow Our Hub, the more we help them thrive. When we support them, they can support us in return. So let's subscribe, like, follow, and spread the word about their fantastic services. Together, we can ensure the success of our local businesses. Stay cheeky and support local! - The Cheeky Window Cleaner</p>
+  <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On Facebook</a>
+  <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
+</div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 140% ; background-repeat: no-repeat; background-position: center;" >
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div></div>
+<footer>
+  <div class="footer-container">
+    <div class="box">
+      <h3>Contact</h3>
+      <p>Email: contact@thehub.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="box">
+      <h3>About Us</h3>
+      <p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
+      <h3>What Do You Think About Our Community Hub?</h3>
+    </div>
+    <div class="box" onclick="scrollToTop()">Top Of Page</div>
+  </div>
+  <div class="box">
+        <h3>Follow Us</h3>
         <a href="#">
           <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
         </a>
@@ -221,121 +475,37 @@
           <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
         </a>
       </div>
-      <div class="bricks-container"></div>
-      <h1>The Graffiti Collective</h1>
-    </div>
-  </header>
-  <p class="appealing-paragraph">
-    Join our vibrant community on the <strong class="highlight">Graffiti Wall,</strong> a dynamic web page where you can proudly share your unique nickname. It's a space to express yourself, connect with like-minded individuals, and celebrate the diversity of our community. Whether you're an artist, a storyteller, or simply someone with a creative spirit, the Graffiti Wall welcomes you to leave your mark and be a part of something extraordinary. Join us today and let your nickname become a work of art!
-  </p>
-  <div class="graffiti-wall" id="graffiti-wall">
-  </div>
-  <div class="form-container">
-    <h2>Submit Your Nickname</h2>
-    <input type="text" id="nickname-input" placeholder="Enter your nickname">
-    <button onclick="submitNickname()">Submit</button>
-  </div>
-  <h3>Imagine Our Wall On Your House! #MaybeOneDay</h3>
-  <div class="gallery-container">
-    <div class="gallery-item"></div>
-    <div class="gallery-item"></div>
-    <div class="gallery-item"></div>
-    <div class="gallery-item"></div>
-  </div>
-  <footer>
-    <div class="footer-wrapper">
-      <div class="footer-section">
-        <h3 class="footer-title">Connect</h3>
-        <p class="footer-text">Email: connect@thehub.com</p>
-        <div class="footer-social">
-          <a href="#">
-            <img src="https://img.icons8.com/office/30/0000FF/youtube.png" alt="YouTube">
-          </a>
-          <a href="#">
-            <img src="https://img.icons8.com/office/30/0000FF/facebook-new.png" alt="Facebook">
-          </a>
-        </div>
-      </div>
-      <div class="footer-section">
-        <h3 class="footer-title">Know More About Us</h3>
-        <p class="footer-text">Terms of Service and Privacy Policy. Please read them thoroughly before accessing or using our platform.</p>
-      </div>
-      <div class="footer-section">
-        <div class="footer-container">
-          <p>&copy; 2023 Lofties. All rights reserved.</p>
-        </div>
-      </div>
-      <div class="footer-section">
-        <div class="tcbhg">
-          <p>
-            <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
-          </p>
-        </div>
-      </div>
-    </div>
+    </div><div class="footer-container">
+      <div class="box back-to-top" onclick="scrollToTop()">Back to Top</div>
+    </div><div class="footer-container">
+      <p>&copy; 2023 Lofties. All rights reserved.</p>
+    </div><div class="tcbhg">
+      <p>
+        <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+      </p></div>
   </footer>
-  <script>
- function getRandomRainbowColor() {
-  var colors = [
-    "#FF0000", // Red
-    "#FF7F00", // Orange
-    "#FFFF00", // Yellow
-    "#00FF00", // Green
-    "#0000FF", // Blue
-    "#4B0082", // Indigo
-    "#8B00FF" // Violet
-  ];
-  return colors[Math.floor(Math.random() * colors.length)];
-}
-function addGraffitiItem() {
-  var graffitiWall = document.getElementById('graffiti-wall');
-  var graffitiItem = document.createElement('div');
-  graffitiItem.className = 'graffiti-item';
-  graffitiItem.style.backgroundColor = getRandomRainbowColor();
-  graffitiItem.innerText = 'Nickname ' + (graffitiWall.childElementCount + 1);
-  graffitiItem.addEventListener('click', function() {
-    this.style.backgroundColor = getRandomRainbowColor();
-  });
-  graffitiWall.appendChild(graffitiItem);
-}
-for (var i = 0; i < 25; i++) {
-  addGraffitiItem();
-}
-var bricks = document.getElementsByClassName('brick');
-for (var i = 0; i < bricks.length; i++) {
-  bricks[i].addEventListener('click', function() {
-    this.style.backgroundColor = getRandomRainbowColor();
-  });
-}
-function submitNickname() {
-  var nicknameInput = document.getElementById('nickname-input');
-  var nickname = nicknameInput.value.trim();
-  if (nickname !== '') {
-    var graffitiWall = document.getElementById('graffiti-wall');
-    var graffitiItem = document.createElement('div');
-    graffitiItem.className = 'graffiti-item';
-    graffitiItem.style.backgroundColor = getRandomRainbowColor();
-    graffitiItem.innerText = nickname;
-    graffitiItem.addEventListener('click', function() {
-      this.style.backgroundColor = getRandomRainbowColor();
-    });
-    graffitiWall.appendChild(graffitiItem);
-    nicknameInput.value = '';
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-}
-function generateBricks() {
-  var bricksContainer = document.querySelector('.bricks-container');
-  var numBricks = 114; 
-  for (var i = 0; i < numBricks; i++) {
-    var brick = document.createElement('div');
-    brick.className = 'brick';
-    brick.addEventListener('click', function() {
-      this.style.backgroundColor = getRandomRainbowColor();
-    });
-    bricksContainer.appendChild(brick);
+  function changeColor(element) {
+    if (element.classList.contains('grid-item')) {
+      var colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#8B00FF'];
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      element.style.backgroundColor = randomColor;
+    }}
+  function stopPropagation(event) {
+    event.stopPropagation();
   }
-}
-generateBricks();
-  </script>
-</body>
-</html>
+  var buttons = document.querySelectorAll('.community-item a');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', stopPropagation);
+  });
+  var gridItems = document.querySelectorAll('.grid-item');
+  gridItems.forEach(function (gridItem) {
+    var itemButtons = gridItem.querySelectorAll('.community-text');
+    itemButtons.forEach(function (itemButton) {
+      itemButton.addEventListener('click', stopPropagation);
+    });});
+</script>
+</body></html>
