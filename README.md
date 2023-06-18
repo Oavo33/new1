@@ -81,8 +81,8 @@
       white-space: nowrap;
     }
     .social div a:hover img {
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
     }
     .social div a:hover span {
       display: block;
