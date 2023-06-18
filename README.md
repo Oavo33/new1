@@ -26,13 +26,15 @@
       font-size: 38px;
       color: white;
       font-weight: bold;
-    }header div.hub-card-title {
+    }
+    header div.hub-card-title {
       font-size: 38px;
       color: white;
       margin: 0;
       margin-top: 20px;
       font-weight: bold;
-    }.hub-card {
+    }
+    .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
@@ -77,14 +79,8 @@
       display: flex;
       align-items: center;
     }
-    .login {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      display: flex;
-      align-items: center;
-    }
-    .login button {
+    .login button,
+    .hub-card button {
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
@@ -100,11 +96,13 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     }
-    .login button:hover {
+    .login button:hover,
+    .hub-card button:hover {
       background-color: #008080;
       transform: scale(1.14);
     }
-    .login button:active {
+    .login button:active,
+    .hub-card button:active {
       transform: scale(0.95);
     }
     .tooltip {
@@ -278,7 +276,8 @@
     }
     .tcbhg a:hover {
       text-decoration: underline;
-    }</style>
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
