@@ -290,8 +290,10 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
+  justify-content: center;
+  text-align: center; 
 }.footer-container .box {
   background-color: #00b3b3;
   color: #ffffff;
