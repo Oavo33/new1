@@ -61,17 +61,19 @@
       color: #ffffff;
     }
     .graffiti {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      font-family: 'Roboto', sans-serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      z-index: 1;
-      left: 2px;
-      font-size: 11px;
-      transform: rotate(-7deg);
-      top: 2%;
-      color: white;
-    }.graffiti-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    left: 2px;
+    font-size: 11px;
+    transform: rotate(-7deg);
+    top: 2%;
+    color: white;
+    border: none; 
+  }
+  .graffiti-button {
     background-color: #00b3b3;
     color: #ffffff;
     border: none;
@@ -84,7 +86,7 @@
     letter-spacing: 1px;
     cursor: pointer;
     outline: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
   }
   .graffiti-button:hover {
