@@ -280,56 +280,55 @@
       transform: scale(0.95);
     }
     footer {
-      background: linear-gradient(to bottom, #ffffff, #00b3b3);
-      padding: 35px;
-      color: #ffffff;
-      text-align: center;
-      font-size: 14px;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .footer-container .box {
-      background-color: #00b3b3;
-      color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      text-align: center;
-      margin: 10px;
-      cursor: pointer;
-    }
-    .footer-container .box h3 {
-      font-size: 18px;
-      margin: 0;
-      color: #ffffff;
-    }
-    .footer-container .box p {
-      font-size: 14px;
-      margin: 10px 0 0;
-      color: #ffffff;
-    }
-    .footer-container .box:first-child {
-      border: 1px solid #ffffff;
-    }
-    .footer-container .box:last-child {
-      border: 1px solid #ffffff;
-    }
-    .tcbhg {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .tcbhg a {
-      color: #00b3b3;
-      text-decoration: none;
-    }
-    .tcbhg a:hover {
-      text-decoration: underline;
+  background: linear-gradient(to bottom, #ffffff, #00b3b3);
+  padding: 35px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}.footer-container .box {
+  background-color: #00b3b3;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+.footer-container .box h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #ffffff;
+}
+.footer-container .box p {
+  font-size: 14px;
+  margin: 10px 0 0;
+  color: #ffffff;
+}
+.footer-container .box:first-child {
+  border: 1px solid #ffffff;
+}
+.footer-container .box:last-child {
+  border: 1px solid #ffffff;
+}
+.tcbhg {
+  text-align: center;
+  margin-top: 20px;
+}
+.tcbhg a {
+  color: #00b3b3;
+  text-decoration: none;
+}
+.tcbhg a:hover {
+  text-decoration: underline;
+}
     }@media screen and (max-width: 768px) {
       header .hub-title {
         font-size: 28px;
