@@ -323,7 +323,7 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
       text-decoration: none;
-      margin-bottom: 10px;
+      margin-right: 5px;
     }
     .cta-button:hover {
       background-color: #008080;
@@ -331,6 +331,59 @@
     }
     .cta-button:active {
       transform: scale(0.95);
+    }
+    @media screen and (max-width: 768px) {
+      header .hub-title {
+        font-size: 28px;
+      }
+      header div.hub-card-title {
+        font-size: 28px;
+      }
+      .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 10px;
+        padding: 10px;
+      }
+      .grid-item h3 {
+        font-size: 14px;
+      }
+      .grid-item p {
+        font-size: 12px;
+      }
+      .hub-card {
+        max-width: 220px;
+        width: 80%;
+        margin-top: -40px;
+        padding: 5px;
+      }
+      .hub-card .hub-card-title {
+        font-size: 14px;
+      }
+      .hub-card p {
+        font-size: 12px;
+      }
+      .footer-container .box {
+        padding: 10px;
+        margin: 5px;
+      }
+      .footer-container .box h3 {
+        font-size: 14px;
+      }
+      .footer-container .box p {
+        font-size: 12px;
+      }
+      .new-heading {
+        font-size: 14px;
+      }
+      .new-heading+p {
+        font-size: 10px;
+      }
+      .cta-button {
+        font-size: 8px;
+        padding: 1px 2px;
+        border-radius: 10px;
+        margin-right: 3px;
+      }
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
