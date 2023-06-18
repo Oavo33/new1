@@ -480,9 +480,7 @@
         <a href="#">
           <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
         </a>
-      </div>
-    </div>
-    <div class="footer-container">
+      </div><div class="footer-container">
       <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
     </div>
     <div class="footer-container">
