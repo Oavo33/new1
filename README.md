@@ -335,15 +335,7 @@ footer {
   <div class="tooltip">
     You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
   </div>
-</div>
-  <h1 class="hub-title">The Community Business Hub</h1>
-  <div class="graffiti">
-    This is your Hub !<br>
-    Do you want to change It ?<br>
-    Submit Request <br>
-    <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
-  </div>
-  <div class="social">
+</div><div class="social">
     <div>
       <a href="#">
         <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
@@ -355,7 +347,13 @@ footer {
         <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
         <span>Facebook</span>
       </a>
-    </div></div>
+    </div>
+  <h1 class="hub-title">The Community Business Hub</h1>
+  <div class="graffiti">
+    This is your Hub !<br>
+    Do you want to change It ?<br>
+    Submit Request <br>
+    <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span></div></div>
 </header>
 <div class="hub-card">
   <div class="hub-card-title">Message From The Team</div>
