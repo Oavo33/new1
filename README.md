@@ -290,23 +290,23 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; 
-}.footer-container .box {
+  text-align: center;
+}
+.footer-container .box {
   background-color: #00b3b3;
   color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 4px;
   text-align: center;
-  margin: 7px;
-  cursor: pointer;
+  margin: 7px auto; 
 }
 .footer-container .box h3 {
   font-size: 18px;
-  margin: 7;
+  margin: 7px 0;
   color: #ffffff;
 }
 .footer-container .box p {
