@@ -456,41 +456,34 @@
   </div>
 </div>
 <footer>
-  <div class="footer-container">
-    <div class="box">
-      <h3>Contact</h3>
-      <p>Email: contact@thehub.com</p>
-      <p>Phone: 123-456-7890</p>
-    </div>
-    <div class="box">
-      <h3>About Us</h3>
-      <p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
-    </div>
-  </div>
-  <div class="footer-container">
-    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
-      <h3>What Do You Think About Our Community Hub?</h3>
-    </div>
-    
-  </div>
-  <div class="box">
-        <h3>Follow Us</h3><a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-        </a>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-        </a>
+    <div class="footer-container">
+      <div class="box">
+        <h3>Contact</h3>
+        <p>Email: contact@thehub.com</p></div>
+      <div class="box">
+  <h3>Terms and conditions</h3>
+  <p>By using The Hub, you agree to our <a href="https://example.com/terms" style="color: pink;">Terms of Service</a> and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+</div><div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
+        <h3>What Do You Think About Our Community Hub?</h3>
+      </div><div class="box">
+        <h3>Follow Us</h3>
+        <div class="social">
+          <a href="#">
+            <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+          </a>
+          <a href="#">
+            <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="footer-container">
-      <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
-    </div>
-    <div class="footer-container">
-      <p>&copy; 2023 Lofties. All rights reserved.</p>
+      <div class="box back-to-top" onclick="scrollToTop()">To The Top</div><p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
     <div class="tcbhg">
       <p>
-        <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+        <a href="https://example.com/privacy-policy">Privacy Policy</a>
+      </p>
+      <p>
+        <a href="https://example.com/guide-to-copywriting" class="guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
       </p>
     </div>
   </footer>
