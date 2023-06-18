@@ -302,16 +302,17 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 4px;
   text-align: center;
-  margin: 7px auto; 
-}
+  margin: 7px auto; }
 .footer-container .box h3 {
-  font-size: 14px;
-  margin: 7px 0;
+  font-size: 18px;
+  margin: 0; 
+  padding: 7px 0; 
   color: #ffffff;
 }
 .footer-container .box p {
   font-size: 14px;
-  margin: 7px 0 0;
+  margin: 0; 
+  padding: 7px 0;
   color: #ffffff;
 }
 .footer-container .box:first-child {
