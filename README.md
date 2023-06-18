@@ -34,7 +34,7 @@
       margin-top: 20px;
       font-weight: bold;
     }
-    .social {
+    .header .social {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -46,13 +46,13 @@
       transform: translateX(-50%);
       background: none;
     }
-    .social div {
+    .header .social div {
       background: none;
     }
-    .social div:not(:last-child) {
+    .header .social div:not(:last-child) {
       margin-right: 50px;
     }
-    .social div a {
+    .header .social div a {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -60,13 +60,13 @@
       background: none;
       position: relative;
     }
-    .social div a img {
+    .header .social div a img {
       width: 30px;
       height: 30px;
       background: none;
       transition: all 0.3s ease;
     }
-    .social div a span {
+    .header .social div a span {
       display: none;
       position: absolute;
       top: 100%;
@@ -79,11 +79,11 @@
       color: #00b3b3;
       white-space: nowrap;
     }
-    .social div a:hover img {
+    .header .social div a:hover img {
       width: 40px;
       height: 40px;
     }
-    .social div a:hover span {
+    .header .social div a:hover span {
       display: block;
     }
     .login {
@@ -322,8 +322,7 @@
       outline: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-      text-decoration: none;
-      margin-bottom: 10px;
+      margin-top: 5px;
     }
     .cta-button:hover {
       background-color: #008080;
@@ -331,7 +330,33 @@
     }
     .cta-button:active {
       transform: scale(0.95);
-    }</style>
+    }
+    /* Social Media Icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #00b3b3;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .social-icons a:hover {
+      background-color: #008080;
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
