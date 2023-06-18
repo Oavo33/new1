@@ -12,7 +12,8 @@
       color: #333333;
       margin: 0;
       padding: 0;
-    }header {
+    }
+    header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
       padding: 50px 20px;
       text-align: center;
@@ -24,13 +25,6 @@
     header .hub-title {
       font-size: 38px;
       color: white;
-      font-weight: bold;
-    }
-    header div.hub-card-title {
-      font-size: 38px;
-      color: white;
-      margin: 0;
-      margin-top: 20px;
       font-weight: bold;
     }
     .login {
@@ -49,7 +43,8 @@
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
       font-weight: bold;
-      text-transform: uppercase;letter-spacing: 1px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
       cursor: pointer;
       outline: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -71,7 +66,8 @@
       background-color: #f2f2f2;
       border: 1px solid #00b3b3;
       border-radius: 5px;
-      padding: 10px;font-size: 14px;
+      padding: 10px;
+      font-size: 14px;
       color: #333333;
       text-align: center;
       visibility: hidden;
@@ -110,18 +106,6 @@
       margin-bottom: 2px;
       color: #ffffff;
     }
-    .graffiti {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      font-family: 'Roboto', sans-serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      z-index: 1;
-      left: 2px;
-      font-size: 11px;
-      transform: rotate(-7deg);
-      top: 2%;
-      color: white;
-    }
     .grid-item .-text {
       font-size: 18px;
       margin: 0;
@@ -140,7 +124,8 @@
       padding: 20px;
       max-width: 1000px;
       margin: 0 auto;
-    }.grid-item {
+    }
+    .grid-item {
       background-color: #ffffff;
       border-radius: 10px;
       padding: 20px;
@@ -165,160 +150,155 @@
       font-weight: bold;
     }
     .social {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  justify-content: center;
-  margin-top: 20px; 
-}
-  .social a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  .social a img {
-    width: 30px;
-    height: 30px;
-    background: none;
-    transition: all 0.3s ease;
-  }
-  .social a span {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #00b3b3;
-    white-space: nowrap;
-  }
-  .social a:hover img {
-    width: 40px;
-    height: 40px;
-  }
-  .social a:hover span {
-    display: block;
-  }
-footer {
-  background: linear-gradient(to bottom, #ffffff, #00b3b3);
-  padding: 35px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-}
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.footer-container .box {
-  background-color: #00b3b3;
-  color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  text-align: center;
-  margin: 10px;
-  cursor: pointer;
-}
-.footer-container .box h3 {
-  font-size: 18px;
-  margin: 0;
-  color: #ffffff;
-}
-.footer-container .box p {
-  font-size: 14px;
-  margin: 10px 0 0;
-  color: #ffffff;
-}
-.footer-container .box:first-child {
-  border: 1px solid #ffffff;
-}
-.footer-container .box:last-child {
-  border: 1px solid #ffffff;
-}
-.tcbhg {
-  text-align: center;
-  margin-top: 20px;
-}
-.tcbhg a {
-  color: white;
-  text-decoration: none;
-}
-.tcbhg a:hover {
-  text-decoration: underline;
-}
-.back-to-top {
-  background-color: #00b3b3;
-  color: #ffffff;
-  border: none;
-  padding: 2px 4px;
-  border-radius: 30px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
-.back-to-top:hover {
-  background-color: #008080;
-  transform: scale(1.05);
-}
-.back-to-top:active {
-  transform: scale(0.95);
-}
-.new-heading {
-  font-size: 18px;
-  color: #00b3b3;
-  margin-top: 0;
-}
-.new-heading+p {
-  font-size: 10px;
-  margin-bottom: 10px;
-  color: #00b3b3;
-}
-.cta-button {
-  display: inline-block;
-  background-color: #00b3b3;
-  color: #ffffff;
-  border: none;
-  padding: 2px 4px;
-  border-radius: 14px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-.cta-button:hover {
-  background-color: #008080;
-  transform: scale(1.05);
-}
-.cta-button:active {
-  transform: scale(0.95);
-}
-.guide-to-copywriting {
-  color: #FF0000;
-  font-size: 16px;
-  font-weight: bold;
-}
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .social a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .social a img {
+      width: 30px;
+      height: 30px;
+      background: none;
+      transition: all 0.3s ease;
+    }
+    .social a span {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #00b3b3;
+      white-space: nowrap;
+    }
+    .social a:hover img {
+      width: 40px;
+      height: 40px;
+    }
+    .social a:hover span {
+      display: block;
+    }
+    footer {
+      background: linear-gradient(to bottom, #ffffff, #00b3b3);
+      padding: 35px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .box {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .box h3 {
+      font-size: 18px;
+      margin: 0;
+      color: #ffffff;
+    }
+    .box p {
+      font-size: 14px;
+      margin: 10px 0 0;
+      color: #ffffff;
+    }
+    .box:first-child {
+      border: 1px solid #ffffff;
+    }
+    .box:last-child {
+      border: 1px solid #ffffff;
+    }
+    .back-to-top {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .back-to-top:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .back-to-top:active {
+      transform: scale(0.95);
+    }
+    .new-heading {
+      font-size: 18px;
+      color: #00b3b3;
+      margin-top: 0;
+    }
+    .new-heading+p {
+      font-size: 10px;
+      margin-bottom: 10px;
+      color: #00b3b3;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 14px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .cta-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .cta-button:active {
+      transform: scale(0.95);
+    }
+    footer .tcbhg {
+      text-align: center;
+      margin-top: 20px;
+    }
+    footer .tcbhg a {
+      color: white;
+      text-decoration: none;
+    }
+    footer .tcbhg a:hover {
+      text-decoration: underline;
+    }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
