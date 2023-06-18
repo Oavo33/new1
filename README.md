@@ -311,7 +311,7 @@
 }
 .footer-container .box p {
   font-size: 14px;
-  margin: 10px 0 0;
+  margin: 2px 0 0;
   color: #ffffff;
 }
 .footer-container .box:first-child {
@@ -322,7 +322,7 @@
 }
 .tcbhg {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2px;
 }
 .tcbhg a {
   color: #00b3b3;
