@@ -219,22 +219,118 @@
       font-size: 14px;
       color: #00b3b3;
       font-weight: bold;
-    }footer {
+    }
+    /* Footer Styles */
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
       text-align: center;
       font-size: 14px;
-    }footer .tcbhg {
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer-container .box {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .footer-container .box h3 {
+      font-size: 18px;
+      margin: 0;
+      color: #ffffff;
+    }
+    .footer-container .box p {
+      font-size: 14px;
+      margin: 10px 0 0;
+      color: #ffffff;
+    }
+    .footer-container .box:first-child {
+      border: 1px solid #ffffff;
+    }
+    .footer-container .box:last-child {
+      border: 1px solid #ffffff;
+    }
+    .tcbhg {
       text-align: center;
       margin-top: 20px;
     }
-    footer .tcbhg a {
-      color: white;
+    .tcbhg a {
+      color: #00b3b3;
       text-decoration: none;
     }
-    footer .tcbhg a:hover {
+    .tcbhg a:hover {
       text-decoration: underline;
+    }
+    .graffiti-button {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .graffiti-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .graffiti-button:active {
+      transform: scale(0.95);
+    }
+    .new-heading {
+      font-size: 18px;
+      color: #00b3b3;
+      margin-top: 0;
+    }
+    .new-heading+p {
+      font-size: 10px;
+      margin-bottom: 10px;
+      color: #00b3b3;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 14px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .cta-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .cta-button:active {
+      transform: scale(0.95);
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
@@ -252,7 +348,15 @@
   <div class="tooltip">
     You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
   </div>
-</div><div class="social">
+</div>
+  <h1 class="hub-title">The Community Business Hub</h1>
+  <div class="graffiti">
+    This is your Hub !<br>
+    Do you want to change It ?<br>
+    Submit Request <br>
+    <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
+  </div>
+  <div class="social">
     <div>
       <a href="#">
         <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
@@ -265,12 +369,7 @@
         <span>Facebook</span>
       </a>
     </div>
-  <h1 class="hub-title">The Community Business Hub</h1>
-  <div class="graffiti">
-    This is your Hub !<br>
-    Do you want to change It ?<br>
-    Submit Request <br>
-    <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span></div></div>
+  </div>
 </header>
 <div class="hub-card">
   <div class="hub-card-title">Message From The Team</div>
@@ -354,40 +453,44 @@
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </div></div>
-<footer>
-    <div class="footer-container">
-      <div class="box">
-        <h3>Contact</h3>
-        <p>Email: contact@thehub.com</p>
-      </div>
-      <div class="box">
-  <h3>Terms and conditions</h3>
-  <p>By using The Hub, you agree to our <a href="https://example.com/terms" style="color: pink;">Terms of Service</a> and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+  </div>
 </div>
-      <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
-        <h3>What Do You Think About Our Community Hub?</h3>
+<footer>
+  <div class="footer-container">
+    <div class="box">
+      <h3>Contact</h3>
+      <p>Email: contact@thehub.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="box">
+      <h3>About Us</h3>
+      <p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
+      <h3>What Do You Think About Our Community Hub?</h3>
+    </div>
+    
+  </div>
+  <div class="box">
+        <h3>Follow Us</h3><a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        </a>
       </div>
-      <div class="box">
-        <h3>Follow Us</h3>
-        <div class="social">
-          <a href="#">
-            <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-          </a>
-          <a href="#">
-            <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-          </a>
-        </div>
-      </div>
+    </div>
+    <div class="footer-container">
       <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
+    </div>
+    <div class="footer-container">
       <p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
     <div class="tcbhg">
       <p>
-        <a href="https://example.com/privacy-policy">Privacy Policy</a>
-      </p>
-      <p>
-        <a href="https://example.com/guide-to-copywriting" class="guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+        <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
       </p>
     </div>
   </footer>
@@ -400,7 +503,8 @@
       var colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#8B00FF'];
       var randomColor = colors[Math.floor(Math.random() * colors.length)];
       element.style.backgroundColor = randomColor;
-    }}
+    }
+  }
   function stopPropagation(event) {
     event.stopPropagation();
   }
@@ -413,6 +517,8 @@
     var itemButtons = gridItem.querySelectorAll('.community-text');
     itemButtons.forEach(function (itemButton) {
       itemButton.addEventListener('click', stopPropagation);
-    });});
+    });
+  });
 </script>
-</body></html>
+</body>
+</html>
