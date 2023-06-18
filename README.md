@@ -34,7 +34,7 @@
       margin-top: 20px;
       font-weight: bold;
     }
-    .header .social {
+    .social {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -46,10 +46,10 @@
       background: none;
       margin-top: 20px;
     }
-    .header .social div:not(:last-child) {
+    .social div:not(:last-child) {
       margin-right: 20px;
     }
-    .header .social div a {
+    .social div a {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -57,7 +57,7 @@
       background: none;
       position: relative;
     }
-    .header .social div a span {
+    .social div a span {
       display: none;
       position: absolute;
       top: -35px;
@@ -70,7 +70,7 @@
       color: #00b3b3;
       white-space: nowrap;
     }
-    .header .social div a:hover span {
+    .social div a:hover span {
       display: block;
     }
     .login {
