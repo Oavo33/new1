@@ -482,7 +482,7 @@
     </div>
     <div class="tcbhg">
       <p>
-        <a href="https://example.com/privacy-policy">Privacy Policy</a>
+        <a href="https://example.com/privacy-policy"style="color: pink;">Privacy Policy</a>
       </p>
       <p>
         <a href="https://example.com/guide-to-copywriting" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
