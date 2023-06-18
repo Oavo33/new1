@@ -35,57 +35,44 @@
       font-weight: bold;
     }
     .header .social {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-      position: absolute;
-      top: 2%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: none;
-    }
-    .header .social div {
-      background: none;
-    }
-    .header .social div:not(:last-child) {
-      margin-right: 50px;
-    }
-    .header .social div a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      background: none;
-      position: relative;
-    }
-    .header .social div a img {
-      width: 30px;
-      height: 30px;
-      background: none;
-      transition: all 0.3s ease;
-    }
-    .header .social div a span {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 5px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-      color: #00b3b3;
-      white-space: nowrap;
-    }
-    .header .social div a:hover img {
-      width: 40px;
-      height: 40px;
-    }
-    .header .social div a:hover span {
-      display: block;
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  margin-top: 20px;
+}
+.header .social div:not(:last-child) {
+  margin-right: 20px;
+}
+.header .social div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: none;
+  position: relative;
+}
+.header .social div a span {
+  display: none;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00b3b3;
+  white-space: nowrap;
+}
+.header .social div a:hover span {
+  display: block;
+}
     .login {
       position: absolute;
       top: 14px;
