@@ -165,12 +165,12 @@
       font-weight: bold;
     }
     .social {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start; 
-    justify-content: center;
-    margin-top: 20px; 
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 20px; 
+}
   .social a {
     display: flex;
     align-items: center;
