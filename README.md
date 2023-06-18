@@ -12,6 +12,7 @@
       color: #333333;
       margin: 0;
       padding: 0;
+      overflow-x: hidden; 
     }
     header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
