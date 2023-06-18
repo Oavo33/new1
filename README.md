@@ -512,9 +512,7 @@
   <div class="footer-container">
     <div class="box">
       <h3>Contact</h3>
-      <p>Email: contact@thehub.com</p>
-      <p>Phone: 123-456-7890</p>
-    </div>
+      <p>Email: contact@thehub.com</p></div>
     <div class="box">
       <h3>About Us</h3>
       <p>By using The Hub, you agree to our <a href="#" style="color: pink;">Terms and conditions</a> and <a href="#" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
@@ -527,7 +525,7 @@
     
   </div>
   <div class="box">
-        <h3>Follow Us</h3><a href="#">
+        <a href="#">
           <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
         </a>
         <a href="#">
