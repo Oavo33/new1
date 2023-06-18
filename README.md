@@ -281,7 +281,7 @@
     }
     footer {
   background: linear-gradient(to bottom, #ffffff, #00b3b3);
-  padding: 35px;
+  padding: 30px;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
@@ -299,19 +299,19 @@
   color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 2px;
+  padding: 7px;
   text-align: center;
-  margin: 2px;
+  margin: 7px;
   cursor: pointer;
 }
 .footer-container .box h3 {
   font-size: 18px;
-  margin: 0;
+  margin: 7;
   color: #ffffff;
 }
 .footer-container .box p {
   font-size: 14px;
-  margin: 2px 0 0;
+  margin: 7px 0 0;
   color: #ffffff;
 }
 .footer-container .box:first-child {
@@ -322,7 +322,7 @@
 }
 .tcbhg {
   text-align: center;
-  margin-top: 2px;
+  margin-top: 7px;
 }
 .tcbhg a {
   color: #00b3b3;
