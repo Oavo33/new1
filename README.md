@@ -26,13 +26,15 @@
       font-size: 38px;
       color: white;
       font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
     }
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      padding: 10px;
+      padding: 20px;
       text-align: center;
       max-width: 280px;
       width: 65%;
@@ -45,7 +47,7 @@
       font-size: 16px;
       margin-top: 0;
       font-weight: bold;
-      margin-bottom: 2px;
+      margin-bottom: 10px;
       color: #ffffff;
     }
     .login {
@@ -82,7 +84,8 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;background: none;
+      justify-content: center;
+      background: none;
       margin-top: 20px;
     }
     .social-header div:not(:last-child) {
@@ -95,7 +98,8 @@
       text-decoration: none;
       background: none;
       position: relative;
-    }.social-header div a span {
+    }
+    .social-header div a span {
       display: none;
       position: absolute;
       top: -35px;
@@ -103,7 +107,8 @@
       transform: translateX(-50%);
       margin-top: 5px;
       font-family: 'Roboto', sans-serif;
-      font-size: 16px;font-weight: bold;
+      font-size: 16px;
+      font-weight: bold;
       color: #00b3b3;
       white-space: nowrap;
     }
@@ -160,7 +165,8 @@
       text-align: center;
       cursor: pointer;
       position: relative;
-    }footer {
+    }
+    footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
@@ -184,7 +190,8 @@
       text-align: center;
       margin: 10px;
       cursor: pointer;
-    }.tcbhg {
+    }
+    .tcbhg {
       text-align: center;
       margin-top: 20px;
     }
