@@ -331,7 +331,11 @@
     }
     .cta-button:active {
       transform: scale(0.95);
-    }
+    }.guide-to-copywriting {
+  color: pink;
+  font-size: 16px;
+  font-weight: bold;
+}
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
