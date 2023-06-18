@@ -71,25 +71,16 @@
     transform: rotate(-7deg);
     top: 2%;
     color: white;
-    border: none;
-  }
-  .graffiti-button {
+  }.graffiti-button {
     background-color: #00b3b3;
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 30px;
-    font-family: 'Roboto', sans-serif;
+    color: #ffffff;font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
     outline: none;
-    box-shadow: none; 
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  }
-  .graffiti-button:hover {
+  }.graffiti-button:hover {
     background-color: #008080;
     transform: scale(1.1);
   }
