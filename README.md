@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +34,111 @@
       margin-top: 20px;
       font-weight: bold;
     }
+    .social {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      position: absolute;
+      top: 2%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: none;
+    }
+    .social div {
+      background: none;
+    }
+    .social div:not(:last-child) {
+      margin-right: 50px;
+    }
+    .social div a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      background: none;
+      position: relative;
+    }
+    .social div a img {
+      width: 30px;
+      height: 30px;
+      background: none;
+      transition: all 0.3s ease;
+    }
+    .social div a span {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #00b3b3;
+      white-space: nowrap;
+    }
+    .social div a:hover img {
+      width: 40px;
+      height: 40px;
+    }
+    .social div a:hover span {
+      display: block;
+    }
+    .login {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+    }
+    .login button {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .login button:hover {
+      background-color: #008080;
+      transform: scale(1.14);
+    }
+    .login button:active {
+      transform: scale(0.95);
+    }
+    .tooltip {
+      position: absolute;
+      top: 100%;
+      right: 99%;
+      transform: translateX(50%);
+      width: 200px;
+      background-color: #f2f2f2;
+      border: 1px solid #00b3b3;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s ease-in-out;
+      z-index: 10;
+      font-family: 'Roboto', sans-serif;
+    }
+    .login:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
@@ -60,158 +165,17 @@
       margin-bottom: 2px;
       color: #ffffff;
     }
-     .graffiti {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    left: 2px;
-    font-size: 11px;
-    transform: rotate(-7deg);
-    top: 2%;
-    color: white;
-  }.graffiti-button {
-    background-color: #00b3b3;
-    color: #ffffff;font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    outline: none;
-  }.graffiti-button:hover {
-    background-color: #008080;
-    transform: scale(1.1);
-  }
-  .graffiti-button:active {
-    transform: scale(0.95);
-  }
-    .login {
+    .graffiti {
       position: absolute;
-      top: 14px;
-      right: 14px;
-      display: flex;
-      align-items: center;
-    }
-    .login button,
-    .hub-card button {
-      background-color: #00b3b3;
-      color: #ffffff;
-      border: none;
-      padding: 5px 10px;
-      border-radius: 30px;
+      transform: translate(-50%, -50%);
       font-family: 'Roboto', sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      cursor: pointer;
-      outline: none;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-    }
-    .login button:hover,
-    .hub-card button:hover {
-      background-color: #008080;
-      transform: scale(1.14);
-    }
-    .login button:active,
-    .hub-card button:active {
-      transform: scale(0.95);
-    }
-    .tooltip {
-      position: absolute;
-      top: 100%;
-      right: 99%;
-      transform: translateX(50%);
-      width: 200px;
-      background-color: #f2f2f2;
-      border: 1px solid #00b3b3;
-      border-radius: 5px;
-      padding: 10px;
-      font-size: 14px;
-      color: #333333;
-      text-align: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.3s ease-in-out;
-      z-index: 10;
-      font-family: 'Roboto', sans-serif;
-    }
-    .login:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
-    }
-    .social-header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      background: none;
-      margin-top: 20px;
-    }
-    .social-header div:not(:last-child) {
-      margin-right: 20px;
-    }
-    .social-header div a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      background: none;
-      position: relative;
-    }
-    .social-header div a span {
-      display: none;
-      position: absolute;
-      top: -35px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 5px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-      color: #00b3b3;
-      white-space: nowrap;
-    }
-    .social-header div a:hover span {
-      display: block;
-    }
-    .social-footer {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      background: none;
-      margin-top: 20px;
-    }
-    .social-footer div:not(:last-child) {
-      margin-right: 20px;
-    }
-    .social-footer div a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      background: none;
-      position: relative;
-    }
-    .social-footer div a span {
-      display: none;
-      position: absolute;
-      top: -35px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 5px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      font-weight: bold;
-      color: #00b3b3;
-      white-space: nowrap;
-    }
-    .social-footer div a:hover span {
-      display: block;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      left: 2px;
+      font-size: 11px;
+      transform: rotate(-7deg);
+      top: 2%;
+      color: white;
     }
     .grid-item .-text {
       font-size: 18px;
