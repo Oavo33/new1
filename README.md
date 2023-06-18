@@ -304,7 +304,7 @@
   text-align: center;
   margin: 7px auto; }
 .footer-container .box h3 {
-  font-size: 18px;
+  font-size: 14px;
   margin: 0; 
   padding: 7px 0; 
   color: #ffffff;
