@@ -60,7 +60,7 @@
       margin-bottom: 2px;
       color: #ffffff;
     }
-    .graffiti {
+     .graffiti {
     position: absolute;
     transform: translate(-50%, -50%);
     font-family: 'Roboto', sans-serif;
@@ -71,7 +71,7 @@
     transform: rotate(-7deg);
     top: 2%;
     color: white;
-    border: none; 
+    border: none;
   }
   .graffiti-button {
     background-color: #00b3b3;
@@ -86,7 +86,7 @@
     letter-spacing: 1px;
     cursor: pointer;
     outline: none;
-    box-shadow: none;
+    box-shadow: none; 
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
   }
   .graffiti-button:hover {
