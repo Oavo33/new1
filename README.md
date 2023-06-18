@@ -517,7 +517,7 @@
     </div>
     <div class="box">
       <h3>About Us</h3>
-      <p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+      <p>By using The Hub, you agree to our <a href="#" style="color: pink;">Terms and conditions</a> and <a href="#" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
     </div>
   </div>
   <div class="footer-container">
@@ -541,7 +541,7 @@
     </div>
     <div class="tcbhg">
       <p>
-        <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+        <a href="https://example.com/guide-to-copywriting" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
       </p>
     </div>
   </footer>
