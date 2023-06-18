@@ -164,45 +164,45 @@
       color: #00b3b3;
       font-weight: bold;
     }
-    /* Footer Styles */
     .social {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-.social a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  margin-right: 10px; 
-}
-.social a img {
-  width: 30px;
-  height: 30px;
-  background: none;
-  transition: all 0.3s ease;
-}
-.social a span {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #00b3b3;
-  white-space: nowrap;
-}
-.social a:hover img {
-  width: 40px;
-  height: 40px;
-}
-.social a:hover span {
-  display: block;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  .social a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .social a img {
+    width: 30px;
+    height: 30px;
+    background: none;
+    transition: all 0.3s ease;
+  }
+  .social a span {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00b3b3;
+    white-space: nowrap;
+  }
+  .social a:hover img {
+    width: 40px;
+    height: 40px;
+  }
+  .social a:hover span {
+    display: block;
+  }
 footer {
   background: linear-gradient(to bottom, #ffffff, #00b3b3);
   padding: 35px;
