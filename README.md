@@ -331,9 +331,7 @@
     }
     .cta-button:active {
       transform: scale(0.95);
-    }.guide-to-copywriting {
-  color: pink;
-  font-size: 16px;
+    }.guide-to-copywriting {font-size: 16px;
   font-weight: bold;
 }
   </style>
@@ -487,7 +485,7 @@
         <a href="https://example.com/privacy-policy">Privacy Policy</a>
       </p>
       <p>
-        <a href="https://example.com/guide-to-copywriting" class="guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+        <a href="https://example.com/guide-to-copywriting" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
       </p>
     </div>
   </footer>
