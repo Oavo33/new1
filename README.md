@@ -273,7 +273,44 @@
     }
     .tcbhg a:hover {
       text-decoration: underline;
-    }@media screen and (max-width: 768px) {
+    }
+    .new-heading {
+      font-size: 18px;
+      color: #00b3b3;
+      margin-top: 0;
+    }
+    .new-heading+p {
+      font-size: 10px;
+      margin-bottom: 10px;
+      color: #00b3b3;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 14px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      text-decoration: none;
+      margin-right: 5px;
+    }
+    .cta-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .cta-button:active {
+      transform: scale(0.95);
+    }
+    @media screen and (max-width: 768px) {
       header .hub-title {
         font-size: 28px;
       }
