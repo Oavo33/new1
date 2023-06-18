@@ -478,13 +478,13 @@
       <div class="box back-to-top" onclick="scrollToTop()">To The Top</div><p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
     <div class="tcbhg">
-      <p>
-        <a href="https://example.com/privacy-policy"style="color: pink;">Privacy Policy</a>
-      </p>
-      <p>
-        <a href="https://example.com/guide-to-copywriting" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
-      </p>
-    </div>
+  <p>
+    <a href="https://example.com/privacy-policy" style="color: pink;">Privacy Policy</a>
+  </p>
+  <p>
+    <a href="https://example.com/guide-to-copywriting" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
+  </p>
+</div>
   </footer>
 <script>
   function scrollToTop() {
