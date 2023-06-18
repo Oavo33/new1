@@ -318,31 +318,7 @@
     .cta-button:active {
       transform: scale(0.95);
     }
-    /* Social Media Icons */
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
-    .social-icons a {
-      display: inline-block;
-      margin: 0 5px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: #00b3b3;
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-    }
-    .social-icons a:hover {
-      background-color: #008080;
-    }
+   
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
