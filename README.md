@@ -220,6 +220,7 @@
       color: #00b3b3;
       font-weight: bold;
     }
+    /* Footer Styles */
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
@@ -235,7 +236,7 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    .box {
+    .footer-container .box {
       background-color: #00b3b3;
       color: #ffffff;
       border-radius: 10px;
@@ -244,6 +245,22 @@
       text-align: center;
       margin: 10px;
       cursor: pointer;
+    }
+    .footer-container .box h3 {
+      font-size: 18px;
+      margin: 0;
+      color: #ffffff;
+    }
+    .footer-container .box p {
+      font-size: 14px;
+      margin: 10px 0 0;
+      color: #ffffff;
+    }
+    .footer-container .box:first-child {
+      border: 1px solid #ffffff;
+    }
+    .footer-container .box:last-child {
+      border: 1px solid #ffffff;
     }
     .tcbhg {
       text-align: center;
@@ -255,6 +272,65 @@
     }
     .tcbhg a:hover {
       text-decoration: underline;
+    }
+    .graffiti-button {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    .graffiti-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .graffiti-button:active {
+      transform: scale(0.95);
+    }
+    .new-heading {
+      font-size: 18px;
+      color: #00b3b3;
+      margin-top: 0;
+    }
+    .new-heading+p {
+      font-size: 10px;
+      margin-bottom: 10px;
+      color: #00b3b3;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #00b3b3;
+      color: #ffffff;
+      border: none;
+      padding: 2px 4px;
+      border-radius: 14px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .cta-button:hover {
+      background-color: #008080;
+      transform: scale(1.05);
+    }
+    .cta-button:active {
+      transform: scale(0.95);
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
@@ -275,11 +351,11 @@
 </div>
   <h1 class="hub-title">The Community Business Hub</h1>
   <div class="graffiti">
-  This is your Hub !<br>
-  Do you want to change It ?<br>
-  Submit Request <br>
-  <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
-</div>
+    This is your Hub !<br>
+    Do you want to change It ?<br>
+    Submit Request <br>
+    <span class="box"><button class="graffiti-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">Here</button></span>
+  </div>
   <div class="social">
     <div>
       <a href="#">
@@ -380,36 +456,43 @@
   </div>
 </div>
 <footer>
-    <div class="footer-container">
-      <div class="box">
-        <h3>Contact</h3>
-        <p>Email: contact@thehub.com</p></div>
-      <div class="box">
-  <h3>Terms and conditions</h3>
-  <p>By using The Hub, you agree to our <a href="https://example.com/terms" style="color: pink;">Terms of Service</a> and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
-</div><div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
-        <h3>What Do You Think About Our Community Hub?</h3>
-      </div><div class="box">
-        <h3>Follow Us</h3>
-        <div class="social">
-          <a href="#">
-            <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-          </a>
-          <a href="#">
-            <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-          </a>
-        </div>
+  <div class="footer-container">
+    <div class="box">
+      <h3>Contact</h3>
+      <p>Email: contact@thehub.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="box">
+      <h3>About Us</h3>
+      <p>By using The Hub, you agree to our Terms of Service and Privacy Policy. Please read them carefully before accessing or using our platform.</p>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
+      <h3>What Do You Think About Our Community Hub?</h3>
+    </div>
+    
+  </div>
+  <div class="box">
+        <h3>Follow Us</h3><a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        </a>
+        <a href="#">
+          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        </a>
       </div>
-      <div class="box back-to-top" onclick="scrollToTop()">To The Top</div><p>&copy; 2023 Lofties. All rights reserved.</p>
+    </div>
+    <div class="footer-container">
+      <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
+    </div>
+    <div class="footer-container">
+      <p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
     <div class="tcbhg">
-  <p>
-    <a href="https://example.com/privacy-policy" style="color: pink;">Privacy Policy</a>
-  </p>
-  <p>
-    <a href="https://example.com/guide-to-copywriting" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
-  </p>
-</div>
+      <p>
+        <a href="https://example.com/guide-to-copywriting">The Community Business Hub's Guide To Copywriting</a>
+      </p>
+    </div>
   </footer>
 <script>
   function scrollToTop() {
