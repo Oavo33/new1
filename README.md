@@ -26,15 +26,18 @@
       font-size: 38px;
       color: white;
       font-weight: bold;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-    .hub-card {
+    }header div.hub-card-title {
+      font-size: 38px;
+      color: white;
+      margin: 0;
+      margin-top: 20px;
+      font-weight: bold;
+    }.hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      padding: 20px;
+      padding: 10px;
       text-align: center;
       max-width: 280px;
       width: 65%;
@@ -47,8 +50,32 @@
       font-size: 16px;
       margin-top: 0;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 2px;
       color: #ffffff;
+    }
+    .hub-card p {
+      font-size: 14px;
+      margin-bottom: 2px;
+      color: #ffffff;
+    }
+    .graffiti {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      left: 2px;
+      font-size: 11px;
+      transform: rotate(-7deg);
+      top: 2%;
+      color: white;
+    }
+    .login {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
     }
     .login {
       position: absolute;
@@ -79,6 +106,29 @@
     }
     .login button:active {
       transform: scale(0.95);
+    }
+    .tooltip {
+      position: absolute;
+      top: 100%;
+      right: 99%;
+      transform: translateX(50%);
+      width: 200px;
+      background-color: #f2f2f2;
+      border: 1px solid #00b3b3;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s ease-in-out;
+      z-index: 10;
+      font-family: 'Roboto', sans-serif;
+    }
+    .login:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
     }
     .social-header {
       display: flex;
@@ -150,6 +200,17 @@
     .social-footer div a:hover span {
       display: block;
     }
+    .grid-item .-text {
+      font-size: 18px;
+      margin: 0;
+      color: #333333;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+    }
+    .grid-item .-text:hover {
+      color: #00b3b3;
+      text-decoration: underline;
+    }
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
@@ -165,6 +226,22 @@
       text-align: center;
       cursor: pointer;
       position: relative;
+    }
+    .grid-item h3 {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #00b3b3;
+    }
+    .grid-item p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+    .grid-item .community-text {
+      font-size: 14px;
+      color: #00b3b3;
+      font-weight: bold;
     }
     footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
