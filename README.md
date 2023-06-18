@@ -1,6 +1,4 @@
-
-<html>
-<head>
+<html><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hub</title>
   <style>
@@ -34,7 +32,7 @@
       margin-top: 20px;
       font-weight: bold;
     }
-    .social {
+    .social-header {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -46,10 +44,10 @@
       background: none;
       margin-top: 20px;
     }
-    .social div:not(:last-child) {
+    .social-header div:not(:last-child) {
       margin-right: 20px;
     }
-    .social div a {
+    .social-header div a {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -57,7 +55,7 @@
       background: none;
       position: relative;
     }
-    .social div a span {
+    .social-header div a span {
       display: none;
       position: absolute;
       top: -35px;
@@ -70,7 +68,7 @@
       color: #00b3b3;
       white-space: nowrap;
     }
-    .social div a:hover span {
+    .social-header div a:hover span {
       display: block;
     }
     .login {
@@ -318,7 +316,20 @@
     .cta-button:active {
       transform: scale(0.95);
     }
-   
+    @media screen and (max-width: 600px) {
+      header .hub-title {
+        font-size: 24px;
+      }
+      header div.hub-card-title {
+        font-size: 24px;
+      }
+      .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+      .footer-container .box {
+        flex-basis: 100%;
+      }
+    }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
