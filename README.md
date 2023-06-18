@@ -1,4 +1,6 @@
-<html><head>
+<!DOCTYPE html>
+<html>
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hub</title>
   <style>
@@ -25,51 +27,26 @@
       color: white;
       font-weight: bold;
     }
-    header div.hub-card-title {
-      font-size: 38px;
-      color: white;
-      margin: 0;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    .social-header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background: none;
-      margin-top: 20px;
-    }
-    .social-header div:not(:last-child) {
-      margin-right: 20px;
-    }
-    .social-header div a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      background: none;
+    .hub-card {
+      background: linear-gradient(to bottom, #008080, #00b3b3);
+      border-radius: 10px;
+      border: 2px solid #ffffff;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      text-align: center;
+      max-width: 280px;
+      width: 65%;
+      margin: 0 auto;
+      margin-top: -55px;
       position: relative;
+      z-index: 2;
     }
-    .social-header div a span {
-      display: none;
-      position: absolute;
-      top: -35px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 5px;
-      font-family: 'Roboto', sans-serif;
+    .hub-card .hub-card-title {
       font-size: 16px;
+      margin-top: 0;
       font-weight: bold;
-      color: #00b3b3;
-      white-space: nowrap;
-    }
-    .social-header div a:hover span {
-      display: block;
+      margin-bottom: 2px;
+      color: #ffffff;
     }
     .login {
       position: absolute;
@@ -101,77 +78,72 @@
     .login button:active {
       transform: scale(0.95);
     }
-    .tooltip {
-      position: absolute;
-      top: 100%;
-      right: -28%;
-      transform: translateX(50%);
-      width: 200px;
-      background-color: #f2f2f2;
-      border: 1px solid #00b3b3;
-      border-radius: 5px;
-      padding: 10px;
-      font-size: 14px;
-      color: #333333;
-      text-align: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.3s ease-in-out;
-      z-index: 10;
-      font-family: 'Roboto', sans-serif;
+    .social-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;background: none;
+      margin-top: 20px;
     }
-    .login:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
+    .social-header div:not(:last-child) {
+      margin-right: 20px;
     }
-    .hub-card {
-      background: linear-gradient(to bottom, #008080, #00b3b3);
-      border-radius: 10px;
-      border: 2px solid #ffffff;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      padding: 10px;
-      text-align: center;
-      max-width: 280px;
-      width: 65%;
-      margin: 0 auto;
-      margin-top: -55px;
+    .social-header div a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      background: none;
       position: relative;
-      z-index: 2;
-    }
-    .hub-card .hub-card-title {
-      font-size: 16px;
-      margin-top: 0;
-      font-weight: bold;
-      margin-bottom: 2px;
-      color: #ffffff;
-    }
-    .hub-card p {
-      font-size: 14px;
-      margin-bottom: 2px;
-      color: #ffffff;
-    }
-    .graffiti {
+    }.social-header div a span {
+      display: none;
       position: absolute;
-      transform: translate(-50%, -50%);
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
       font-family: 'Roboto', sans-serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      z-index: 1;
-      left: 2px;
-      font-size: 11px;
-      transform: rotate(-7deg);
-      top: 2%;
-      color: white;
-    }
-    .grid-item .-text {
-      font-size: 18px;
-      margin: 0;
-      color: #333333;
-      cursor: pointer;
-      transition: color 0.3s ease-in-out;
-    }
-    .grid-item .-text:hover {
+      font-size: 16px;font-weight: bold;
       color: #00b3b3;
-      text-decoration: underline;
+      white-space: nowrap;
+    }
+    .social-header div a:hover span {
+      display: block;
+    }
+    .social-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      margin-top: 20px;
+    }
+    .social-footer div:not(:last-child) {
+      margin-right: 20px;
+    }
+    .social-footer div a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      background: none;
+      position: relative;
+    }
+    .social-footer div a span {
+      display: none;
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #00b3b3;
+      white-space: nowrap;
+    }
+    .social-footer div a:hover span {
+      display: block;
     }
     .grid-container {
       display: grid;
@@ -188,25 +160,7 @@
       text-align: center;
       cursor: pointer;
       position: relative;
-    }
-    .grid-item h3 {
-      font-size: 16px;
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: #00b3b3;
-    }
-    .grid-item p {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #333333;
-    }
-    .grid-item .community-text {
-      font-size: 14px;
-      color: #00b3b3;
-      font-weight: bold;
-    }
-    /* Footer Styles */
-    footer {
+    }footer {
       background: linear-gradient(to bottom, #ffffff, #00b3b3);
       padding: 35px;
       color: #ffffff;
@@ -221,7 +175,7 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    .footer-container .box {
+    .box {
       background-color: #00b3b3;
       color: #ffffff;
       border-radius: 10px;
@@ -230,24 +184,7 @@
       text-align: center;
       margin: 10px;
       cursor: pointer;
-    }
-    .footer-container .box h3 {
-      font-size: 18px;
-      margin: 0;
-      color: #ffffff;
-    }
-    .footer-container .box p {
-      font-size: 14px;
-      margin: 10px 0 0;
-      color: #ffffff;
-    }
-    .footer-container .box:first-child {
-      border: 1px solid #ffffff;
-    }
-    .footer-container .box:last-child {
-      border: 1px solid #ffffff;
-    }
-    .tcbhg {
+    }.tcbhg {
       text-align: center;
       margin-top: 20px;
     }
@@ -257,80 +194,7 @@
     }
     .tcbhg a:hover {
       text-decoration: underline;
-    }
-    .graffiti-button {
-      background-color: #00b3b3;
-      color: #ffffff;
-      border: none;
-      padding: 2px 4px;
-      border-radius: 30px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      cursor: pointer;
-      outline: none;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-    }
-    .graffiti-button:hover {
-      background-color: #008080;
-      transform: scale(1.05);
-    }
-    .graffiti-button:active {
-      transform: scale(0.95);
-    }
-    .new-heading {
-      font-size: 18px;
-      color: #00b3b3;
-      margin-top: 0;
-    }
-    .new-heading+p {
-      font-size: 10px;
-      margin-bottom: 10px;
-      color: #00b3b3;
-    }
-    .cta-button {
-      display: inline-block;
-      background-color: #00b3b3;
-      color: #ffffff;
-      border: none;
-      padding: 2px 4px;
-      border-radius: 14px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      cursor: pointer;
-      outline: none;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-      margin-top: 5px;
-    }
-    .cta-button:hover {
-      background-color: #008080;
-      transform: scale(1.05);
-    }
-    .cta-button:active {
-      transform: scale(0.95);
-    }
-    @media screen and (max-width: 600px) {
-      header .hub-title {
-        font-size: 24px;
-      }
-      header div.hub-card-title {
-        font-size: 24px;
-      }
-      .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      }
-      .footer-container .box {
-        flex-basis: 100%;
-      }
-    }
-  </style>
+    }</style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
