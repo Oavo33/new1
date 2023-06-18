@@ -106,7 +106,7 @@
     .tooltip {
       position: absolute;
       top: 100%;
-      right: 80%;
+      right: -28%;
       transform: translateX(50%);
       width: 200px;
       background-color: #f2f2f2;
