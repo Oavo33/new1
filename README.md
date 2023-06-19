@@ -511,7 +511,7 @@
 <footer>
   <div class="footer-container">
     <div class="box"><p>Contact The Team <br>Email: contact@thehub.com</p></div>
-    <div class="box"><p>By using The Hub, you agree to our <a href="#" style="color: pink;">Terms and conditions</a> and <a href="#" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
+    <div class="box"><p>By using The Hub, you agree to our <a href="https://oavo33.github.io/termsancond/" style="color: pink;">Terms and conditions</a> and <a href="#" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
     </div>
   </div>
   <div class="footer-container">
