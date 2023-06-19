@@ -517,9 +517,10 @@
     </div>
   </div>
   <div class="footer-container">
-    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
-      <h3>What Do You Think About Our Community Hub?</h3>
-    </div>
+  <div class="box" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">
+    <h3>What Do You Think About Our Community Hub?</h3>
+  </div>
+</div>
     
   </div>
   <div class="box">
