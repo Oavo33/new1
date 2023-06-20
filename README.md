@@ -520,7 +520,7 @@
     <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
   </div>
   <div class="footer-container">
-    <p>&copy; 2023 KarlRyanLeahWhitneyleighJake. All rights reserved.</p>
+    <p>&copy; 2023KarlRyanLeahWhitneyleighJake. All rights reserved.</p>
   </div>
   <div class="tcbhg">
     <p>
