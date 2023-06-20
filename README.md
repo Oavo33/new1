@@ -280,58 +280,59 @@
       transform: scale(0.95);
     }
     footer {
-  background: linear-gradient(to bottom, #ffffff, #00b3b3);
-  padding: 30px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-}
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.footer-container .box {
-  background-color: #00b3b3;
-  color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 4px;
-  text-align: center;
-  margin: 7px auto; }
-.footer-container .box h3 {
-  font-size: 14px;
-  margin: 0; 
-  padding: 7px 0; 
-  color: #ffffff;
-}
-.footer-container .box p {
-  font-size: 14px;
-  margin: 0; 
-  padding: 7px 0;
-  color: #ffffff;
-}
-.footer-container .box:first-child {
-  border: 1px solid #ffffff;
-}
-.footer-container .box:last-child {
-  border: 1px solid #ffffff;
-}
-.tcbhg {
-  text-align: center;
-  margin-top: 7px;
-}
-.tcbhg a {
-  color: #00b3b3;
-  text-decoration: none;
-}
-.tcbhg a:hover {
-  text-decoration: underline;
-}
+      background: linear-gradient(to bottom, #ffffff, #00b3b3);
+      padding: 30px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .footer-container .box {
+      background-color: #00b3b3;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 4px;
+      text-align: center;
+      margin: 7px auto;
+    }
+    .footer-container .box h3 {
+      font-size: 14px;
+      margin: 0; 
+      padding: 7px 0; 
+      color: #ffffff;
+    }
+    .footer-container .box p {
+      font-size: 14px;
+      margin: 0; 
+      padding: 7px 0;
+      color: #ffffff;
+    }
+    .footer-container .box:first-child {
+      border: 1px solid #ffffff;
+    }
+    .footer-container .box:last-child {
+      border: 1px solid #ffffff;
+    }
+    .tcbhg {
+      text-align: center;
+      margin-top: 7px;
+    }
+    .tcbhg a {
+      color: #00b3b3;
+      text-decoration: none;
+    }
+    .tcbhg a:hover {
+      text-decoration: underline;
+    }
     }@media screen and (max-width: 768px) {
       header .hub-title {
         font-size: 28px;
