@@ -535,7 +535,7 @@
     </div>
     <div class="tcbhg">
       <p>
-        <a href="https://example.com/guide-to-copywriting" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
+        <a href="https://oavo33.github.io/copywrites/" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
       </p>
     </div>
   </footer>
