@@ -517,7 +517,7 @@
     </div>
   </div>
   <div class="footer-container">
-  <div class="box" onclick="window.open('https://docs.google.com/forms/d/1q76lEgWn-D8CoaPEdrTWtb5xqof5j5C3lrUWI5GTN-s/viewform?embedded=true')">
+  <div class="box" onclick="window.open('https://docs.google.com/forms/d/1q76lEgWn-D8CoaPEdrTWtb5xqof5j5C3lrUWI5GTN-s/viewform?embedded=true')" style="cursor: pointer;">
     <h3>What Do You Think About Our Community Hub?</h3>
   </div>
 </div><div class="box">
