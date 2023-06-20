@@ -517,13 +517,10 @@
     </div>
   </div>
   <div class="footer-container">
-  <div class="box" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true')">
+  <div class="box" onclick="window.open('https://docs.google.com/forms/d/1q76lEgWn-D8CoaPEdrTWtb5xqof5j5C3lrUWI5GTN-s/viewform?embedded=true')">
     <h3>What Do You Think About Our Community Hub?</h3>
   </div>
-</div>
-    
-  </div>
-  <div class="box">
+</div><div class="box">
         <a href="#">
           <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
         </a>
