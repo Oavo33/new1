@@ -503,42 +503,46 @@
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
-  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100%; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </div>
 </div>
-<footer><div class="footer-container">
-            <div class="box">
-                <p>Contact<br>Email: contact@thehub.com</p>
-            </div>
-  <div class="footer-container">
-    <div class="box"><p>By using The Hub, you agree to our <a href="https://oavo33.github.io/termsancond/" style="color: pink;">Terms and conditions</a> and <a href="https://oavo33.github.io/policy/" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
-    </div>
-  </div>
-  <div class="footer-container">
-  <div class="box" onclick="window.open('https://docs.google.com/forms/d/1q76lEgWn-D8CoaPEdrTWtb5xqof5j5C3lrUWI5GTN-s/viewform?embedded=true')" style="cursor: pointer;">
-    <h3>What Do You Think About Our Community Hub?</h3>
-  </div>
-</div><div class="box">
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-        </a>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-        </a>
-      </div><div class="footer-container">
-      <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
+<footer>
+    <div class="footer-container">
+        <div class="box">
+            <p>Contact<br>Email: contact@thehub.com</p>
+        </div>
     </div>
     <div class="footer-container">
-      <p>&copy; 2023 Lofties. All rights reserved.</p>
+        <div class="box">
+            <p>By using The Hub, you agree to our <a href="https://oavo33.github.io/termsancond/" style="color: pink;">Terms and conditions</a> and <a href="https://oavo33.github.io/policy/" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="box" onclick="window.open('https://docs.google.com/forms/d/1q76lEgWn-D8CoaPEdrTWtb5xqof5j5C3lrUWI5GTN-s/viewform?embedded=true')" style="cursor: pointer;">
+            <h3>What Do You Think About Our Community Hub?</h3>
+        </div>
+    </div>
+    <div class="box">
+        <a href="#">
+            <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+        </a>
+        <a href="#">
+            <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+        </a>
+    </div>
+    <div class="footer-container">
+        <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
+    </div>
+    <div class="footer-container">
+        <p>&copy; 2023 Lofties. All rights reserved.</p>
     </div>
     <div class="tcbhg">
-      <p>
-        <a href="https://oavo33.github.io/copywrites/" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
-      </p>
+        <p>
+            <a href="https://oavo33.github.io/copywrites/" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
+        </p>
     </div>
-  </footer>
+</footer>
 <script>
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
