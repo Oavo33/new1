@@ -388,21 +388,21 @@
     }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZG8MP5HRX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RZG8MP5HRX');
-  </script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZG8MP5HRX');
+</script>
 </head>
 <body>
 <header>
   <div class="login">
-  <button class="custom-class">Login</button>
-  <div class="tooltip">
-    You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
+    <button class="custom-class">Login</button>
+    <div class="tooltip">
+      You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
+    </div>
   </div>
-</div>
   <h1 class="hub-title">The Community Business Hub</h1>
   <div class="graffiti">
     This is your Hub !<br>
@@ -431,46 +431,36 @@
 </div>
 <div class="grid-container">
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_1')">
-    <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/"><p class="community-text">Elderly Assistance</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/Elderly.assistance/"><p class="community-text">Elderly Assistance</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_2')">
-    <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/"><p class="community-text">Community Giveaway</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/Personalized.Exchange.And.Free.Services/"><p class="community-text">Community Giveaway</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_3')">
-    <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall"><p class="community-text">The Community Graffiti Wall</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/The.Community.Graffiti.Wall"><p class="community-text">The Community Graffiti Wall</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_4')">
-    <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/"><p class="community-text">Our Vintage Shop Memories</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/Vintage.High.Street/"><p class="community-text">Our Vintage Shop Memories</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_5')">
-    <a class="community-item" href="https://oavo33.github.io/Help/"><p class="community-text">Help Our Homeless</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/Help/"><p class="community-text">Help Our Homeless</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_6')">
-    <a class="community-item" href="https://oavo33.github.io/The.Hub/"><p class="community-text">Encouraging Young Business</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/The.Hub/"><p class="community-text">Encouraging Young Business</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_7')">
-    <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/"><p class="community-text">FREE Web Pages, Every Month</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/Personalized.Web.Pages/"><p class="community-text">FREE Web Pages, Every Month</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)" style="background-image: url('IMAGE_URL_8')">
-    <a class="community-item" href="https://oavo33.github.io/White.Paper/"><p class="community-text">White Paper</p>
-    </a>
+    <a class="community-item" href="https://oavo33.github.io/White.Paper/"><p class="community-text">White Paper</p></a>
   </div>
   <div class="grid-item" onclick="changeColor(this)">
-  <div class="new-heading">Let's Go!</div>
-  <p>Hey community! As your cheeky window cleaner, I've been auditing local businesses and here's what I found. The more we Subscribe, Like, and Follow Our Hub, the more we help them thrive. When we support them, they can support us in return. So let's subscribe, like, follow, and spread the word about their fantastic services. Together, we can ensure the success of our local businesses. Stay cheeky and support local! - The Cheeky Window Cleaner</p>
-  <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On Facebook</a>
-  <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
-</div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 140% ; background-repeat: no-repeat; background-position: center;" >
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
+    <div class="new-heading">Let's Go!</div>
+    <p>Hey community! As your cheeky window cleaner, I've been auditing local businesses and here's what I found. The more we Subscribe, Like, and Follow Our Hub, the more we help them thrive. When we support them, they can support us in return. So let's subscribe, like, follow, and spread the word about their fantastic services. Together, we can ensure the success of our local businesses. Stay cheeky and support local! - The Cheeky Window Cleaner</p>
+    <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On Facebook</a>
+    <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
+  </div>
+  <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 140% ; background-repeat: no-repeat; background-position: center;">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
   </div>
@@ -496,53 +486,47 @@
   </div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </div><div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100% ; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
-    <p class="-text" onclick="window.location.href='1'">New Button 1</p>
-    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
-  </div>
+    <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p></div>
   <div class="grid-item" style="background-image: url('https://i.imgur.com/gT1Sbd4.png'); background-size: 100%; background-repeat: no-repeat; background-position: center;" onclick="changeColor(this)">
     <p class="-text" onclick="window.location.href='1'">New Button 1</p>
     <p class="-text" onclick="window.location.href='URL_HERE'">New Button 6</p>
+  </div>
 </div>
 <footer>
-    <div class="footer-container">
-        <div class="box">
-            <p>Contact<br>Email: contact@thehub.com</p>
-        </div>
-    </div>
-    <div class="footer-container">
-        <div class="box">
-            <p>By using The Hub, you agree to our <a href="https://oavo33.github.io/termsancond/" style="color: pink;">Terms and conditions</a> and <a href="https://oavo33.github.io/policy/" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
-        </div>
-    </div>
-    <div class="footer-container">
-        <div class="box" onclick="window.open('https://docs.google.com/forms/d/1q76lEgWn-D8CoaPEdrTWtb5xqof5j5C3lrUWI5GTN-s/viewform?embedded=true')" style="cursor: pointer;">
-            <h3>What Do You Think About Our Community Hub?</h3>
-        </div>
-    </div>
+  <div class="footer-container">
     <div class="box">
-        <a href="#">
-            <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-        </a>
-        <a href="#">
-            <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-        </a>
+      <p>Contact<br>Email: contact@thehub.com</p>
     </div>
-    <div class="footer-container">
-        <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
+  </div>
+  <div class="footer-container">
+    <div class="box">
+      <p>By using The Hub, you agree to our <a href="https://oavo33.github.io/termsancond/" style="color: pink;">Terms and conditions</a> and <a href="https://oavo33.github.io/policy/" style="color: pink;">Privacy Policy</a>. Please read them carefully before accessing or using our platform.</p>
     </div>
-    <div class="footer-container">
-        <p>&copy; 2023 Karl<br>Ryan<br>Leah<br>Whitneyleigh<br>Jake. All rights reserved.</p>
+  </div>
+  <div class="footer-container">
+    <div class="box" onclick="window.open('https://docs.google.com/forms/d/1q76lEgWn-D8CoaPEdrTWtb5xqof5j5C3lrUWI5GTN-s/viewform?embedded=true')" style="cursor: pointer;">
+      <h3>What Do You Think About Our Community Hub?</h3>
     </div>
-    <div class="tcbhg">
-        <p>
-            <a href="https://oavo33.github.io/copywrites/" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
-        </p>
-    </div>
+  </div>
+  <div class="box">
+    <a href="#">
+      <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+    </a>
+    <a href="#">
+      <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+    </a>
+  </div>
+  <div class="footer-container">
+    <div class="box back-to-top" onclick="scrollToTop()">To The Top</div>
+  </div>
+  <div class="footer-container">
+    <p>&copy; 2023 Karl<br>Ryan<br>Leah<br>Whitneyleigh<br>Jake. All rights reserved.</p>
+  </div>
+  <div class="tcbhg">
+    <p>
+      <a href="https://oavo33.github.io/copywrites/" style="color: pink;">The Community Business Hub's Guide To Copywriting</a>
+    </p>
+  </div>
 </footer>
 <script>
   function scrollToTop() {
