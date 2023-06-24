@@ -258,13 +258,13 @@
       background-color: #00b3b3;
       color: #ffffff;
       border: none;
-      padding: 2px 4px;
+      padding: 1px 2px;
       border-radius: 14px;
       font-family: 'Roboto', sans-serif;
-      font-size: 10px;
+      font-size: 9px;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0px;
       cursor: pointer;
       outline: none;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
