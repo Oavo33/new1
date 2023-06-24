@@ -456,7 +456,7 @@
   </div>
   <div class="grid-item" onclick="changeColor(this)">
     <div class="new-heading">Let's Go!</div>
-    <p>Hey community! As your cheeky window cleaner, I've been auditing local people and local businesses, Here's what I found. We have an amazing group of individuals from our local area that we can share a story and some custom with, maybe a cheeky bargin/barter? Just say the cheeky window cleaner sent you! Stay cheeky and support local by liking and subscribing to our Facebook/YouTube. We got a good feeling about this bit, as the more word of mouth we can generate, the more we can help small local businesses and the community with the proceedings! We can literally make a change by word of mouth!</p>
+    <p>Hey community! As your cheeky window cleaner, I've been auditing local people and local businesses, Here's what I found. We have an amazing group of individuals from our local area that we can share a story and some custom with, maybe a cheeky bargin/barter? Stay cheeky and support local by liking and subscribing to our Facebook/YouTube. We got a good feeling about this bit, as the more word of mouth we can generate, the more we can help small local businesses and the community with the proceedings! We can literally make a big change by word of mouth and a couple of clicks !</p>
     <a href="https://www.facebook.com/myprofile" class="cta-button">Add Us On Facebook</a>
     <a href="https://www.youtube.com/mychannel" class="cta-button">Subscribe On YouTube</a>
   </div>
