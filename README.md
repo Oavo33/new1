@@ -374,10 +374,10 @@
         font-size: 12px;
       }
       .new-heading {
-        font-size: 14px;
+        font-size: 12px;
       }
       .new-heading+p {
-        font-size: 10px;
+        font-size: 8px;
       }
       .cta-button {
         font-size: 8px;
