@@ -249,7 +249,7 @@
       margin-top: 0;
     }
     .new-heading+p {
-      font-size: 8px;
+      font-size: 9px;
       margin-bottom: 2px;
       color: #00b3b3;
     }
