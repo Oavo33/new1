@@ -244,13 +244,13 @@
       font-weight: bold;
     }
     .new-heading {
-      font-size: 18px;
+      font-size: 14px;
       color: #00b3b3;
       margin-top: 0;
     }
     .new-heading+p {
-      font-size: 10px;
-      margin-bottom: 10px;
+      font-size: 8px;
+      margin-bottom: 2px;
       color: #00b3b3;
     }
     .cta-button {
