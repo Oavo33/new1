@@ -51,7 +51,7 @@
       background: none;
     }
     .social div:not(:last-child) {
-      margin-right: 40px;
+      margin-right: 20px;
     }
     .social div a {
       display: flex;
